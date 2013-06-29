@@ -1,0 +1,140 @@
+/*******************
+   Main Structure 
+*******************/
+.timeline-container {
+    width: 960px;
+    z-index: 0;
+}
+
+.timeline {
+    position: absolute;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    width: 960px;
+    height: 530px;
+    margin: auto; 
+    font-family: sans-serif;
+    z-index: 0;
+}
+
+#timeline-slider {
+    position: relative;
+    margin-left: -8.5px; /*97px*/
+    width: 960px;
+    display: table;
+    height: 530px;
+    z-index: 0;
+}
+
+/*********************************
+   General Timeline Items
+**********************************/
+.timeline-item {
+    float: left;
+}
+
+.timeline-item-content {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.timeline-item-content-img-cont {
+    width: 100%;
+    height: 92%;
+    overflow: hidden;
+}
+
+/* item default */
+.item-default {
+    height: 530px;
+    width: 960px;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 85%;
+}
+
+.item-default.active {
+	opacity: 1;
+}
+/*********************************
+   Dates
+**********************************/
+#timeline-dates {
+    height: 20px;
+    position: relative;
+    margin-left: 45px;
+    z-index: 1;
+}
+
+.date-container {
+    float: left;
+    display: inline-table;
+    color: black;
+    font-size: 10px;
+}
+
+#timeline-dates li:hover {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pointer-date-separator {
+    float: left;
+    width: 91px;
+    /*border-left: 1px solid black;*/
+}
+
+.date {
+    float: left;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+}
+
+.date-focus {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-left: -10px;
+}
+/***************************************/
+#middle {
+	height: 1px;
+    width: 1px;
+    /*margin: auto;*/
+	position: absolute;
+    color: yellow;
+}
+/**************************/
+#timelineContent {
+	text-align: left;
+}
+
+.timelineHeader {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.timelineHeader1 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.icon a {
+	display: inline-block;
+	opacity: 0.8;
+}
+
+.icon1 a {
+	display: inline-block;
+	opacity: 0.8;
+	position: relative;
+	left: 25px;
+}
+
+.icon a:hover, .icon1 a:hover {
+	opacity: 1;
+}

@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<!--
+|\    /|||******
+| \  / |||
+|  \/  |||*****||
+|      |	   ||
+***************||
+
+THIS SITE IS DESIGNED AND DEVELOPED BY MONISH SINGH
+-->
+<html>
+	<head>
+		<link rel="shortcut icon" href="icon/box.png">
+		<link rel="stylesheet" href="mainpage/mainStyles/master.css" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Poughkeepsie Regatta - Contact</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="mainpage/scripts/timelineGallery.js" ></script>
+		<script type="text/javascript" src="mainpage/scripts/timelineFormat.js" ></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				/*----*/
+				$('#footerContent').load('mainpage/footers.htm', function() {
+					$('a.nav').click(function() {
+						var toLoad = $(this).attr('href');
+						var toLoad = toLoad + " " + "#mainBody, #sectionHeader1, #infoContent1";
+						$('#infoContent, #infoContent1').load(toLoad, function() {
+							var $tdata = $('table.tbl');
+							$tdata.find('tr.tbldata').hide();
+
+							$('tr.Box').mouseover(function() {
+								$(this).parent().find('tr.tbldata').show();
+							});
+
+							$('tr.Box').mouseout(function() {
+								$(this).parent().find('tr.tbldata').hide();
+							});
+
+							$('tr.Box').hover(function() {
+								$(this).css({
+									'cursor' : 'pointer'
+								});
+							});
+							
+							$('#rightContent, #infoContent').hover(function() {
+                                $(this).css('overflow-y', 'auto');
+                            }, function() {
+                                $(this).css('overflow-y', 'hidden');
+                            });
+						});
+						return false;
+					});
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			// <![CDATA[
+			var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+			if(mobile) {
+				document.location = "http://bit.ly/maristArchives";
+			}
+		</script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-11905311-4']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+		<style type="text/css">
+          #mainBody {
+              overflow-y: auto;
+          }
+        </style>
+	</head>
+	<body>
+        <div id="headerContainer">
+            <a href="http://library.marist.edu/archives/index.html" target="_self"> <div id="header"></div> </a>
+        </div>
+        <div id="menu">
+            <div id="menuItems">
+                <ul class="dropdown">
+                    <li>
+                        <a href="http://library.marist.edu/archives/index.html"
+                        target="_self">Home</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="http://www.marist.edu"
+                                target="_blank">Marist Home</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/" target=
+                                "_blank">Cannavino Library</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://voyager.marist.edu/vwebv/searchBasic?sk=en_USmarist"
+                                target="_blank">Library
+                                Catalog</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/index_hold.html"
+                                target="_blank">Old A &amp;SC Home</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://library.marist.edu/archives/mainpage/collections.htm"
+                        target="_blank">Collections</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="http://library.marist.edu/archives/overview.htm" target=
+                                "_blank">Overview of
+                                Collections</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://library.marist.edu/archives/mainpage/visitorInfo.htm"
+                        target="_blank">Researcher Information</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/mainpage/collectionDevelopment.htm"
+                                target="_blank">Collection
+                                Development</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/mainpage/policiesAndProcedures.htm"
+                                target="_blank">Policies and
+                                Procedures</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/mainpage/archivesForms.htm"
+                                target="_blank">Forms</a>
+                                <ul>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/mainpage/forms/AUDIOVISUAL%20USE%20AGREEMENT%20FORM%20-%20MARIST%20COLLEGE.pdf"
+                                        target="_blank">Audiovisual Use Agreement</a>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/mainpage/forms/DEED%20OF%20GIFT%20FORM%20-%20MARIST%20COLLEGE.pdf"
+                                        target="_blank">Deed of Gift Form</a>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/mainpage/forms/PHOTOGRAPH%20USE%20FORM%20-%20MARIST%20COLLEGE.pdf"
+                                        target="_blank">Photograph Use Form</a>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/mainpage/forms/Reproduction%20Charges%20and%20Commercial%20Use%20Fees.pdf"
+                                        target="_blank">Reproduction Charges and Commercial Use Fees</a>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/mainpage/forms/RESEARCH%20AGREEMENT%20FORM%20-%20MARIST%20COLLEGE.pdf"
+                                        target="_blank">Research Agreement Form</a>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/mainpage/forms/USE%20AGREEMENT%20AND%20REPRODUCTION%20FORM%20-%20MARIST%20COLLEGE.pdf"
+                                        target="_blank">Use Agreement and Reproduction Form</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://library.marist.edu/archives/mainpage/contactInfo.htm"
+                                target="_blank">Contact
+                                Information</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://library.marist.edu/archives/mainpage/onlineExhibits.htm"
+                        target="_blank">Online Exhibits</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/LTP/LTaudio/LTaudio.html" target="_self">LT Audio Samples</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/LTP/Graphic%20Materials/Thomas2.1.1.2/arabia2.1.1.2.1.1.xml"
+                                target="_blank">The Lowell Thomas
+                                Papers: Glass Plate Negatives</a>
+                                <ul>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/LTP/Graphic%20Materials/Thomas2.1.1.2/arabia2.1.1.2.1.1.xml"
+                                        target="_blank">Arabia</a>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/LTP/Graphic%20Materials/Thomas2.1.1.2/palestine2.1.1.2.1.2.xml"
+                                        target="_blank">Palestine</a>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/LTP/Graphic%20Materials/Thomas2.1.1.2/egypt2.1.1.2.1.3.xml"
+                                        target="_blank">Egypt</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/gill/foreword.html"
+                                target="_blank">Hidden in Plain Sight:
+                                A Brief History of Fore-Edge
+                                Painting</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/regatta/index.html"
+                                target="_blank">Intercollegiate Rowing
+                                Association: Poughkeepsie
+                                Regatta</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/DCM/index.html"
+                                target="_blank">The Milestones of
+                                Dutchess County</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/Pawling%20Chronicle/index.html"
+                                target="_blank">Lowell Thomas and "The
+                                Nine Old Men" Baseball Team</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://library.marist.edu/archives/mainpage/collections.htm"
+                        target="_blank">Special Projects</a>
+                        <ul>
+                            <li>
+                                <a href="http://library.marist.edu/archives/mainpage/heritageProject.htm"
+                                target="_blank">Marist Heritage Project</a>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/mainpage/onlineHistory.htm" target="_blank">On-line History</a>
+                                        <ul>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/MHP_new/building.htm"
+                                                target="_blank">Buildings and Place Names</a>
+                                            </li>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/MHP_new/chronology.htm"
+                                                target="_blank">Chronology of
+                                                Marist College: 1858-1969</a>
+                                            </li>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/MHP/tableofcontents.html"
+                                                target="_blank">Marist College History</a>
+                                            </li>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/MHP_new/maristSymbols.htm"
+                                                target="_blank">Marist Symbols</a>
+                                            </li>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/MHP_new/studentNewspaper.html"
+                                                target="_blank">Student Newspapers: The Record and The Circle</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/oralHistory/oralHistory.html"
+                                        target="_blank">Oral History</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://library.marist.edu/archives/mainpage/heritageProject.htm"
+                                        target="_blank">Written History</a>
+                                        <ul>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/writtenHistory/historicalGrowthAndDevelopment.html"
+                                                target="_blank">The Historical
+                                                Growth and Development of the
+                                                Marist Brothers in the United
+                                                States</a>
+                                            </li>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/writtenHistory/murrayArticle.html"
+                                                target="_blank">A Lasting
+                                                Ideal in a Changing World: A
+                                                History of Marist
+                                                College</a>
+                                            </li>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/prayerAndWork/prayerAndWork.html"
+                                                target="_blank">Prayer and
+                                                Work</a>
+                                            </li>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/writtenHistory/shortHistoryOfMaristCollegeTheatre.html"
+                                                target="_blank">A Short
+                                                History of Marist College
+                                                Theater</a>
+                                            </li>
+                                            <li>
+                                                <a href=
+                                                "http://library.marist.edu/archives/MHP_new/studentNewspaper.html"
+                                                target="_blank">Student
+                                                Newspapers: The Record and The
+                                                Circle</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/mehp/index.html"
+                                target="_blank">Marist Environmental History
+                                Project</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://library.marist.edu/archives/mainpage/collections.htm"
+                        target="_blank">Gallery</a>
+                        <ul>
+                            <li>
+                                <a href="http://library.marist.edu/archives/gallery/mainGallery.html" target="_blank">July 2011</a>
+                            </li>
+                            <li>
+                                <a href="http://library.marist.edu/archives/gallery/august2011/august2011.html" target="_blank">August 2011</a>
+                            </li>
+                            <li>
+                                <a href="http://library.marist.edu/archives/gallery/september2011/september2011.html" target="_blank">September 2011</a>
+                            </li>
+                            <li>
+                                <a href="http://library.marist.edu/archives/gallery/october2011/october2011.html" target="_blank">October 2011</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/gallery/redFoxGallery/redFoxGallery.html"
+                                target="_blank">Red Fox Gallery</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/gallery/nellyGolettiGallery/nellyGolettiGallery.html"
+                                target="_blank">Nelly Goletti Gallery</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "http://library.marist.edu/archives/gallery/maristHeritage/maristHeritage.html"
+                                target="_blank">Marist Heritage Gallery</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "#" target="_self">360 Degree Gallery</a>
+                                <ul>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/LTP/Objects/objects360/1713.1.htm"
+                                        target=
+                                        "_blank">World War I/Travelogues</a>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/LTP/Objects/objects360/3.5/1699.1.htm"
+                                        target=
+                                        "_blank">Tibet</a>
+                                    </li>
+                                    <li>
+                                        <a href=
+                                        "http://library.marist.edu/archives/LTP/Objects/equipment3.3.xml"
+                                        target=
+                                        "_blank">Equipment</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    <form id='search_form' name='search_form' action="http://library.marist.edu/archives/search/" method="POST">
+                        <input type='text' id='title' name='title' style="margin-top: 5px; width: 200px;" />
+                        <input type='submit' class="classname" value='Search'/>
+                        <input type="hidden" name="action" value="search" />
+                        <input type="hidden" name="page" value="0" />
+                        <input type="hidden" name="page_size" value="25" />
+                        <input id='col_42175' name='col_42175' value='true' style="display: none;"/>
+                        <input id='col_38958' name='col_38958' value='true' style="display: none;"/>
+                    </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+		<div id="bodyContainer">
+			<div id="bodyContent">
+				<div id="container">
+				<div class="timeline-container">
+				</div>
+            </div>
+            
+            <div id="menu1">
+            	<div id="menuItems1">
+            		<ul class="dropdown">
+            			<li>
+							<a href="index.html" class="nav">Home</a>
+						</li>
+						<li>
+							<a href="program.html" class="nav">Programs</a>
+						</li>
+						<li>
+							<a href="bibliography.html" class="nav">Bibliography</a>
+						</li>
+						<li>
+							<a href="resources.html" class="nav">Resources</a>
+						</li>
+						<li>
+							<a href="contact.html" class="nav">Contact</a>
+						</li>
+					</ul>
+			    </div>
+			</div>
+				
+				<div id="infoContent">
+				<div id="mainBody">
+					<div class="sectionHeader">Contact Information</div>
+					<p style="font-size:18px; font-weight:bold;">Staffs</p> 
+					
+					<p class="tableFont1">John Ansley</p>
+					<p class="tableFont1">Head of Archives and Special Collections</p>
+					<p class="tableFont1">845-575-5217</p>
+					<p class="tableFont1"><a href="mailto:john.ansley@marist.edu" target="_blank">john.ansley@marist.edu</a></p>
+					<br/>
+					
+					<p class="tableFont1">Monish Man Singh</p>
+					<p class="tableFont1">Digital Archivist</p>
+					<p class="tableFont1">845-575-5214</p>
+				    <p class="tableFont1"><a href="mailto:monish.singh1@marist.edu" target="_blank">monish.singh1@marist.edu</a></p>
+                    <br/>
+                    
+					<p class="tableFont1">Nancy Decker</p>
+					<p class="tableFont1">Library Assistant</p>
+					<p class="tableFont1">845-575-3199</p>
+					<p class="tableFont1"><a href="mailto:nancy.decker@marist.edu" target="_blank">nancy.decker@marist.edu</a></p>
+					
+					<p style="font-size:18px; font-weight:bold;">Hours</p> 
+					<p class="tableFont1">Monday through Friday, 8:30 a.m. - 5:00 p.m. (closed 1:30 p.m. to 2:30 p.m.)</p><br />
+					<p class="tableFont1">PLEASE MAKE AN APPOINTMENT IN ADVANCE.</p>
+					
+					<h2 class="subHeading">General Contact Information:</h2>
+					<p class="tableFont1">Marist College</p>
+					<p class="tableFont1">Archives and Special Collections</p>
+					<p class="tableFont1">James A. Cannavino Library, LB 134</p>
+					
+					<p class="tableFont1">3399 North Road</p>
+					<p class="tableFont1">Poughkeepsie, NY 12601</p><br />
+					<p class="tableFont1"><strong>Tel: </strong>845-575-2750</p>
+					<p class="tableFont1"><strong>Fax: </strong>845-575-3150</p>
+					</div>
+      			</div>
+				</div>
+				</div>
+				<noscript>
+					<h1 class="heading">&amp;nbsp;Please enable Javascript to view this page or visit <a href=
+					"http://library.marist.edu/archives/index_hold.html"
+					target="_blank">Old A&amp;amp;SC Home</a></h1>
+				</noscript>
+				
+				<div id="footerContent"></div>
+	</body>
+</html>

@@ -1,0 +1,150 @@
+.building-name {
+	font-size: 2em;
+	font-weight: bold;
+}
+			
+.building-date {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+table {
+	border-spacing: 0;
+}
+
+.gallery td {
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+audio {
+	margin-top: 12px;
+	margin-left: 12px;
+	margin-bottom: 12px;
+}	
+
+#audioTitle {
+	color: #b31b1b;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.list {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #000;
+}
+
+.list a {
+	text-decoration: none;
+}
+
+.info1 {
+	font-size: 0.6em;
+}
+
+#audioList {
+	border-top: 1px dashed #000;
+}
+
+.greystone {
+	position: relative;
+	left: 440px;
+	top: 350px;
+}
+
+.stPeters {
+	position: relative;
+	left: 585px;
+	top: 340px;
+}
+
+.kieran {
+	position: relative;
+	left: 590px;
+	top: 375px;
+}
+
+.greenhouse {
+	position: relative;
+	left: 480px;
+	top: 320px;
+}
+
+.farm {
+	position: relative;
+	left: 170px;
+	top: 470px;
+}
+
+.cemetery {
+	position: relative;
+	left: 80px;
+	top: 420px;
+}
+
+.macpherson {
+	position: relative;
+	left: 590px;
+	top: 210px;
+}
+
+.oldMarian {
+	position: relative;
+	left: 190px;
+	top: 400px;
+}
+
+.canary {
+	position: relative;
+	left: 100px;
+	top: 390px;
+}
+
+.stMarys {
+	position: relative;
+	left: 100px;
+	top: 355px;
+}
+
+.novitiate {
+	position: relative;
+	left: 80px;
+	top: 440px;
+}
+
+.studyArea {
+	position: relative;
+	left: 270px;
+	top: 310px;
+}
+
+.chapel {
+	position: relative;
+	left: 250px;
+	top: 340px;
+}
+
+.adrian {
+	position: relative;
+	left: 180px;
+	top: 360px;
+}
+
+.leo {
+	position: relative;
+	right: 120px;
+	top: 350px;
+}
+
+.sheahan {
+	position: relative;
+	right: 140px;
+	top: 380px;
+}
+
+.donnelly {
+	position: relative;
+	left: 220px;
+	top: 410px;
+}
