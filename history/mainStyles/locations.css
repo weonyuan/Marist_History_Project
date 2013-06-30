@@ -1,0 +1,506 @@
+.building-name {
+	font-size: 2em;
+	font-weight: bold;
+}
+			
+.building-date {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+table {
+	border-spacing: 0;
+}
+
+.gallery td {
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+audio {
+	margin-top: 12px;
+	margin-left: 12px;
+	margin-bottom: 12px;
+}	
+
+#audioTitle {
+	color: #b31b1b;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.list {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #000;
+}
+
+.list a {
+	text-decoration: none;
+}
+
+.info1 {
+	font-size: 0.6em;
+}
+
+#audioList {
+	border-top: 1px dashed #000;
+}
+
+.greystone {
+	position: relative;
+	left: 470px;
+	top: 350px;
+}
+
+.stPeters {
+	position: relative;
+	left: 585px;
+	top: 340px;
+}
+
+.kieran {
+	position: relative;
+	left: 590px;
+	top: 375px;
+}
+
+.greenhouse {
+	position: relative;
+	left: 480px;
+	top: 320px;
+}
+
+.farm {
+	position: relative;
+	left: 170px;
+	top: 470px;
+}
+
+.cemetery {
+	position: relative;
+	left: 80px;
+	top: 420px;
+}
+
+.macpherson {
+	position: relative;
+	left: 590px;
+	top: 210px;
+}
+
+.oldMarian {
+	position: relative;
+	left: 190px;
+	top: 400px;
+}
+
+.cannery {
+	position: relative;
+	left: 100px;
+	top: 390px;
+}
+
+.stMarys {
+	position: relative;
+	left: 100px;
+	top: 355px;
+}
+
+.novitiate {
+	position: relative;
+	left: 80px;
+	top: 440px;
+}
+
+.studyArea {
+	position: relative;
+	left: 270px;
+	top: 310px;
+}
+
+.chapel {
+	position: relative;
+	left: 250px;
+	top: 340px;
+}
+
+.adrian {
+	position: relative;
+	left: 180px;
+	top: 360px;
+}
+
+.leo {
+	position: relative;
+	right: 95px;
+	top: 350px;
+}
+
+.sheahan {
+	position: relative;
+	right: 120px;
+	top: 385px;
+}
+
+.donnelly {
+	position: relative;
+	left: 200px;
+	top: 410px;
+}
+
+.marian {
+	position: relative;
+	left: 360px;
+	top: 365px;
+}
+
+/* FOR 1970 AND PRESENT */
+.greystone1 {
+	position: relative;
+	left: 440px;
+	top: 350px;
+}
+
+.stPeters1 {
+	position: relative;
+	left: 555px;
+	top: 340px;
+}
+
+.kieran1 {
+	position: relative;
+	left: 560px;
+	top: 375px;
+}
+
+.marian1 {
+	position: relative;
+	left: 330px;
+	top: 365px;
+}
+
+.leo1 {
+	position: relative;
+	left: 65px;
+	top: 355px;
+}
+
+.sheahan1 {
+	position: relative;
+	left: 45px;
+	top: 385px;
+}
+
+.chapel1 {
+	position: relative;
+	left: 410px;
+	top: 340px;
+}
+
+.studyArea1 {
+	position: relative;
+	left: 390px;
+	top: 330px;
+}
+
+.donnelly1 {
+	position: relative;
+	left: 380px;
+	top: 390px;
+}
+
+.mccann {
+	position: relative;
+	right: 70px;
+	top: 430px;
+}
+
+.champagnat {
+	position: relative;
+	left: 45px;
+	top: 365px;
+}
+
+.studentCenter {
+	position: relative;
+	left: 65px;
+	top: 335px;
+}
+
+.dyson {
+	position: relative;
+	left: 370px;
+	top: 270px;
+}
+
+.lowell {
+	position: relative;
+	left: 330px;
+	top: 310px;
+}
+
+.longview {
+	position: relative;
+	right: 135px;
+	top: 250px;
+}
+
+.lowerNew {
+	position: relative;
+	left: 20px;
+	top: 300px;
+}
+
+.upperNew {
+	position: relative;
+	left: 85px;
+	top: 275px;
+}
+
+.byrne {
+	position: relative;
+	right: 200px;
+	top: 320px;
+}
+
+.fontaineAnnex {
+	position: relative;
+	left: 315px;
+	top: 220px;
+}
+
+.steelPlant {
+	position: relative;
+	left: 215px;
+	top: 400px;
+}
+
+.stAnns {
+	position: relative;
+	left: 265px;
+	top: 165px;
+}
+
+.foy {
+	position: relative;
+	left: 40px;
+	top: 255px;
+}
+
+.gartland {
+	position: relative;
+	left: 140px;
+	top: 190px;
+}
+
+.lowerwestCedar {
+	position: relative;
+	left: 130px;
+	top: 465px;
+}
+
+.midrise {
+	position: relative;
+	right: 280px;
+	top: 290px;
+}
+
+.library {
+	position: relative;
+	right: 135px;
+	top: 330px;
+}
+
+.tenney {
+	position: relative;
+	right: 200px;
+	top: 450px;
+}
+
+.fontaineHall {
+	position: relative;
+	left: 50px;
+	top: 260px;
+}
+
+.fernTor {
+	position: relative;
+	left: 5px;
+	top: 145px;
+}
+
+/** FOR 2010 **/
+.greystone2 {
+	position: relative;
+	left: 470px;
+	top: 350px;
+}
+
+.stPeters2 {
+	position: relative;
+	left: 580px;
+	top: 340px;
+}
+
+.kieran2 {
+	position: relative;
+	left: 585px;
+	top: 375px;
+}
+
+.marian2 {
+	position: relative;
+	left: 360px;
+	top: 365px;
+}
+
+.leo2 {
+	position: relative;
+	left: 110px;
+	top: 355px;
+}
+
+.sheahan2 {
+	position: relative;
+	left: 85px;
+	top: 385px;
+}
+
+.chapel2 {
+	position: relative;
+	left: 440px;
+	top: 335px;
+}
+
+.donnelly2 {
+	position: relative;
+	left: 410px;
+	top: 390px;
+}
+
+.mccann1 {
+	position: relative;
+	right: 20px;
+	top: 425px;
+}
+
+.champagnat1 {
+	position: relative;
+	left: 85px;
+	top: 365px;
+}
+
+.studentCenter1 {
+	position: relative;
+	left: 105px;
+	top: 330px;
+}
+
+.dyson1 {
+	position: relative;
+	left: 400px;
+	top: 265px;
+}
+
+.lowell1 {
+	position: relative;
+	left: 355px;
+	top: 310px;
+}
+
+.longview1 {
+	position: relative;
+	right: 90px;
+	top: 245px;
+}
+
+.lowerNew1 {
+	position: relative;
+	left: 60px;
+	top: 295px;
+}
+
+.upperNew1 {
+	position: relative;
+	left: 110px;
+	top: 260px;
+}
+
+.byrne1 {
+	position: relative;
+	right: 150px;
+	top: 315px;
+}
+
+.fontaineAnnex1 {
+	position: relative;
+	left: 335px;
+	top: 205px;
+}
+
+.steelPlant1 {
+	position: relative;
+	left: 245px;
+	top: 395px;
+}
+
+.stAnns1 {
+	position: relative;
+	left: 285px;
+	top: 145px;
+}
+
+.foy1 {
+	position: relative;
+	left: 70px;
+	top: 250px;
+}
+
+.gartland1 {
+	position: relative;
+	left: 160px;
+	top: 175px;
+}
+
+.lowerwestCedar1 {
+	position: relative;
+	left: 155px;
+	top: 460px;
+}
+
+.midrise1 {
+	position: relative;
+	right: 240px;
+	top: 285px;
+}
+
+.library1 {
+	position: relative;
+	right: 100px;
+	top: 325px;
+}
+
+.tenney1 {
+	position: relative;
+	right: 165px;
+	top: 445px;
+}
+
+.fontaineHall1 {
+	position: relative;
+	left: 75px;
+	top: 255px;
+}
+
+.fernTor1 {
+	position: relative;
+	left: 25px;
+	top: 120px;
+}
+
+.hancock {
+	position: relative;
+	right: 185px;
+	top: 290px;
+}
