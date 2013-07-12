@@ -1,32 +1,3 @@
-hs.graphicsDir = '../images/highslide/';
-hs.align = 'center';
-hs.transitions = ['expand', 'crossfade'];
-hs.fadeInOut = true;
-hs.dimmingOpacity = 0.8;
-hs.outlineType = 'rounded-white';
-hs.captionEval = 'this.thumb.alt';
-hs.marginBottom = 105; // make room for the thumbstrip and the controls
-hs.numberPosition = 'caption';
-
-// Add the slideshow providing the controlbar and the thumbstrip
-hs.addSlideshow({
-	//slideshowGroup: 'group1',
-	interval: 3500,
-	repeat: false,
-	useControls: true,
-	overlayOptions: {
-		position: 'bottom center',
-		opacity: 0.75,
-		hideOnMouseOut: true
-	},
-	thumbstrip: {
-		position: 'bottom center',
-		mode: 'horizontal',
-		relativeTo: 'viewport'
-	}
-});
-
-
 $(document).ready(function(){
 				$('a.listItem').click(function(){
 					$('source').remove();

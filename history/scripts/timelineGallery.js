@@ -263,7 +263,7 @@ $(document).ready(function(){
 				
 				innerHtml: '<table><tr><td colspan="2"><h2>Greystone <a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">This is a short description of Greystone.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/greystone.html\' })"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/greystone/images/main.jpg" rel="prettyPhoto[gallery]" title="Greystone"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
 							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/greystone.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
@@ -280,7 +280,9 @@ $(document).ready(function(){
 	                $(".jquerybubblepopup").bind("mouseenter", function() {
 	                    active = true;
 	                }).bind("mouseleave", function() {
-	                    active = false; 
+	                    active = false;
+	                    
+	                $(".jquerybubblepopup-innerHtml a[rel^='prettyPhoto']").prettyPhoto();
                 });
             }
 			});
@@ -289,6 +291,7 @@ $(document).ready(function(){
 		$(window).bind('click',function() {
 	        resetActiveBubble();
 	    });
+	    
 });
 
 function resetActiveBubble() {
