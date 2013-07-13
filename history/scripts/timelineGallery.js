@@ -264,7 +264,22 @@ $(document).ready(function(){
 				innerHtml: '<table><tr><td colspan="2"><h2>Greystone <a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">This is a short description of Greystone.<br/><br/></td></tr> \
 							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/greystone/images/main.jpg" rel="prettyPhoto[gallery]" title="Greystone"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/greystone.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table>' ,
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/greystone.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/greystone/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/03.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/04.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/05.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/06.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/07.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/08.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/09.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/10.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/11.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/12.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/13.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/14.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/15.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/16.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/17.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/18.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/19.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/20.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/21.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/22.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/23.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/24.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/25.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/26.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/27.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/28.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/29.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/30.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/31.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/32.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/33.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/34.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/35.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/36.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/37.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/38.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/39.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/40.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/41.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr> \
+								   <tr><td><a href="locations/greystone/images/42.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greystone/images/43.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td>&nbsp;</td></tr></tbody></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -277,12 +292,13 @@ $(document).ready(function(){
 				selectable: true,
 				afterShown: function() {
 	                active = false;
+	                $(".jquerybubblepopup-innerHtml a[rel^='prettyPhoto']").prettyPhoto();
 	                $(".jquerybubblepopup").bind("mouseenter", function() {
 	                    active = true;
 	                }).bind("mouseleave", function() {
 	                    active = false;
 	                    
-	                $(".jquerybubblepopup-innerHtml a[rel^='prettyPhoto']").prettyPhoto();
+	                
                 });
             }
 			});

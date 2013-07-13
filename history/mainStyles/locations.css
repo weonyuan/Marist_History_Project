@@ -15,6 +15,7 @@ table {
 .gallery td {
 	padding-right: 15px;
 	padding-bottom: 10px;
+	display: none;
 }
 
 audio {

@@ -58,9 +58,8 @@
 												<a href="#" class="pp_arrow_previous">Previous</a> \
 												<p class="currentTextHolder">0/0</p> \
 												<a href="#" class="pp_arrow_next">Next</a> \
-											</div> \
-											<p class="pp_description"></p> \
-											<div class="pp_social">{pp_social}</div> \
+											</div><br/><br/> \
+											<div class="pp_description"></div> \
 											<a class="pp_close" href="#">Close</a> \
 										</div> \
 									</div> \
@@ -152,7 +151,7 @@
 			// Put the SRCs, TITLEs, ALTs into an array.
 			pp_images = (isSet) ? jQuery.map(matchedObjects, function(n, i){ if($(n).attr(settings.hook).indexOf(theRel) != -1) return $(n).attr('href'); }) : $.makeArray($(this).attr('href'));
 			pp_titles = (isSet) ? jQuery.map(matchedObjects, function(n, i){ if($(n).attr(settings.hook).indexOf(theRel) != -1) return ($(n).find('img').attr('alt')) ? $(n).find('img').attr('alt') : ""; }) : $.makeArray($(this).find('img').attr('alt'));
-			pp_descriptions = (isSet) ? jQuery.map(matchedObjects, function(n, i){ if($(n).attr(settings.hook).indexOf(theRel) != -1) return ($(n).attr('title')) ? $(n).attr('title') : ""; }) : $.makeArray($(this).attr('title'));
+			pp_descriptions = (isSet) ? jQuery.map(matchedObjects, function(n, i){ if($(n).attr(settings.hook).indexOf(theRel) != -1) return ($(n).attr('alt')) ? $(n).attr('title') : ""; }) : $.makeArray($(this).attr('alt'));
 			
 			if(pp_images.length > settings.overlay_gallery_max) settings.overlay_gallery = false;
 			
