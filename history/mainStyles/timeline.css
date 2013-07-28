@@ -123,39 +123,18 @@
 	font-weight: bold;
 }
 
-.icon, .icon1, .icon2, .icon3, .icon4, .icon5 {
+.icon {
+	background-image: url("../images/icon.png");
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
 	display: inline-block;
 	position: relative;
 	opacity: 0.8;
 	cursor: pointer;
 }
 
-.icon:hover, .icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover {
+.icon:hover {
 	opacity: 1;
 	cursor: pointer;
-}
-
-.icon1 a {
-	left: 25px;
-}
-
-/* FOR 1958 */
-.icon2 a {
-	left: 45px;
-}
-
-/* FOR 1970 AND PRESENT */
-.icon3 a {
-	left: 30px;
-	top: -30px;
-}
-
-.icon4 a {
-	left: 55px;
-	top: -30px;
-}
-
-.icon5 a {
-	left: 15px;
-	top: -30px;
 }

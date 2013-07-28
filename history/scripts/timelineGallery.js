@@ -7,239 +7,239 @@ $(document).ready(function(){
 				"marker": "1904",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1904.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon greystone"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon stPeters"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<div id="locations"><span name="Greystone" class="icon greystone"></span>' +
+							'<span name="St. Peters" class="icon stPeters"></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran"></span></div>'
 			},
 			{
 				"marker": "1905",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1905-1929.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon greystone"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon stPeters"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran"><img src="images/icon.png" width="25" height="25" /></span>' +
+							'<div id="locations"><span name="Greystone" class="icon greystone"></span>' +
+							'<span name="St. Peters" class="icon stPeters"></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran"></span>' +
 							//NEW LOCATIONS
-							'<span name="Greenhouse" class="icon greenhouse"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Farm" class="icon farm"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Cemetery" class="icon cemetery"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="MacPherson" class="icon macpherson"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Old Marian" class="icon oldMarian"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Cannery" class="icon cannery"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Marys" class="icon stMarys"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<span name="Greenhouse" class="icon greenhouse"></span>' +
+							'<span name="Farm" class="icon farm"></span>' +
+							'<span name="Cemetery" class="icon cemetery"></span>' +
+							'<span name="MacPherson" class="icon macpherson"></span>' +
+							'<span name="Old Marian" class="icon oldMarian"></span>' +
+							'<span name="Cannery" class="icon cannery"></span>' +
+							'<span name="St. Marys" class="icon stMarys"></span></div>'
 			},
 			{
 				"marker": "1930",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1930-1945.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon greystone"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon stPeters"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Greenhouse" class="icon greenhouse"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Farm" class="icon farm"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Cemetery" class="icon cemetery"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="MacPherson" class="icon macpherson"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Old Marian" class="icon oldMarian"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Cannery" class="icon cannery"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Marys" class="icon stMarys"><img src="images/icon.png" width="25" height="25" /></span>' +
+							'<div id="locations"><span name="Greystone" class="icon greystone"></span>' +
+							'<span name="St. Peters" class="icon stPeters"></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran"></span>' +
+							'<span name="Greenhouse" class="icon greenhouse"></span>' +
+							'<span name="Farm" class="icon farm"></span>' +
+							'<span name="Cemetery" class="icon cemetery"></span>' +
+							'<span name="MacPherson" class="icon macpherson"></span>' +
+							'<span name="Old Marian" class="icon oldMarian"></span>' +
+							'<span name="Cannery" class="icon cannery"></span>' +
+							'<span name="St. Marys" class="icon stMarys"></span>' +
 							//NEW LOCATION
-							'<span name="Novitiate" class="icon novitiate"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<span name="Novitiate" class="icon novitiate"></span></div>'
 			},
 			{
 				"marker": "1946",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1946-1957.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon greystone"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon stPeters"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Farm" class="icon farm1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Cemetery" class="icon cemetery1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="MacPherson" class="icon macpherson1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Old Marian" class="icon oldMarian1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Cannery" class="icon cannery1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Marys" class="icon stMarys1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Novitiate" class="icon novitiate1"><img src="images/icon.png" width="25" height="25" /></span>' +
+							'<div id="locations"><span name="Greystone" class="icon greystone"></span>' +
+							'<span name="St. Peters" class="icon stPeters"></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran"></span>' +
+							'<span name="Farm" class="icon farm1"></span>' +
+							'<span name="Cemetery" class="icon cemetery1"></span>' +
+							'<span name="MacPherson" class="icon macpherson1"></span>' +
+							'<span name="Old Marian" class="icon oldMarian1"></span>' +
+							'<span name="Cannery" class="icon cannery1"></span>' +
+							'<span name="St. Marys" class="icon stMarys1"></span>' +
+							'<span name="Novitiate" class="icon novitiate1"></span>' +
 							//NEW LOCATIONS
-							'<span name="Brothers Dining/Study Area" class="icon studyArea"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Chapel" class="icon chapel"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Adrian Building" class="icon adrian"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<span name="Brothers Dining/Study Area" class="icon studyArea"></span>' +
+							'<span name="Chapel" class="icon chapel"></span>' +
+							'<span name="Adrian Building" class="icon adrian"></span></div>'
 							
 			},
 			{
 				"marker": "1958",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1958-1969.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon greystone"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon stPeters"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Farm" class="icon farm1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Cemetery" class="icon cemetery1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Old Marian" class="icon oldMarian2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Cannery" class="icon cannery2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Marys" class="icon stMarys2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Novitiate" class="icon novitiate2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Brothers Dining/Study Area" class="icon studyArea1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Chapel" class="icon chapel1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Adrian Building" class="icon adrian1"><img src="images/icon.png" width="25" height="25" /></span>' +
+							'<div id="locations"><span name="Greystone" class="icon greystone"></span>' +
+							'<span name="St. Peters" class="icon stPeters"></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran"></span>' +
+							'<span name="Farm" class="icon farm1"></span>' +
+							'<span name="Cemetery" class="icon cemetery1"></span>' +
+							'<span name="Old Marian" class="icon oldMarian2"></span>' +
+							'<span name="Cannery" class="icon cannery2"></span>' +
+							'<span name="St. Marys" class="icon stMarys2"></span>' +
+							'<span name="Novitiate" class="icon novitiate2"></span>' +
+							'<span name="Brothers Dining/Study Area" class="icon studyArea1"></span>' +
+							'<span name="Chapel" class="icon chapel1"></span>' +
+							'<span name="Adrian Building" class="icon adrian1"></span>' +
 							//NEW LOCATIONS
-							'<span name="Leo Hall" class="icon leo"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Sheahan Hall" class="icon sheahan"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Donnelly Hall" class="icon donnelly"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<span name="Leo Hall" class="icon leo"></span>' +
+							'<span name="Sheahan Hall" class="icon sheahan"></span>' +
+							'<span name="Donnelly Hall" class="icon donnelly"></span></div>'
 			},
 			{
 				"marker": "1970",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1970-1979.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon greystone"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon stPeters"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Marian Hall" class="icon marian"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Brothers Dining/Study Area" class="icon studyArea1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Chapel" class="icon chapel1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Leo Hall" class="icon leo1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Sheahan Hall" class="icon sheahan1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Donnelly Hall" class="icon donnelly1"><img src="images/icon.png" width="25" height="25" /></span>' +
+							'<div id="locations"><span name="Greystone" class="icon greystone"></span>' +
+							'<span name="St. Peters" class="icon stPeters"></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran"></span>' +
+							'<span name="Marian Hall" class="icon marian"></span>' +
+							'<span name="Brothers Dining/Study Area" class="icon studyArea1"></span>' +
+							'<span name="Chapel" class="icon chapel1"></span>' +
+							'<span name="Leo Hall" class="icon leo1"></span>' +
+							'<span name="Sheahan Hall" class="icon sheahan1"></span>' +
+							'<span name="Donnelly Hall" class="icon donnelly1"></span>' +
 							//NEW LOCATIONS
-							'<span name="McCann Recreational Center" class="icon mccann"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Champagnat Hall" class="icon champagnat"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Student Center" class="icon studentCenter"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Dyson Center" class="icon dyson"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lowell Thomas Communications Center" class="icon lowell"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Longview Park" class="icon longview"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lower Townhouses" class="icon lowerNew"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="New Townhouses" class="icon upperNew"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Byrne House" class="icon byrne"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Fontaine Annex" class="icon fontaineAnnex"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Steel Plant" class="icon steelPlant"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Anns Hermitage" class="icon stAnns"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<span name="McCann Recreational Center" class="icon mccann"></span>' +
+							'<span name="Champagnat Hall" class="icon champagnat"></span>' +
+							'<span name="Student Center" class="icon studentCenter"></span>' +
+							'<span name="Dyson Center" class="icon dyson"></span>' +
+							'<span name="Lowell Thomas Communications Center" class="icon lowell"></span>' +
+							'<span name="Longview Park" class="icon longview"></span>' +
+							'<span name="Lower Townhouses" class="icon lowerNew"></span>' +
+							'<span name="New Townhouses" class="icon upperNew"></span>' +
+							'<span name="Byrne House" class="icon byrne"></span>' +
+							'<span name="Fontaine Annex" class="icon fontaineAnnex"></span>' +
+							'<span name="Steel Plant" class="icon steelPlant"></span>' +
+							'<span name="St. Anns Hermitage" class="icon stAnns"></span></div>'
 							
 			},
 			{
 				"marker": "1980",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1980-1993.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon greystone1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon stPeters1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Marian Hall" class="icon marian"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Brothers Dining/Study Area" class="icon studyArea2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Chapel" class="icon chapel2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Leo Hall" class="icon leo1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Sheahan Hall" class="icon sheahan1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Donnelly Hall" class="icon donnelly1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="McCann Recreational Center" class="icon mccann"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Champagnat Hall" class="icon champagnat"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Student Center" class="icon studentCenter"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Dyson Center" class="icon dyson"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lowell Thomas Communications Center" class="icon lowell"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Longview Park" class="icon longview"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lower Townhouses" class="icon lowerNew"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="New Townhouses" class="icon upperNew"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Byrne House" class="icon byrne"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Fontaine Annex" class="icon fontaineAnnex"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Steel Plant" class="icon steelPlant"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Anns Hermitage" class="icon stAnns"><img src="images/icon.png" width="25" height="25" /></span>' +
+							'<div id="locations"><span name="Greystone" class="icon greystone1"></span>' +
+							'<span name="St. Peters" class="icon stPeters1"></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran1"></span>' +
+							'<span name="Marian Hall" class="icon marian"></span>' +
+							'<span name="Brothers Dining/Study Area" class="icon studyArea2"></span>' +
+							'<span name="Chapel" class="icon chapel2"></span>' +
+							'<span name="Leo Hall" class="icon leo1"></span>' +
+							'<span name="Sheahan Hall" class="icon sheahan1"></span>' +
+							'<span name="Donnelly Hall" class="icon donnelly1"></span>' +
+							'<span name="McCann Recreational Center" class="icon mccann"></span>' +
+							'<span name="Champagnat Hall" class="icon champagnat"></span>' +
+							'<span name="Student Center" class="icon studentCenter"></span>' +
+							'<span name="Dyson Center" class="icon dyson"></span>' +
+							'<span name="Lowell Thomas Communications Center" class="icon lowell"></span>' +
+							'<span name="Longview Park" class="icon longview"></span>' +
+							'<span name="Lower Townhouses" class="icon lowerNew"></span>' +
+							'<span name="New Townhouses" class="icon upperNew"></span>' +
+							'<span name="Byrne House" class="icon byrne"></span>' +
+							'<span name="Fontaine Annex" class="icon fontaineAnnex"></span>' +
+							'<span name="Steel Plant" class="icon steelPlant"></span>' +
+							'<span name="St. Anns Hermitage" class="icon stAnns"></span>' +
 							//NEW LOCATIONS
-							'<span name="Foy Townhouses" class="icon foy"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Gartland Townhouses" class="icon gartland"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<span name="Foy Townhouses" class="icon foy"></span>' +
+							'<span name="Gartland Townhouses" class="icon gartland"></span></div>'
 			},
 			{
 				"marker": "1994",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1994-1999.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon greystone1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon stPeters1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Marian Hall" class="icon marian"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Chapel" class="icon chapel3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Leo Hall" class="icon leo2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Sheahan Hall" class="icon sheahan2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Donnelly Hall" class="icon donnelly2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="McCann Recreational Center" class="icon mccann1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Champagnat Hall" class="icon champagnat1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Student Center" class="icon studentCenter1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Dyson Center" class="icon dyson1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lowell Thomas Communications Center" class="icon4 lowell1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Longview Park" class="icon longview1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lower Townhouses" class="icon lowerNew1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="New Townhouses" class="icon upperNew1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Byrne House" class="icon byrne1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Fontaine Annex" class="icon fontaineAnnex1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Steel Plant" class="icon steelPlant1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Anns Hermitage" class="icon stAnns1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Foy Townhouses" class="icon foy1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Gartland Townhouses" class="icon gartland1"><img src="images/icon.png" width="25" height="25" /></span>' +
+							'<div id="locations"><span name="Greystone" class="icon greystone1"></span>' +
+							'<span name="St. Peters" class="icon stPeters1"></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran1"></span>' +
+							'<span name="Marian Hall" class="icon marian"></span>' +
+							'<span name="Chapel" class="icon chapel3"></span>' +
+							'<span name="Leo Hall" class="icon leo2"></span>' +
+							'<span name="Sheahan Hall" class="icon sheahan2"></span>' +
+							'<span name="Donnelly Hall" class="icon donnelly2"></span>' +
+							'<span name="McCann Recreational Center" class="icon mccann1"></span>' +
+							'<span name="Champagnat Hall" class="icon champagnat1"></span>' +
+							'<span name="Student Center" class="icon studentCenter1"></span>' +
+							'<span name="Dyson Center" class="icon dyson1"></span>' +
+							'<span name="Lowell Thomas Communications Center" class="icon4 lowell1"></span>' +
+							'<span name="Longview Park" class="icon longview1"></span>' +
+							'<span name="Lower Townhouses" class="icon lowerNew1"></span>' +
+							'<span name="New Townhouses" class="icon upperNew1"></span>' +
+							'<span name="Byrne House" class="icon byrne1"></span>' +
+							'<span name="Fontaine Annex" class="icon fontaineAnnex1"></span>' +
+							'<span name="Steel Plant" class="icon steelPlant1"></span>' +
+							'<span name="St. Anns Hermitage" class="icon stAnns1"></span>' +
+							'<span name="Foy Townhouses" class="icon foy1"></span>' +
+							'<span name="Gartland Townhouses" class="icon gartland1"></span>' +
 							//NEW LOCATIONS
-							'<span name="West Cedar Townhouses" class="icon lowerwestCedar"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Midrise Hall" class="icon midrise"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<span name="West Cedar Townhouses" class="icon lowerwestCedar"></span>' +
+							'<span name="Midrise Hall" class="icon midrise"></span></div>'
 			},
 			{
 				"marker": "2000",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/2000-2009.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon5 greystone2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon5 stPeters2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon5 kieran2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Marian Hall" class="icon5 marian1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Chapel" class="icon5 chapel4"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Leo Hall" class="icon5 leo3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Sheahan Hall" class="icon5 sheahan3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Donnelly Hall" class="icon5 donnelly3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="McCann Recreational Center" class="icon5 mccann2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Champagnat Hall" class="icon5 champagnat2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Student Center" class="icon5 studentCenter2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Dyson Center" class="icon5 dyson2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lowell Thomas Communications Center" class="icon5 lowell2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Longview Park" class="icon5 longview2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lower Townhouses" class="icon5 lowerNew2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="New Townhouses" class="icon5 upperNew2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Byrne House" class="icon5 byrne2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Fontaine Annex" class="icon5 fontaineAnnex2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Steel Plant" class="icon5 steelPlant2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Anns Hermitage" class="icon5 stAnns2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Foy Townhouses" class="icon5 foy2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Gartland Townhouses" class="icon5 gartland2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lower West Cedar Townhouses" class="icon5 lowerwestCedar1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Midrise Hall" class="icon5 midrise1"><img src="images/icon.png" width="25" height="25" /></span>' +
+							'<div id="locations"><span name="Greystone" class="icon5 greystone2"></span>' +
+							'<span name="St. Peters" class="icon5 stPeters2"></span>' +
+							'<span name="Kieran Gatehouse" class="icon5 kieran2"></span>' +
+							'<span name="Marian Hall" class="icon5 marian1"></span>' +
+							'<span name="Chapel" class="icon5 chapel4"></span>' +
+							'<span name="Leo Hall" class="icon5 leo3"></span>' +
+							'<span name="Sheahan Hall" class="icon5 sheahan3"></span>' +
+							'<span name="Donnelly Hall" class="icon5 donnelly3"></span>' +
+							'<span name="McCann Recreational Center" class="icon5 mccann2"></span>' +
+							'<span name="Champagnat Hall" class="icon5 champagnat2"></span>' +
+							'<span name="Student Center" class="icon5 studentCenter2"></span>' +
+							'<span name="Dyson Center" class="icon5 dyson2"></span>' +
+							'<span name="Lowell Thomas Communications Center" class="icon5 lowell2"></span>' +
+							'<span name="Longview Park" class="icon5 longview2"></span>' +
+							'<span name="Lower Townhouses" class="icon5 lowerNew2"></span>' +
+							'<span name="New Townhouses" class="icon5 upperNew2"></span>' +
+							'<span name="Byrne House" class="icon5 byrne2"></span>' +
+							'<span name="Fontaine Annex" class="icon5 fontaineAnnex2"></span>' +
+							'<span name="Steel Plant" class="icon5 steelPlant2"></span>' +
+							'<span name="St. Anns Hermitage" class="icon5 stAnns2"></span>' +
+							'<span name="Foy Townhouses" class="icon5 foy2"></span>' +
+							'<span name="Gartland Townhouses" class="icon5 gartland2"></span>' +
+							'<span name="Lower West Cedar Townhouses" class="icon5 lowerwestCedar1"></span>' +
+							'<span name="Midrise Hall" class="icon5 midrise1"></span>' +
 							//NEW LOCATIONS
-							'<span name="James A. Cannavino Library" class="icon5 library"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Tenney Stadium" class="icon5 tenney"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Fontaine Hall" class="icon5 fontaineHall"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Fern Tor Arboretum" class="icon5 fernTor"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<span name="James A. Cannavino Library" class="icon5 library"></span>' +
+							'<span name="Tenney Stadium" class="icon5 tenney"></span>' +
+							'<span name="Fontaine Hall" class="icon5 fontaineHall"></span>' +
+							'<span name="Fern Tor Arboretum" class="icon5 fernTor"></span></div>'
 			},
 			{
 				"marker": "2010",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/2010-2012.jpg)"></div>' +
-							'<div id="locations"><span name="Greystone" class="icon greystone3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Peters" class="icon stPeters3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Marian Hall" class="icon marian2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Chapel" class="icon chapel5"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Leo Hall" class="icon leo4"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Sheahan Hall" class="icon sheahan4"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Donnelly Hall" class="icon donnelly4"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="McCann Recreational Center" class="icon mccann3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Champagnat Hall" class="icon champagnat3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Student Center" class="icon studentCenter3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Dyson Center" class="icon dyson3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lowell Thomas Communications Center" class="icon lowell3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Longview Park" class="icon longview3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lower Townhouses" class="icon lowerNew3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="New Townhouses" class="icon upperNew3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Byrne House" class="icon byrne3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Fontaine Annex" class="icon fontaineAnnex3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Steel Plant" class="icon steelPlant3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="St. Anns Hermitage" class="icon stAnns3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Foy Townhouses" class="icon foy3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Gartland Townhouses" class="icon gartland3"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Lower West Cedar Townhouses" class="icon lowerwestCedar2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Midrise Hall" class="icon midrise2"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="James A. Cannavino Library" class="icon library1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Tenney Stadium" class="icon tenney1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Fontaine Hall" class="icon fontaineHall1"><img src="images/icon.png" width="25" height="25" /></span>' +
-							'<span name="Fern Tor Arboretum" class="icon fernTor1"><img src="images/icon.png" width="25" height="25" /></span>' +
+							'<div id="locations"><span name="Greystone" class="icon greystone3"></span>' +
+							'<span name="St. Peters" class="icon stPeters3"></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran3"></span>' +
+							'<span name="Marian Hall" class="icon marian2"></span>' +
+							'<span name="Chapel" class="icon chapel5"></span>' +
+							'<span name="Leo Hall" class="icon leo4"></span>' +
+							'<span name="Sheahan Hall" class="icon sheahan4"></span>' +
+							'<span name="Donnelly Hall" class="icon donnelly4"></span>' +
+							'<span name="McCann Recreational Center" class="icon mccann3"></span>' +
+							'<span name="Champagnat Hall" class="icon champagnat3"></span>' +
+							'<span name="Student Center" class="icon studentCenter3"></span>' +
+							'<span name="Dyson Center" class="icon dyson3"></span>' +
+							'<span name="Lowell Thomas Communications Center" class="icon lowell3"></span>' +
+							'<span name="Longview Park" class="icon longview3"></span>' +
+							'<span name="Lower Townhouses" class="icon lowerNew3"></span>' +
+							'<span name="New Townhouses" class="icon upperNew3"></span>' +
+							'<span name="Byrne House" class="icon byrne3"></span>' +
+							'<span name="Fontaine Annex" class="icon fontaineAnnex3"></span>' +
+							'<span name="Steel Plant" class="icon steelPlant3"></span>' +
+							'<span name="St. Anns Hermitage" class="icon stAnns3"></span>' +
+							'<span name="Foy Townhouses" class="icon foy3"></span>' +
+							'<span name="Gartland Townhouses" class="icon gartland3"></span>' +
+							'<span name="Lower West Cedar Townhouses" class="icon lowerwestCedar2"></span>' +
+							'<span name="Midrise Hall" class="icon midrise2"></span>' +
+							'<span name="James A. Cannavino Library" class="icon library1"></span>' +
+							'<span name="Tenney Stadium" class="icon tenney1"></span>' +
+							'<span name="Fontaine Hall" class="icon fontaineHall1"></span>' +
+							'<span name="Fern Tor Arboretum" class="icon fernTor1"></span>' +
 							//NEW LOCATION
-							'<span name="Hancock Center" class="icon hancock"><img src="images/icon.png" width="25" height="25" /></span></div>'
+							'<span name="Hancock Center" class="icon hancock"></span></div>'
 			}
 		];
     
