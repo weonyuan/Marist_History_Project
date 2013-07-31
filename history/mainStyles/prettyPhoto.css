@@ -169,7 +169,7 @@
 	
 	div.dark_square .pp_next:hover { background: url(../images/prettyPhoto/dark_square/btnNext.png) center right  no-repeat; cursor: pointer; } /* Next button */
 	div.dark_square .pp_previous:hover { background: url(../images/prettyPhoto/dark_square/btnPrevious.png) center left no-repeat; cursor: pointer; } /* Previous button */
-
+z
 
 	/* ----------------------------------
 		Light Square Theme
@@ -365,7 +365,7 @@
 		}
 		
 		.pp_gallery {
-			display: none;
+			display: block;
 			left: 50%;
 			margin-top: -50px;
 			position: absolute;
@@ -415,7 +415,7 @@
 				width: 50px;
 			}
 			
-			.pp_gallery li.default a img { display: none; }
+			.pp_gallery li.default a img { display: block; }
 			
 			.pp_gallery .pp_arrow_previous,
 			.pp_gallery .pp_arrow_next {

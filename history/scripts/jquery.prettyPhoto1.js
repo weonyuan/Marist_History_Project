@@ -27,9 +27,9 @@
 			wmode: 'opaque', /* Set the flash wmode attribute */
 			autoplay: true, /* Automatically start videos: True/False */
 			modal: false, /* If set to true, only the close button will close the window */
-			deeplinking: true, /* Allow prettyPhoto to update the url to enable deeplinking. */
+			deeplinking: false, /* Allow prettyPhoto to update the url to enable deeplinking. */
 			overlay_gallery: true, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
-			overlay_gallery_max: 30, /* Maximum number of pictures in the overlay gallery */
+			overlay_gallery_max: 50, /* Maximum number of pictures in the overlay gallery */
 			keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
 			changepicturecallback: function(){}, /* Called everytime an item is shown/changed */
 			callback: function(){}, /* Called when prettyPhoto is closed */
@@ -789,10 +789,10 @@
 				
 				$pp_pic_holder.find('.pp_content').hover(
 					function(){
-						$pp_pic_holder.find('.pp_gallery:not(.disabled)').fadeIn();
+						$pp_pic_holder.find('.pp_gallery:not(.disabled)');
 					},
 					function(){
-						$pp_pic_holder.find('.pp_gallery:not(.disabled)').fadeOut();
+						$pp_pic_holder.find('.pp_gallery:not(.disabled)');
 					});
 
 				itemWidth = 52+5; // 52 beign the thumb width, 5 being the right margin.
