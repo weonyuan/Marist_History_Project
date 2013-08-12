@@ -90,6 +90,7 @@
 	}
 	
 	.jquerybubblepopup-innerHtml .description {
+		font-style: italic;
 		margin: 5px;
 	}
 	
