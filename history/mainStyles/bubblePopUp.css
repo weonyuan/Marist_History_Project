@@ -94,6 +94,23 @@
 		margin: 5px;
 	}
 	
+	.jquerybubblepopup-innerHtml .closeButton {
+		position: relative;
+		top: -5px;
+		margin-left: 10px;
+		float: right;
+		font-weight: bold;
+	}
+	
+	/* -- For .lowell* and .chapel* --*/
+	.jquerybubblepopup-innerHtml .closeButton1 {
+		position: relative;
+		top: -8px;
+		margin-left: 10px;
+		font-weight: bold;
+	}
+	/* -- For .lowell*, .chapel*, .mccann*, .lowerwestCedar*, and .library* --*/
+	
 	.jquerybubblepopup-innerHtml img {
 		margin-right: 5px;
 	}

@@ -1,5 +1,6 @@
 var button = false;
 var active = true;
+var closeActive = false;
 
 $(document).ready(function(){
 		var dates = [
@@ -256,12 +257,13 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Greystone <a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Greystone <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Office of the current College President.<br/><br/></td></tr> \
 							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/greystone/images/main.jpg" rel="prettyPhoto[gallery]" title="Greystone"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
 							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/greystone.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
@@ -306,12 +308,13 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Kieran Gatehouse<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Kieran Gatehouse <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Office space. Private residence.<br/><br/></td></tr> \
 							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/kieran/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
 							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/kieran.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
@@ -342,14 +345,15 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>St. Peter&rsquo;s<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>St. Peter&rsquo;s <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Residence for administrative offices.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="St. Peters"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
 							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
 							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
@@ -378,16 +382,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Greenhouse<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Greenhouse <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Constructed by the Marist Brothers.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/greenhouse/images/main.jpg" rel="prettyPhoto[gallery]" title="Greenhouse"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/greenhouse.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/greenhouse/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/greenhouse/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -414,16 +419,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Farm<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Farm <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Constructed by the Marist Brothers.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/farm/images/main.jpg" rel="prettyPhoto[gallery]" title="Farm"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/farm.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/farm/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/farm/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -450,16 +456,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Cemetery<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Cemetery <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Constructed by the Marist Brothers.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/cemetery/images/main.jpg" rel="prettyPhoto[gallery]" title="Cemetery"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/cemetery.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/cemetery/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/cemetery/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -486,16 +493,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>MacPherson<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>MacPherson <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">This is a short description of MacPherson.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/macpherson/images/main.jpg" rel="prettyPhoto[gallery]" title="MacPherson"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/macpherson.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/macpherson/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/macpherson/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -522,16 +530,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Marian Hall<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Marian Hall <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Dormitory for Freshman and Sophomore residents.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/marian/images/main.jpg" rel="prettyPhoto[gallery]" title="Marian Hall"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/marian.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/marian/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/marian/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -558,16 +567,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Cannery<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Cannery <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Constructed by the Marist Brothers.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/cannery/images/main.jpg" rel="prettyPhoto[gallery]" title="Cannery"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/cannery.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/cannery/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/cannery/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -594,16 +604,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>St. Mary&rsquo;s<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>St. Mary&rsquo;s <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stmarys/images/main.jpg" rel="prettyPhoto[gallery]" title="St. Marys"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stmarys.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stmarys/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stmarys/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -630,16 +641,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Novitiate<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Novitiate <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/novitiate/images/main.jpg" rel="prettyPhoto[gallery]" title="Novitiate"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/novitiate.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/novitiate/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/novitiate/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -666,16 +678,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Study Area<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Study Area <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/studyarea/images/main.jpg" rel="prettyPhoto[gallery]" title="Study Area"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/studyarea.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/studyarea/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/studyarea/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -702,16 +715,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Our Lady Seat of Wisdom Chapel<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">Currently owned by Marist College.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Our Lady Seat of Wisdom Chapel <a href="javascript:resetActiveBubble();" class="closeButton1">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Constructed by the Marist Brothers.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/chapel/images/main.jpg" rel="prettyPhoto[gallery]" title="Chapel"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/chapel.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/chapel/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/chapel/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -738,16 +752,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Adrian Building<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Adrian Building <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Formerly housed the Alumni office and Marist Poll.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/adrian/images/main.jpg" rel="prettyPhoto[gallery]" title="Adrian Building"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/adrian.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/adrian/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/adrian/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -774,16 +789,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Leo Hall<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Leo Hall <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Dormitory for Freshman residents.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/leo/images/main.jpg" rel="prettyPhoto[gallery]" title="Leo Hall"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/leo.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/leo/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/leo/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -810,16 +826,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Sheahan Hall<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Sheahan Hall <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Dormitory for Freshman residents.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/sheahan/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/sheahan.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/sheahan/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/sheahan/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -846,16 +863,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Donnelly Hall<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Donnelly Hall <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Academic building. Administrative offices.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/donnelly/images/main.jpg" rel="prettyPhoto[gallery]" title="Sheahan Hall"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/donnelly.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/donnelly/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/sheahan/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -882,16 +900,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>James J. McCann Recreation Center<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>James J. McCann Recreation Center <a href="javascript:resetActiveBubble();" class="closeButton1">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Athletic building. Recreational center.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/mccann/images/main.jpg" rel="prettyPhoto[gallery]" title="James J. McCann Recreational Center"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/mccann.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/mccann/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/mccann/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -918,16 +937,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Champagnat Hall<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Champagnat Hall <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">Dormitory for Freshman residents.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/champagnat/images/main.jpg" rel="prettyPhoto[gallery]" title="Champagnat Hall"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/champagnat.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/champagnat/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/champagnat/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -954,16 +974,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Student Center<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Student Center <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Serves as a gathering place for students.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/studentcenter/images/main.jpg" rel="prettyPhoto[gallery]" title="Student Center"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/studentcenter.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/studentcenter/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/studentcenter/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -990,16 +1011,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Dyson Center<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Dyson Center <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Academic building. Named after Charles H. Dyson.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/dyson/images/main.jpg" rel="prettyPhoto[gallery]" title="Dyson Hall"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/dyson.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/dyson/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/dyson/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1026,16 +1048,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Lowell Thomas Communications Center<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Lowell Thomas Communications Center <a href="javascript:resetActiveBubble();" class="closeButton1">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Academic building. Named after Lowell Thomas.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/lowell/images/main.jpg" rel="prettyPhoto[gallery]" title="Lowell Thomas Communications Center"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/lowell.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/lowell/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/lowell/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1062,16 +1085,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Longview Park<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Longview Park <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/longview/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/longview.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/longview/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/longview/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1103,11 +1127,11 @@ $(document).ready(function(){
 			position : 'right',
 			align	 : 'middle',
 			
-			innerHtml: '<table><tr><td colspan="2"><h2>Lower New Townhouses<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-						       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-						       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-						           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-						<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+			innerHtml: '<table><tr><td colspan="2"><h2>Lower New Townhouses <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+						       <tr><td colspan="2" class="description">Townhouses for Sophomore and Junior residents.<br/><br/></td></tr> \
+						       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/lowernew/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+						           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/lowernew.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+						<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/lowernew/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/lowernew/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 	
 			innerHtmlStyle: {
 								color:'#FFFFFF', 
@@ -1139,11 +1163,11 @@ $(document).ready(function(){
 			position : 'right',
 			align	 : 'middle',
 			
-			innerHtml: '<table><tr><td colspan="2"><h2>Upper New Townhouses<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-						       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-						       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-						           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-						<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+			innerHtml: '<table><tr><td colspan="2"><h2>Upper New Townhouses <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+						       <tr><td colspan="2" class="description">Townhouses for Sophomore and Junior residents.<br/><br/></td></tr> \
+						       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/uppernew/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+						           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/uppernew.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+						<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/uppernew/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/uppernew/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 	
 			innerHtmlStyle: {
 								color:'#FFFFFF', 
@@ -1175,11 +1199,11 @@ $(document).ready(function(){
 			position : 'right',
 			align	 : 'middle',
 			
-			innerHtml: '<table><tr><td colspan="2"><h2>Byrne House<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-						       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-						       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-						           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-						<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+			innerHtml: '<table><tr><td colspan="2"><h2>Byrne House <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+						       <tr><td colspan="2" class="description">School ministry. Student counseling center.<br/><br/></td></tr> \
+						       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/byrne/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+						           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/byrne.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+						<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/byrne/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/byrne/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 	
 			innerHtmlStyle: {
 								color:'#FFFFFF', 
@@ -1206,16 +1230,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Fontaine Annex<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
+				innerHtml: '<table><tr><td colspan="2"><h2>Fontaine Annex <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
 							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/fontaineannex/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/fontaineannex.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/fontaineannex/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/fontaineannex/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1242,16 +1267,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Steel Plant Studio<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Steel Plant Studio <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Houses several studios and an art gallery.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/steelplant/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/steelplant.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/steelplant/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/steelplant/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1278,16 +1304,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>St. Ann&rsquo;s Hermitage<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>St. Ann&rsquo;s Hermitage <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Private residence.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stanns/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stanns.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stanns/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stanns/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1314,16 +1341,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Foy Townhouses<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Foy Townhouses <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Townhouses for Sophomore residents.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/foy/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/foy.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/foy/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1350,16 +1378,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Gartland Commons<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">Built in 1985.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Gartland Commons <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Townhouses for Sophomore residents.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/gartland/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/gartland.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/gartland/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/gartland/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1386,16 +1415,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Lower West Cedar Townhouses<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Lower West Cedar Townhouses <a href="javascript:resetActiveBubble();" class="closeButton1">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Townhouses for upperclassmen residents.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/lowerwestcedar/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/lowerwestcedar.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/lowerwestcedar/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/lowerwestcedar/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1422,16 +1452,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Midrise Hall<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Midrise Hall <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Dormitory for Sophomore residents.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/midrise/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/midrise.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/midrise/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/midrise/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1458,16 +1489,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>James A. Cannavino Library<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>James A. Cannavino Library <a href="javascript:resetActiveBubble();" class="closeButton1">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Official library of Marist College.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/library/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/library.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/library/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/library/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1494,16 +1526,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Tenney Stadium<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Tenney Stadium <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Official football stadium of Marist College.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/tenney/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/tenney.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/tenney/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/tenney/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1530,16 +1563,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Fontaine Hall<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Fontaine Hall <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Academic building.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/fontainehall/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/fontainehall.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/fontainehall/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/fontainehall/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1566,16 +1600,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Fern Tor Arborteum<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Fern Tor Arborteum <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Arboretum owned by Marist College.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/ferntor/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/ferntor.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/ferntor/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/ferntor/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1602,16 +1637,17 @@ $(document).ready(function(){
 			resetActiveBubble();
 			button = $(this);
 			active = true;
+			closeActive = false;
 			button.ShowBubblePopup({
 				manageMouseEvents: false,
 				position : 'right',
 				align	 : 'middle',
 				
-				innerHtml: '<table><tr><td colspan="2"><h2>Hancock Hall<a href="javascript: resetActiveBubble();" style="position: relative; left: 108px; bottom: 8px; font-weight: bold;">X</a></h2></td></tr> \
-							       <tr><td colspan="2" class="description">This is a short description of St. Mary&rsquo;s.<br/><br/></td></tr> \
-							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/stpeters/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
-							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/stpeters.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
-							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/stpeters/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/stpeters/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
+				innerHtml: '<table><tr><td colspan="2"><h2>Hancock Hall <a href="javascript:resetActiveBubble();" class="closeButton">X</a></h2></td></tr> \
+							       <tr><td colspan="2" class="description">Academic building.<br/><br/></td></tr> \
+							       <tr><td width="105" style="border-right: 2px solid #909090; text-align: center;"><a href="locations/hancock/images/main.jpg" rel="prettyPhoto[gallery]" title="Kieran"><img src="images/gallery.jpg" width="25" height="25" />Gallery</a></td> \
+							           <td width="87" style="text-align: center;"><a href="javascript:$.pageslide({ direction: \'left\', href: \'locations/hancock.html\' })"><img src="images/info.jpg" width="25" height="25" />Info</a></td></tr></table> \
+							<table class="gallery"><tr><td>&nbsp;</td><td><a href="locations/hancock/images/01.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td> <td><a href="locations/hancock/images/02.jpg" rel="prettyPhoto[gallery]">&nbsp;</a></td></tr></table>' ,
 		
 				innerHtmlStyle: {
 									color:'#FFFFFF', 
@@ -1629,7 +1665,10 @@ $(document).ready(function(){
 	                    active = true;
 	                }).bind("mouseleave", function() {
 	                    active = false;
-                });
+                	});
+                	$(".jquerybubblepopup-innerHtml .closeButton, .jquerybubblepopup-innerHtml .closeButton1").bind("click", function() {
+                		closeActive = true;
+                	});
             }
 			});
 		});
@@ -1641,10 +1680,10 @@ $(document).ready(function(){
 });
 
 function resetActiveBubble() {
-	    if ( button && active == false ) {
+	    if ( (button && active == false) || closeActive == true ) {
 	        button.RemoveBubblePopup();
 	        button.CreateBubblePopup({
 	            manageMouseEvents: false
-	        });    
-	    }
+	    	});
+    	}
 }
