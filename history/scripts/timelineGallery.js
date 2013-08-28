@@ -1676,7 +1676,6 @@ $(document).ready(function(){
 		$(window).bind('click',function() {
 	        resetActiveBubble();
 	    });
-	    
 });
 
 function resetActiveBubble() {

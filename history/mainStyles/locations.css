@@ -1,11 +1,16 @@
 .building-name {
-	font-size: 2em;
+	font-size: 24px;
 	font-weight: bold;
 }
 			
 .building-date {
-	font-size: 1.3em;
+	font-size: 18px;
 	font-weight: bold;
+}
+
+.building-description {
+	font-size: 14px;
+	font-style: italic;
 }
 
 table {
