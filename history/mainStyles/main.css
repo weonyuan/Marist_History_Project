@@ -91,35 +91,12 @@ body {
     border-bottom: solid #AEAEA6 1px;
 }
 
-#bibliography {
-	width: 900px;
-	height: 60px;
-	background-color: #FFFFFF;
-	border-bottom: 1px solid #000;
-	padding-bottom: 10px;
-}
-
-#infoContent, #infoContent1, #leftContent {
+#infoContent {
 	width: 960px;
 	float: left;
 	text-align: left;
 	overflow-y: auto;
 	overflow-x: hidden;
-}
-
-#leftContent {
-	width: 440px;
-	overflow: hidden;
-}
-
-#rightContent {
-	width: 440px;
-	height: 700px;
-	padding-left: 20px;
-	border-left: solid #AEAEA6 1px;
-	text-align: left;
-	overflow-y: auto;
-	float: right;
 }
 
 #fadeshow1 {

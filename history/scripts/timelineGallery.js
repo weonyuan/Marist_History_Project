@@ -248,6 +248,11 @@ $(document).ready(function(){
         	initPos: 0,
         	data: dates
         });
+<<<<<<< HEAD
+        
+        $("a.location").pageslide({ direction: "left", modal: false });
+    });
+=======
 
 		$('#locations span').click().CreateBubblePopup({
 			manageMouseEvents: false
@@ -1686,3 +1691,4 @@ function resetActiveBubble() {
 	    	});
     	}
 }
+>>>>>>> parent of 748686f... Nightly build - v. 0.5.2
