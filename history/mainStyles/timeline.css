@@ -19,7 +19,7 @@
 
 #timeline-slider {
     position: relative;
-    margin-left: -8.5px; /*97px*/
+    margin-left: 0; /*97px*/
     width: 960px;
     display: table;
     height: 530px;

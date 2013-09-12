@@ -1,6 +1,20 @@
+body {
+    color: #000000;
+    font-family: "Calibri", Arial, sans-serif;
+    font-size: 0.8em;
+    overflow: hidden;
+}
+
+ul {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-padding-start: 0px;
+}
+
 .building-name {
 	font-size: 24px;
 	font-weight: bold;
+	position: relative;
 }
 			
 .building-date {
@@ -13,6 +27,29 @@
 	font-style: italic;
 }
 
+.closeButton {
+	display: inline;
+	background-color: #b31b1b;
+	color: white;
+	width: 60px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	left: 195px;
+	bottom: 7px;
+}
+
+.antiscroll-inner p:first-child {
+	margin-top: 0;
+}
+
+.antiscroll-inner p:last-child {
+	margin-bottom: 0;
+}
+
 table {
 	border-spacing: 0;
 }
@@ -21,18 +58,6 @@ table {
 	padding-right: 15px;
 	padding-bottom: 10px;
 	display: none;
-}
-
-audio {
-	margin-top: 12px;
-	margin-left: 12px;
-	margin-bottom: 12px;
-}	
-
-#audioTitle {
-	color: #b31b1b;
-	font-weight: bold;
-	font-size: 1.5em;
 }
 
 .list {

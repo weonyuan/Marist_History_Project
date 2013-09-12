@@ -34,5 +34,9 @@ $(document).ready(function(){
 			// Prevent the anchor's default click action
 			e.preventDefault();
 		});
-	});  
+	});
+	
+	$(".closeButton").click(function() {
+		javascript:parent.$.pageslide.close();	
+	});
 });
