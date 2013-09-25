@@ -4,6 +4,7 @@
 .timeline-container {
     width: 960px;
     z-index: 0;
+    position: absolute;
 }
 
 .timeline {
@@ -137,4 +138,22 @@
 .icon:hover {
 	opacity: 1;
 	cursor: pointer;
+}
+
+.hoverBox {
+	background-color: #000000;
+	opacity: 0.8;
+	width: 350px;
+	height: 24px;
+	position: absolute;
+	top: 30px;
+	left: 570px;
+	padding: 10px;
+	text-align: center;
+}
+
+.hoverBox span {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
 }

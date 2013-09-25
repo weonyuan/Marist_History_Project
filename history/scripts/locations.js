@@ -36,6 +36,8 @@ $(document).ready(function(){
 		});
 	});
 	
+	$("div.building-name").after('<input type="button" class="closeButton" value="Close">');
+	
 	$(".closeButton").click(function() {
 		javascript:parent.$.pageslide.close();	
 	});

@@ -12,7 +12,7 @@ ul {
 }
 
 .building-name {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: bold;
 	position: relative;
 }
@@ -38,8 +38,8 @@ ul {
 	font-size: 14px;
 	font-weight: bold;
 	position: absolute;
-	left: 195px;
-	bottom: 7px;
+	left: 330px;
+	top: 7px;
 }
 
 .antiscroll-inner p:first-child {
