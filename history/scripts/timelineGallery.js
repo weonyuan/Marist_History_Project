@@ -2,18 +2,23 @@ var currentName = "";
 
 $(document).ready(function(){
 		var dates = [
-			{
+			/*{
 				"marker": "1904",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1904.jpg)"></div>' +
 							'<span name="Greystone" class="icon greystone"><a href="locations/greystone.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="St. Peter&rsquo;s" class="icon stPeters"><a href="locations/stpeters.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Kieran Gatehouse" class="icon kieran"><a href="locations/kieran.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
-			},
+			},*/
 			{
+				"marker": "1904",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1904.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1904"></div>'
+			},
+			/*{
 				"marker": "1905",
 				"type": "default",
-				"content":  '<div class="timeline" style="background-image: url(images/maps/1905-1929.jpg)"></div>' +
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1905-1929.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1905"></div>' +
 							'<span name="Greystone" class="icon greystone"><a href="locations/greystone.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="St. Peter&rsquo;s" class="icon stPeters"><a href="locations/stpeters.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Kieran Gatehouse" class="icon kieran"><a href="locations/kieran.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
@@ -25,11 +30,16 @@ $(document).ready(function(){
 							'<span name="Old Marian" class="icon oldMarian"><a href="locations/marian.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Cannery" class="icon cannery"><a href="locations/cannery.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="St. Marys" class="icon stMarys"><a href="locations/stmarys.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
-			},
+			},*/
 			{
+				"marker": "1905",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1905-1929.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1905"></div>'
+			},
+			/*{
 				"marker": "1930",
 				"type": "default",
-				"content":  '<div class="timeline" style="background-image: url(images/maps/1930-1945.jpg)"></div>' +
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1930-1945.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1930"></div>' +
 							'<span name="Greystone" class="icon greystone"><a href="locations/greystone.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="St. Peter&rsquo;s" class="icon stPeters"><a href="locations/stpeters.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Kieran Gatehouse" class="icon kieran"><a href="locations/kieran.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
@@ -42,6 +52,11 @@ $(document).ready(function(){
 							'<span name="St. Marys" class="icon stMarys"><a href="locations/stmarys.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							//NEW LOCATION
 							'<span name="Novitiate" class="icon novitiate"><a href="locations/novitiate.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
+			},*/
+			{
+				"marker": "1930",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1930-1945.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1930"></div>'
 			},
 			{
 				"marker": "1946",
@@ -247,14 +262,14 @@ $(document).ready(function(){
         	data: dates
         });
         
-        $("a.location").pageslide({ direction: "left", modal: false });
+        $("area.location").pageslide({ direction: "left", modal: false });
         
-		$("span.icon").mouseenter(function() {
-			currentName = $(this).attr("name");
+		$("area.location").mouseenter(function() {
+			currentName = $(this).attr("alt");
 			$(".hoverBox").append("<span>" + currentName + "</span>");
 		});
         
-        $("span.icon").mouseleave(function() {
+        $("area.location").mouseleave(function() {
 			$(".hoverBox span").remove('span');
 		});
         

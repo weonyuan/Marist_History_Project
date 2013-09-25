@@ -10,6 +10,14 @@
 		<script type="text/javascript" src="scripts/jquery.prettyPhoto1.js" ></script>
 		<script type="text/javascript" src="scripts/timelineFormat.js" ></script>
 		<script type="text/javascript" src="scripts/timelineGallery.js" ></script>
+		<script type="text/javascript" src="scripts/jquery.maphilight.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.map').maphilight();
+			});
+		</script>
+		
+		
 		<script type="text/javascript" src="scripts/menu.js" ></script>
 
 		<link rel="stylesheet" type="text/css" href="mainStyles/master.css" />
@@ -409,17 +417,38 @@
 					</li>
 				</ul>
 			</div>
-		<div id="bodyContent">
-				<div id="container">
-					<div id="timeline-dates"></div>
-					<div id="infoContent">
-						<div class="timeline-container"></div>
-
-						<script type="text/javascript" src="scripts/jquery.pageslide.js"></script>
+			<div id="bodyContent">
+					<div id="container">
+						<div id="timeline-dates"></div>
+						<div id="infoContent">
+							<div class="timeline-container"></div>
+	
+							<script type="text/javascript" src="scripts/jquery.pageslide.js"></script>
+						</div>
 					</div>
-				</div>
 			</div>
-		
+			
+			<map name="1904">
+				  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone" href="locations/greystone.html">
+				  	<area shape="rect" coords="624,359, 643,379" class="location" alt="St. Peter's" href="locations/stpeters.html">
+				  	<area shape="rect" coords="595,322, 621,347" class="location" alt="Kieran Gatehouse" href="locations/kieran.html">
+			</map>
+			
+			<map name="1905">
+				  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone" href="locations/greystone.html">
+				  	<area shape="rect" coords="624,359, 643,379" class="location" alt="St. Peter's" href="locations/stpeters.html">
+				  	<area shape="rect" coords="595,322, 621,347" class="location" alt="Kieran Gatehouse" href="locations/kieran.html">
+				  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" href="locations/marian.html">
+			</map>
+			
+			<map name="1930">
+				  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone" href="locations/greystone.html">
+				  	<area shape="rect" coords="624,359, 643,379" class="location" alt="St. Peter's" href="locations/stpeters.html">
+				  	<area shape="rect" coords="595,322, 621,347" class="location" alt="Kieran Gatehouse" href="locations/kieran.html">
+				  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" href="locations/marian.html">
+				  	<area shape="rect" coords="300,424, 337,456" class="location" alt="Novitiate" href="locations/marian.html">
+			</map>
+			
 			<noscript>
 				<h1 class="heading">&amp;nbsp;Please enable Javascript to view this page or visit <a href=
 				"http://library.marist.edu/archives/index_hold.html"
