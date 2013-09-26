@@ -58,7 +58,7 @@ $(document).ready(function(){
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1930-1945.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1930"></div>'
 			},
-			{
+			/*{
 				"marker": "1946",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1946-1957.jpg)"></div>' +
@@ -77,8 +77,14 @@ $(document).ready(function(){
 							'<span name="Our Lady Seat of Wisdom Chapel" class="icon chapel"><a href="locations/chapel.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Adrian Building" class="icon adrian"><a href="locations/adrian.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
 							
-			},
+			},*/
 			{
+				"marker": "1946",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1946-1957.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1946"></div>'
+							
+			},
+			/*{
 				"marker": "1958",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1958-1969.jpg)"></div>' +
@@ -98,8 +104,13 @@ $(document).ready(function(){
 							'<span name="Leo Hall" class="icon leo"><a href="locations/leo.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Sheahan Hall" class="icon sheahan"><a href="locations/sheahan.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Donnelly Hall" class="icon donnelly"><a href="locations/donnelly.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
-			},
+			},*/
 			{
+				"marker": "1958",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1958-1969.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1958"></div>'
+			},
+			/*{
 				"marker": "1970",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1970-1979.jpg)"></div>' +
@@ -126,8 +137,14 @@ $(document).ready(function(){
 							'<span name="Steel Plant Studio" class="icon steelPlant"><a href="locations/steelPlant.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="St. Ann&rsquo;s Hermitage" class="icon stAnns"><a href="locations/stanns.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
 							
-			},
+			},*/
 			{
+				"marker": "1970",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1970-1979.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1970"></div>'
+							
+			},
+			/*{
 				"marker": "1980",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1980-1993.jpg)"></div>' +
@@ -155,6 +172,11 @@ $(document).ready(function(){
 							//NEW LOCATIONS
 							'<span name="Foy Townhouses" class="icon foy"><a href="locations/foy.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Gartland Commons" class="icon gartland"><a href="locations/gartland.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
+			},*/
+			{
+				"marker": "1980",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1980-1993.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1980"></div>'
 			},
 			{
 				"marker": "1994",
@@ -262,7 +284,7 @@ $(document).ready(function(){
         	data: dates
         });
         
-        $("area.location").pageslide({ direction: "left", modal: false });
+        $("area.location, a.location").pageslide({ direction: "left", modal: false });
         
 		$("area.location").mouseenter(function() {
 			currentName = $(this).attr("alt");
