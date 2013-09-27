@@ -178,7 +178,7 @@ $(document).ready(function(){
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1980-1993.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1980"></div>'
 			},
-			{
+			/*{
 				"marker": "1994",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/1994-1999.jpg)"></div>' +
@@ -207,8 +207,13 @@ $(document).ready(function(){
 							//NEW LOCATIONS
 							'<span name="West Cedar Townhouses" class="icon lowerwestCedar"><a href="locations/westCedar.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Midrise Hall" class="icon midrise"><a href="locations/midrise.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
-			},
+			},*/
 			{
+				"marker": "1994",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1994-1999.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1994"></div>'
+			},
+			/*{
 				"marker": "2000",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/2000-2009.jpg)"></div>' +
@@ -241,8 +246,13 @@ $(document).ready(function(){
 							'<span name="Tenney Stadium" class="icon tenney"><a href="locations/tenney.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Fontaine Hall" class="icon fontaineHall"><a href="locations/fontaine.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							'<span name="Fern Tor Arboretum" class="icon fernTor"><a href="locations/fernTor.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
-			},
+			},*/
 			{
+				"marker": "2000",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/2000-2009.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#2000"></div>'
+			},
+			/*{
 				"marker": "2010",
 				"type": "default",
 				"content":  '<div class="timeline" style="background-image: url(images/maps/2010-2012.jpg)"></div>' +
@@ -276,6 +286,11 @@ $(document).ready(function(){
 							'<span name="Fern Tor Arboretum" class="icon fernTor1"><a href="locations/fernTor.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
 							//NEW LOCATION
 							'<span name="Hancock Center" class="icon hancock"><a href="locations/hancock.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
+			}*/
+			{
+				"marker": "2010",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/2010-2012.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#2010"></div>'
 			}
 		];
     
