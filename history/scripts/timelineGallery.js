@@ -299,16 +299,29 @@ $(document).ready(function(){
         	data: dates
         });
         
-        $("area.location, a.location").pageslide({ direction: "left", modal: false });
+        $("area.location").click(function() {
+        	var count = 
+            api_images = ['locations/greystone/images/*'];
+            api_titles = ['Title Dogs', 'Title Yard 1', 'Title Yard 2', 'Title Yard 3'];
+            api_descriptions = ['Dogs', 'Yard 1', 'Yard 2', 'Yard 3'];
+            $.prettyPhoto.open(api_images, api_titles, api_descriptions);
+        });
         
-		$("area.location").mouseenter(function() {
+        $("area.location").pageslide({
+        	direction: "left",
+        	modal: false
+    	});
+        
+        $(".timeline-container").append(function() {
+        	$(this).append('<div class="hoverBox" style="display: none;"><span>Hover over a building</span></div>');
+        	$(".hoverBox:hidden").delay(500).fadeIn(800);
+        });
+        
+		$("area.location").hover(function() {
+			$(".hoverBox span").empty();
 			currentName = $(this).attr("alt");
-			$(".hoverBox").append("<span>" + currentName + "</span>");
+			$(".hoverBox span").append(currentName);
+		}, function() {
+			$(".hoverBox span").empty();
 		});
-        
-        $("area.location").mouseleave(function() {
-			$(".hoverBox span").remove('span');
-		});
-        
-        $(".timeline-container").append('<div class="hoverBox"></div>');
 });

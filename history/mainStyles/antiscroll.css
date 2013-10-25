@@ -2,8 +2,8 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
-  width: 385px;
-  height: 465px;
+  width: 365px;
+  height: 375px;
 }
 
 .antiscroll-scrollbar {
@@ -35,8 +35,8 @@
 }
 
 .antiscroll-inner {
-	width: 375px;
-	height: 465px;
+	width: 355px;
+	height: 375px;
 	font-size: 1.2em;
 	overflow: scroll;
 }
