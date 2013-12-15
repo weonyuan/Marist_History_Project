@@ -316,7 +316,7 @@ z
 		
 			.pp_content_container .pp_details {
 				float: left;
-				margin: 10px 0 2px 0;
+				margin: 0 0 0 0;
 			}
 				.pp_description {
 					display: none;
@@ -512,10 +512,14 @@ z
 			
 				#pp_full_res .pp_inline p { margin: 0 0 15px 0; }
 	
-		div.ppt {
+		/*div.ppt {
 			color: #fff;
 			display: none;
 			font-size: 17px;
 			margin: 0 0 5px 15px;
 			z-index: 9999;
+		}*/
+		
+		div.ppt {
+			height: 0;
 		}

@@ -47,11 +47,11 @@
 								<div class="pp_content"> \
 									<div class="pp_loaderIcon"></div> \
 									<div class="pp_fade"> \
-										<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+										<!--<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
 										<div class="pp_hoverContainer"> \
 											<a class="pp_next" href="#">next</a> \
 											<a class="pp_previous" href="#">previous</a> \
-										</div> \
+										</div>--> \
 										<div id="pp_full_res"></div> \
 										<div class="pp_details"> \
 										</div> \
@@ -628,7 +628,7 @@
 			$pp_title.remove();
 			
 			// Get the container size, to resize the holder to the right dimensions
-			pp_contentHeight = height + detailsHeight;
+			pp_contentHeight = height;
 			pp_contentWidth = width;
 			pp_containerHeight = pp_contentHeight + titleHeight + $pp_pic_holder.find('.pp_top').height() + $pp_pic_holder.find('.pp_bottom').height();
 			pp_containerWidth = width;

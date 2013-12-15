@@ -13,8 +13,8 @@
 		<script type="text/javascript" src="scripts/jquery.maphilight.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('.map').maphilight();
-			});
+                $('.map').maphilight();
+            });
 		</script>
 		
 		
@@ -22,7 +22,6 @@
 
 		<link rel="stylesheet" type="text/css" href="mainStyles/master.css" />
 		
-		<link rel="stylesheet" type="text/css" href="mainStyles/jquery.pageslide.css" />
 		<link rel="stylesheet" type="text/css" href="mainStyles/prettyPhoto.css" />
 		
 		<script type="text/javascript">
@@ -46,10 +45,18 @@
 		</script>
 		
 		<style type="text/css">
+			.Archives {
+				min-height: 768px;
+			}
+		
 			#mainBody {
 				overflow-y: auto;
 			}
-
+			
+			area {
+				cursor: hand;
+			}
+			
 			/* menu::base */
 			#menu {
 				/*float: left;*/
@@ -228,8 +235,6 @@
 				height: 520px;
 			}
 		</style>
-		
-		<script type="text/javascript" src="scripts/locations.js"></script>
 	</head>
 	<body class="Archives">
 		<div id="headerContainer">
@@ -422,15 +427,13 @@
 						<div id="timeline-dates"></div>
 						<div id="infoContent">
 							<div class="timeline-container"></div>
-	
-							<script type="text/javascript" src="scripts/jquery.pageslide.js"></script>
 						</div>
 					</div>
 			</div>
 			
 			<map name="1904">
-			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" class="prettyPhoto" href="locations/greystone.html">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" href="locations/kieran.html">
+			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/greystone.html?iframe=true&width=900&height=576');" style="cursor: hand;">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" href="#" onclick="$.prettyPhoto.open('locations/kieran.html?iframe=true&width=900&height=576');">
 			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" href="locations/stpeters.html">
 			</map>
 			

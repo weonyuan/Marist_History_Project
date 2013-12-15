@@ -17,7 +17,7 @@
 			opacity: 0.8, /* Value between 0 and 1 */
 			show_title: false, /* true/false */
 			allow_resize: true, /* Resize the photos bigger than viewport. true/false */
-			allow_expand: true, /* Allow the user to expand a resized image. true/false */
+			allow_expand: false, /* Allow the user to expand a resized image. true/false */
 			default_width: 500,
 			default_height: 344,
 			counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
@@ -60,7 +60,6 @@
 												<a href="#" class="pp_arrow_next">Next</a> \
 											</div><br/><br/> \
 											<div class="pp_description"></div> \
-											<a class="pp_close" href="#">Close</a> \
 										</div> \
 									</div> \
 								</div> \

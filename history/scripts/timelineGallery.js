@@ -2,19 +2,20 @@ var currentName = "";
 
 $(document).ready(function(){
 		var dates = [
-			/*{
-				"marker": "1904",
-				"type": "default",
-				"content":  '<div class="timeline" style="background-image: url(images/maps/1904.jpg)"></div>' +
-							'<span name="Greystone" class="icon greystone"><a href="locations/greystone.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
-							'<span name="St. Peter&rsquo;s" class="icon stPeters"><a href="locations/stpeters.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
-							'<span name="Kieran Gatehouse" class="icon kieran"><a href="locations/kieran.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
-			},*/
 			{
 				"marker": "1904",
 				"type": "default",
-				"content":  '<div class="timeline" style="background-image: url(images/maps/1904.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1904"></div>'
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1904.jpg); height: 530px;"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1904"></div>' +
+							'<span name="Greystone" class="icon greystone"><a href="locations/greystone.html?iframe=true&width=900&height=576" class="location" rel="prettyPhoto"><img src="images/icon.png" width="25" height="25" /></a></span>' +
+							'<span name="St. Peter&rsquo;s" class="icon stPeters"><a href="locations/stpeters.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>' +
+							'<span name="Kieran Gatehouse" class="icon kieran"><a href="locations/kieran.html" class="location"><img src="images/icon.png" width="25" height="25" /></a></span>'
 			},
+			/*{
+				"marker": "1904",
+				"type": "default",
+				"content":  '<div class="timeline" style="background-image: url(images/maps/1904.jpg)"><img src="images/invisible.png" class="map" width="960" height="530" usemap="#1904"></div>' +
+							'<map name="1904"> <area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" rel="prettyPhoto" href="locations/greystone.html?iframe=true&width=900&height=576"> <area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" href="locations/kieran.html"> <area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peters" href="locations/stpeters.html?iframe=true&width=900&height=576"></map>'
+			},*/
 			/*{
 				"marker": "1905",
 				"type": "default",
@@ -307,10 +308,10 @@ $(document).ready(function(){
             $.prettyPhoto.open(api_images, api_titles, api_descriptions);
         });
         
-        $("area.location").pageslide({
+        /*$("area.location").pageslide({
         	direction: "left",
         	modal: false
-    	});
+    	});*/
         
         $(".timeline-container").append(function() {
         	$(this).append('<div class="hoverBox" style="display: none;"><span>Hover over a building</span></div>');
