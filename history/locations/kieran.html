@@ -8,38 +8,59 @@
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script src="../scripts/antiscroll.js"></script>
 		<script type="text/javascript" src="../scripts/locations.js"></script>
+		<script type="text/javascript" src="../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../mainStyles/prettyPhoto.css" />
+
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
 		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
 	</head>
 	
-	<body>
-		<table>
-			<tr>
-				<td width="120" rowspan="2" style="padding-right: 10px;"><img src="kieran/main.jpg" width="120" height="120" alt="Kieran Gatehouse"/></td>
-				<td>
-					<div class="building-name">Kieran Gatehouse</div>
-					<div class="building-date">Built in 1865</div>
-					<p class="building-description">Office space; Private residence</p>
-				</td>
-			</tr>
-		</table>
-		
-		<div>
-			<ul class="tabs">
-				<li><a href="#tabs1">Info</a></li>
-			    <li><a href="#tabs2">Directory</a></li>
-			</ul>
+	<body style="width:900px;">
+		<div style="width: 510px; float: left;">
+			<iframe src="kieran/gallery.html" width="490px" height="560px" seamless>
+				<p>Oops! A 404 error occurred.</p>
+			</iframe>
 		</div>
-		
-		<div id="tabs1">
-			<div class="antiscroll-wrap">
-	        	<div class="antiscroll-inner">
-    				<p>Listed on the state and national Registers of Historic Places, the Kieran Gatehouse dates to 1865 and was a gatehouse on the estate purchased by the Marist Brothers in 1908. This quaint cottage has remained in constant use, first as a headquarters for the Poughkeepsie Province of the Marist Brothers and then as office space and a private residence. Brother Paul Ambrose Fontaine used the Gatehouse as his office during his tenure as President of the College. The Gatehouse was renamed the Kieran Gatehouse in October 1990 when it was dedicated to the late Brother Kieran Thomas Brennan. Not only was Brother Brennan a long-time trustee of Marist College, but he was also the director of student Brothers from 1954 to 1964.</p>
+
+		<div style="width: 380px; float: right; margin-left: 10px;">
+			<table>
+				<tr>
+					<td width="120" rowspan="2" style="padding-right: 10px;"><img src="kieran/main.jpg" width="120" height="120" alt="Kieran Gatehouse"/></td>
+					<td>
+						<div class="building-name">Kieran Gatehouse</div>
+						<div class="building-date">Built in 1865</div>
+						<p class="building-description">Office space; Private residence</p>
+					</td>
+				</tr>
+			</table>
+			
+			<div>
+				<ul class="tabs">
+					<li><a href="#tabs1">Info</a></li>
+				    <li><a href="#tabs2">Directory</a></li>
+				</ul>
+			</div>
+			
+			<div id="tabs1">
+				<div class="antiscroll-wrap">
+		        	<div class="antiscroll-inner">
+	    				<p>Listed on the state and national Registers of Historic Places, the Kieran Gatehouse dates to 1865 and was a gatehouse on the estate purchased by the Marist Brothers in 1908. This quaint cottage has remained in constant use, first as a headquarters for the Poughkeepsie Province of the Marist Brothers and then as office space and a private residence. Brother Paul Ambrose Fontaine used the Gatehouse as his office during his tenure as President of the College. The Gatehouse was renamed the Kieran Gatehouse in October 1990 when it was dedicated to the late Brother Kieran Thomas Brennan. Not only was Brother Brennan a long-time trustee of Marist College, but he was also the director of student Brothers from 1954 to 1964.</p>
+				  	</div>
 			  	</div>
 		  	</div>
-	  	</div>
-	  	
-	  	<div id="tabs2">
-	  		
-	  	</div>
+		  	
+		  	<div id="tabs2">
+		  		
+		  	</div>
+	  </div>
 	</body>
 </html>

@@ -8,40 +8,60 @@
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script src="../scripts/antiscroll.js"></script>
 		<script type="text/javascript" src="../scripts/locations.js"></script>
+		<script type="text/javascript" src="../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../mainStyles/prettyPhoto.css" />
 		
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
 	</head>
 	
-	<body>
-		<table>
-			<tr>
-				<td width="120" rowspan="2" style="padding-right: 10px;"><img src="chapel/main.jpg" width="120" height="120" alt="Our Lady of Seat Wisdom Chapel"/></td>
-				<td>
-					<div class="building-name">Our Lady Seat of Wisdom Chapel</div>
-					<div class="building-date">Built in 1953</div>
-					<p class="building-description">Currently owned by Marist College.</p>
-				</td>
-			</tr>
-		</table>
-		
-		<div>
-			<ul class="tabs">
-				<li><a href="#tabs1">Info</a></li>
-			    <li><a href="#tabs2">Directory</a></li>
-			</ul>
+	<body style="width:900px;">
+		<div style="width: 510px; float: left;">
+			<iframe src="chapel/gallery.html" width="490px" height="560px" seamless>
+				<p>Oops! A 404 error occurred.</p>
+			</iframe>
 		</div>
-		
-		<div id="tabs1">
-			<div class="antiscroll-wrap">
-	        	<div class="antiscroll-inner">
-    				<p>Our Lady Seat of Wisdom Chapel is the crown jewel in the diadem of buildings which comprise the Marist College campus. The chapel was built in 1953 by Marist Brothers under the direction of Brother Nilus Donnelly. Its circular design was one of the first for a Catholic church in the United States. The design was later established with the Second Vatican Council in 1965 in which churches began to move their altars into a similar circular shape.</p>
-    				<p>Brother Nilus decided that instead of stained glass windows he would line the perimeter of the chapel with the photographic images of the Virgin Mary with accompanying quotes from the scripture. The images would be placed on heavy plastic and suspended on springs which compensated for the expansion from the sunlight and the contraction during the night. Rita Hunt, a professional model, and her husband were friends with Brother Nilus and volunteered to depict the Virgin Mary. Unfortunately, the images have faded due to the bleaching of the sun.</p>
-			  		<p>Our Lady Seat of Wisdom Chapel forms the core, the anchor, and the inspiration for the Marist College campus.</p>
+		<div style="width: 380px; float: right; margin-left: 10px;">
+			<table>
+				<tr>
+					<td width="120" rowspan="2" style="padding-right: 10px;"><img src="chapel/main.jpg" width="120" height="120" alt="Our Lady of Seat Wisdom Chapel"/></td>
+					<td>
+						<div class="building-name">Our Lady Seat of Wisdom Chapel</div>
+						<div class="building-date">Built in 1953</div>
+						<p class="building-description">Currently owned by Marist College.</p>
+					</td>
+				</tr>
+			</table>
+			
+			<div>
+				<ul class="tabs">
+					<li><a href="#tabs1">Info</a></li>
+				    <li><a href="#tabs2">Directory</a></li>
+				</ul>
+			</div>
+			
+			<div id="tabs1">
+				<div class="antiscroll-wrap">
+		        	<div class="antiscroll-inner">
+	    				<p>Our Lady Seat of Wisdom Chapel is the crown jewel in the diadem of buildings which comprise the Marist College campus. The chapel was built in 1953 by Marist Brothers under the direction of Brother Nilus Donnelly. Its circular design was one of the first for a Catholic church in the United States. The design was later established with the Second Vatican Council in 1965 in which churches began to move their altars into a similar circular shape.</p>
+	    				<p>Brother Nilus decided that instead of stained glass windows he would line the perimeter of the chapel with the photographic images of the Virgin Mary with accompanying quotes from the scripture. The images would be placed on heavy plastic and suspended on springs which compensated for the expansion from the sunlight and the contraction during the night. Rita Hunt, a professional model, and her husband were friends with Brother Nilus and volunteered to depict the Virgin Mary. Unfortunately, the images have faded due to the bleaching of the sun.</p>
+				  		<p>Our Lady Seat of Wisdom Chapel forms the core, the anchor, and the inspiration for the Marist College campus.</p>
+				  	</div>
 			  	</div>
 		  	</div>
-	  	</div>
-	  	
-	  	<div id="tabs2">
-			
+		  	
+		  	<div id="tabs2">
+				
+		  	</div>
 	  	</div>
 	</body>
 </html>

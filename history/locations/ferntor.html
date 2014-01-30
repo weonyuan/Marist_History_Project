@@ -8,37 +8,58 @@
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script src="../scripts/antiscroll.js"></script>
 		<script type="text/javascript" src="../scripts/locations.js"></script>
+		<script type="text/javascript" src="../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../mainStyles/prettyPhoto.css" />
+		
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
 	</head>
 	
-	<body>
-		<table>
-			<tr>
-				<td width="120" rowspan="2" style="padding-right: 10px;"><img src="ferntor/main.jpg" width="120" height="120" alt="Fern Tor"/></td>
-				<td>
-					<div class="building-name">Fern Tor</div>
-					<div class="building-date">Acquired in 1997</div>
-					<p class="building-description">Arboretum owned by Marist College.</p>
-				</td>
-			</tr>
-		</table>
-		
-		<div>
-			<ul class="tabs">
-				<li><a href="#tabs1">Info</a></li>
-			    <li><a href="#tabs2">Directory</a></li>
-			</ul>
+	<body style="width:900px;">
+		<div style="width: 510px; float: left;">
+			<iframe src="ferntor/gallery.html" width="490px" height="560px" seamless>
+				<p>Oops! A 404 error occurred.</p>
+			</iframe>
 		</div>
-		
-		<div id="tabs1">
-			<div class="antiscroll-wrap">
-	        	<div class="antiscroll-inner">
-    				<p>Fern Tor is the 13 acre estate acquired by Marist College in 1997. Located on campus's northern boundary, Fern Tor is a quiet retreat with trees, wildflowers, herbs, shrubs, wildlife, and several ecological habitats. The Hudson River can be viewed from several spots, as it is graced with 800 feet of shoreline. The land Fern Tor is located on remained undeveloped until it was purchased in 1861 by Thomas Newbold for a family home. Newbold constructed a mansion, summerhouse, formal gardens, greenhouses, a man-made pond, and a carriage house. Thomas Newbold's son Frederick nicknames the location Fern Tor after its ferns and rocky hills. The property was later sold to the Way family who then sold the parcel to Marist. The foundations of the mansion are all that remain from the previous owners. Fern Tor is currently used by both environmental majors and non-science majors as an ecological lab or to just enjoy the peace and quiet.</p>
+		<div style="width: 380px; float: right; margin-left: 10px;">
+			<table>
+				<tr>
+					<td width="120" rowspan="2" style="padding-right: 10px;"><img src="ferntor/main.jpg" width="120" height="120" alt="Fern Tor"/></td>
+					<td>
+						<div class="building-name">Fern Tor</div>
+						<div class="building-date">Acquired in 1997</div>
+						<p class="building-description">Arboretum owned by Marist College.</p>
+					</td>
+				</tr>
+			</table>
+			
+			<div>
+				<ul class="tabs">
+					<li><a href="#tabs1">Info</a></li>
+				    <li><a href="#tabs2">Directory</a></li>
+				</ul>
+			</div>
+			
+			<div id="tabs1">
+				<div class="antiscroll-wrap">
+		        	<div class="antiscroll-inner">
+	    				<p>Fern Tor is the 13 acre estate acquired by Marist College in 1997. Located on campus's northern boundary, Fern Tor is a quiet retreat with trees, wildflowers, herbs, shrubs, wildlife, and several ecological habitats. The Hudson River can be viewed from several spots, as it is graced with 800 feet of shoreline. The land Fern Tor is located on remained undeveloped until it was purchased in 1861 by Thomas Newbold for a family home. Newbold constructed a mansion, summerhouse, formal gardens, greenhouses, a man-made pond, and a carriage house. Thomas Newbold's son Frederick nicknames the location Fern Tor after its ferns and rocky hills. The property was later sold to the Way family who then sold the parcel to Marist. The foundations of the mansion are all that remain from the previous owners. Fern Tor is currently used by both environmental majors and non-science majors as an ecological lab or to just enjoy the peace and quiet.</p>
+				  	</div>
 			  	</div>
 		  	</div>
-	  	</div>
-	  	
-	  	<div id="tabs2">
-			
+		  	
+		  	<div id="tabs2">
+				
+		  	</div>
 	  	</div>
 	</body>
 </html>

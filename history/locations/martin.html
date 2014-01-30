@@ -8,43 +8,63 @@
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script src="../scripts/antiscroll.js"></script>
 		<script type="text/javascript" src="../scripts/locations.js"></script>
+		<script type="text/javascript" src="../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../mainStyles/prettyPhoto.css" />
 		
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
 	</head>
 	
-	<body>
-		<table>
-			<tr>
-				<td width="120" rowspan="2" style="padding-right: 10px;"><img src="martin/main.jpg" width="120" height="120" alt="Martin Boathouse"/></td>
-				<td>
-					<div class="building-name">Martin Boathouse</div>
-					<div class="building-date">Built in 1963</div>
-					<p class="building-description">Marist College's boathouse</p>
-				</td>
-			</tr>
-		</table>
-		
-		<div>
-			<ul class="tabs">
-				<li><a href="#tabs1">Info</a></li>
-			    <li><a href="#tabs2">Directory</a></li>
-			</ul>
+	<body style="width:900px;">
+		<div style="width: 510px; float: left;">
+			<iframe src="martin/gallery.html" width="490px" height="560px" seamless>
+				<p>Oops! A 404 error occurred.</p>
+			</iframe>
 		</div>
-		
-		<div id="tabs1">
-			<div class="antiscroll-wrap">
-	        	<div class="antiscroll-inner">
-    				<p>The Martin Boathouse, also known as the Marist Boathouse, was built in 1963 to house the rowing and sailing equipment of Marist College. It is named in memory of William Martin, who was the chairman responsible for funding the construction of the boathouse. There are two ramps that lead directly into the Hudson River, allowing the crew team quick and easy access for training and competitions, such as races and regattas. At first, Blue Jays, 13-foot wooden sloop rigged boats, were used by students and faculty for competition and pleasure sailing. Later, in 1966, these were replaced by Barnegats, 19-foot fiberglass sloops. These sloops could hold six people, but were used in competitions with a crew of two.  They were later replaced with smaller boats.</p>
-    				<p>Before Marist built the Martin boathouse, the city of Poughkeepsie owned the other boathouses on the waterfront property: the California Boathouse and Cornell Boathouse. These were used for local high school crew teams in the National Crew Regattas. Marist was allowed to buy the two boathouses and develop the waterfront property under the condition that the local high school teams would still be able to use them for their crew activities.</p>
-			  		<p>Marist faculty believed a Butler type construction for the boathouse would be the most beneficial. It would be utilized for the storage of shells, and also serve as a dormitory for visiting crews. Once the season was over, the space could be used as an athletic facility for gymnastics, weight training lifting, and as a training space for the crew team members. The goal of this plan was to make team practices easier and more convenient and to offer greater hospitality to visiting teams.</p>
-			  		<p>The upper floor of the boathouse, consisting of two rooms, is furnished with restroom and shower facilities as well as a sleeping space for visiting teams who compete in regattas on the Hudson River. Larry Davis, a past Marist crew coach, used to live in the boathouse with his wife, Vicki. They moved to the boathouse in August of 1981 when Larry was hired to be the business manager of athletics at the McCann Center and coach of the varsity crew team. Vicki, quickly adapting to the unique space, made some small home improvements and furnished the floor by adding wallpaper to make it homier.</p>
-			  		<p>The Marist crew team won the prestigious Haight Trophy for five consecutive years, but their streak ended in 1966. The team's crowning achievement came in 2002 when they qualified for the Henley Cup Regatta in Oxford, England. Unfortunately, they did not make it past the second round, as they were defeated by Harvard, who was the overall winner.</p>
-			  		<p>The boathouse is named after William Martin, a local insurance agent who was the chairman of the fund drive to construct the boathouse. He passed away before the boathouse's completion and Brother Joannes requested it be named in his memory.</p>
+		<div style="width: 380px; float: right; margin-left: 10px;">
+			<table>
+				<tr>
+					<td width="120" rowspan="2" style="padding-right: 10px;"><img src="martin/main.jpg" width="120" height="120" alt="Martin Boathouse"/></td>
+					<td>
+						<div class="building-name">Martin Boathouse</div>
+						<div class="building-date">Built in 1963</div>
+						<p class="building-description">Marist College's boathouse</p>
+					</td>
+				</tr>
+			</table>
+			
+			<div>
+				<ul class="tabs">
+					<li><a href="#tabs1">Info</a></li>
+				    <li><a href="#tabs2">Directory</a></li>
+				</ul>
+			</div>
+			
+			<div id="tabs1">
+				<div class="antiscroll-wrap">
+		        	<div class="antiscroll-inner">
+	    				<p>The Martin Boathouse, also known as the Marist Boathouse, was built in 1963 to house the rowing and sailing equipment of Marist College. It is named in memory of William Martin, who was the chairman responsible for funding the construction of the boathouse. There are two ramps that lead directly into the Hudson River, allowing the crew team quick and easy access for training and competitions, such as races and regattas. At first, Blue Jays, 13-foot wooden sloop rigged boats, were used by students and faculty for competition and pleasure sailing. Later, in 1966, these were replaced by Barnegats, 19-foot fiberglass sloops. These sloops could hold six people, but were used in competitions with a crew of two.  They were later replaced with smaller boats.</p>
+	    				<p>Before Marist built the Martin boathouse, the city of Poughkeepsie owned the other boathouses on the waterfront property: the California Boathouse and Cornell Boathouse. These were used for local high school crew teams in the National Crew Regattas. Marist was allowed to buy the two boathouses and develop the waterfront property under the condition that the local high school teams would still be able to use them for their crew activities.</p>
+				  		<p>Marist faculty believed a Butler type construction for the boathouse would be the most beneficial. It would be utilized for the storage of shells, and also serve as a dormitory for visiting crews. Once the season was over, the space could be used as an athletic facility for gymnastics, weight training lifting, and as a training space for the crew team members. The goal of this plan was to make team practices easier and more convenient and to offer greater hospitality to visiting teams.</p>
+				  		<p>The upper floor of the boathouse, consisting of two rooms, is furnished with restroom and shower facilities as well as a sleeping space for visiting teams who compete in regattas on the Hudson River. Larry Davis, a past Marist crew coach, used to live in the boathouse with his wife, Vicki. They moved to the boathouse in August of 1981 when Larry was hired to be the business manager of athletics at the McCann Center and coach of the varsity crew team. Vicki, quickly adapting to the unique space, made some small home improvements and furnished the floor by adding wallpaper to make it homier.</p>
+				  		<p>The Marist crew team won the prestigious Haight Trophy for five consecutive years, but their streak ended in 1966. The team's crowning achievement came in 2002 when they qualified for the Henley Cup Regatta in Oxford, England. Unfortunately, they did not make it past the second round, as they were defeated by Harvard, who was the overall winner.</p>
+				  		<p>The boathouse is named after William Martin, a local insurance agent who was the chairman of the fund drive to construct the boathouse. He passed away before the boathouse's completion and Brother Joannes requested it be named in his memory.</p>
+				  	</div>
 			  	</div>
 		  	</div>
-	  	</div>
-	  	
-	  	<div id="tabs2">
-			
+		  	
+		  	<div id="tabs2">
+				
+		  	</div>
 	  	</div>
 	</body>
 </html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <link rel="stylesheet" href="../../mainStyles/locations.css" />
+	    
+	  	<script type="text/javascript" src="../../scripts/jquery.min.js"></script>
+		<script type="text/javascript" src="../../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../../mainStyles/prettyPhoto.css" />
+		
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto({
+					overlay_gallery: true
+				});
+				
+				api_images = ['../../locations/adrian/images/01.jpg',
+							  '../../locations/adrian/images/02.jpg',
+							  '../../locations/adrian/images/03.jpg',
+							  '../../locations/adrian/images/04.jpg',
+							  '../../locations/adrian/images/05.jpg',
+							  '../../locations/adrian/images/06.jpg',
+							  '../../locations/adrian/images/07.jpg',
+							  '../../locations/adrian/images/08.jpg',
+							  '../../locations/adrian/images/09.jpg',
+							  '../../locations/adrian/images/10.jpg',
+							  '../../locations/adrian/images/11.jpg',
+							  '../../locations/adrian/images/12.jpg',
+							  '../../locations/adrian/images/13.jpg',
+							  '../../locations/adrian/images/main.jpg'];
+				api_descriptions = ['Description 1','Description 2','Description 3'];
+				$.prettyPhoto.open(api_images,'',api_descriptions);
+			});
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	
+	<body>
+	</body>
+</html>

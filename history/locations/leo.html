@@ -8,40 +8,61 @@
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script src="../scripts/antiscroll.js"></script>
 		<script type="text/javascript" src="../scripts/locations.js"></script>
+		<script type="text/javascript" src="../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../mainStyles/prettyPhoto.css" />
+		
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
 		
 	</head>
 	
-	<body>
-		<table>
-			<tr>
-				<td width="120" rowspan="2" style="padding-right: 10px;"><img src="leo/main.jpg" width="120" height="120" alt="Leo Hall"/></td>
-				<td>
-					<div class="building-name">Leo Hall</div>
-					<div class="building-date">Built in 1963</div>
-					<p class="building-description">Freshman residence</p>
-				</td>
-			</tr>
-		</table>
-		
-		<div>
-			<ul class="tabs">
-				<li><a href="#tabs1">Info</a></li>
-			    <li><a href="#tabs2">Directory</a></li>
-			</ul>
+	<body style="width:900px;">
+		<div style="width: 510px; float: left;">
+			<iframe src="leo/gallery.html" width="490px" height="560px" seamless>
+				<p>Oops! A 404 error occurred.</p>
+			</iframe>
 		</div>
-		
-		<div id="tabs1">
-			<div class="antiscroll-wrap">
-	        	<div class="antiscroll-inner">
-    				<p>With its construction funded by a federal government loan, Leo Hall opened in 1963 as a dorm for Marist students. Six stories tall, it houses approximately 290 students and provides a lounge, recreation hall, and balconies for studying and relaxing. Resident students used to call it "Leo Hilton" because the dorm was able to satisfy their intellectual, recreational, and general needs and its location provided residents with beautiful views of the Hudson River. Women took up residence on the sixth floor when they were allowed to attend Marist in 1969. At one point, the basement of Leo was used as an alternative classroom because of the large increase in admitted students.</p>
-    				<p>Leo Hall is dedicated in memory of Brother Leo Brouiletter, who served as Provincial of the Marist Brothers from 1921 to 1930. In 1929 he secured the original charter for the Marist Normal Training School.</p>
-			  		<p>Leo presently serves as a co-ed dorm for freshmen students at Marist.</p>
+		<div style="width: 380px; float: right; margin-left: 10px;">
+			<table>
+				<tr>
+					<td width="120" rowspan="2" style="padding-right: 10px;"><img src="leo/main.jpg" width="120" height="120" alt="Leo Hall"/></td>
+					<td>
+						<div class="building-name">Leo Hall</div>
+						<div class="building-date">Built in 1963</div>
+						<p class="building-description">Freshman residence</p>
+					</td>
+				</tr>
+			</table>
+			
+			<div>
+				<ul class="tabs">
+					<li><a href="#tabs1">Info</a></li>
+				    <li><a href="#tabs2">Directory</a></li>
+				</ul>
+			</div>
+			
+			<div id="tabs1">
+				<div class="antiscroll-wrap">
+		        	<div class="antiscroll-inner">
+	    				<p>With its construction funded by a federal government loan, Leo Hall opened in 1963 as a dorm for Marist students. Six stories tall, it houses approximately 290 students and provides a lounge, recreation hall, and balconies for studying and relaxing. Resident students used to call it "Leo Hilton" because the dorm was able to satisfy their intellectual, recreational, and general needs and its location provided residents with beautiful views of the Hudson River. Women took up residence on the sixth floor when they were allowed to attend Marist in 1969. At one point, the basement of Leo was used as an alternative classroom because of the large increase in admitted students.</p>
+	    				<p>Leo Hall is dedicated in memory of Brother Leo Brouiletter, who served as Provincial of the Marist Brothers from 1921 to 1930. In 1929 he secured the original charter for the Marist Normal Training School.</p>
+				  		<p>Leo presently serves as a co-ed dorm for freshmen students at Marist.</p>
+				  	</div>
 			  	</div>
 		  	</div>
-	  	</div>
-	  	
-	  	<div id="tabs2">
-			
+		  	
+		  	<div id="tabs2">
+				
+		  	</div>
 	  	</div>
 	</body>
 </html>

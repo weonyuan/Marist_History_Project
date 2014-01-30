@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <link rel="stylesheet" href="../../mainStyles/locations.css" />
+	    
+	  	<script type="text/javascript" src="../../scripts/jquery.min.js"></script>
+		<script type="text/javascript" src="../../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../../mainStyles/prettyPhoto.css" />
+		
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto({
+					overlay_gallery: true
+				});
+				
+				api_images = ['../../locations/hancock/images/01.jpg',
+							  '../../locations/hancock/images/02.jpg',
+							  '../../locations/hancock/images/03.jpg',
+							  '../../locations/hancock/images/04.jpg',
+							  '../../locations/hancock/images/05.jpg',
+							  '../../locations/hancock/images/06.jpg',
+							  '../../locations/hancock/images/07.jpg',
+							  '../../locations/hancock/images/08.jpg',
+							  '../../locations/hancock/images/09.jpg',
+							  '../../locations/hancock/images/10.jpg',
+							  '../../locations/hancock/images/11.jpg',
+							  '../../locations/hancock/images/12.jpg',
+							  '../../locations/hancock/images/13.jpg',
+							  '../../locations/hancock/images/14.jpg',
+							  '../../locations/hancock/images/15.jpg',
+							  '../../locations/hancock/images/16.jpg',
+							  '../../locations/hancock/images/17.jpg',
+							  '../../locations/hancock/images/18.jpg',
+							  '../../locations/hancock/images/19.jpg',
+							  '../../locations/hancock/images/20.jpg',
+							  '../../locations/hancock/images/21.jpg',
+							  '../../locations/hancock/images/22.jpg',
+							  '../../locations/hancock/images/23.jpg',
+							  '../../locations/hancock/images/24.jpg'];
+				api_descriptions = ['Description 1','Description 2','Description 3'];
+				$.prettyPhoto.open(api_images,'',api_descriptions);
+			});
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	
+	<body>
+	</body>
+</html>

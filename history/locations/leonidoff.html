@@ -8,41 +8,61 @@
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script src="../scripts/antiscroll.js"></script>
 		<script type="text/javascript" src="../scripts/locations.js"></script>
+		<script type="text/javascript" src="../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../mainStyles/prettyPhoto.css" />
 		
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
 	</head>
 	
-	<body>
-		<table>
-			<tr>
-				<td width="120" rowspan="2" style="padding-right: 10px;"><img src="leonidoff/main.jpg" width="120" height="120" alt="Leonidoff Field"/></td>
-				<td>
-					<div class="building-name">Leonidoff Field</div>
-					<div class="building-date">Built in 1965</div>
-					<p class="building-description">Athletic field</p>
-				</td>
-			</tr>
-		</table>
-		
-		<div>
-			<ul class="tabs">
-				<li><a href="#tabs1">Info</a></li>
-			    <li><a href="#tabs2">Directory</a></li>
-			</ul>
+	<body style="width:900px;">
+		<div style="width: 510px; float: left;">
+			<iframe src="leonidoff/gallery.html" width="490px" height="560px" seamless>
+				<p>Oops! A 404 error occurred.</p>
+			</iframe>
 		</div>
-		
-		<div id="tabs1">
-			<div class="antiscroll-wrap">
-	        	<div class="antiscroll-inner">
-    				<p>Leonidoff Field is Marist's first major athletic field, providing a venue for sports and intermural activities hosted by the Marist Athletics Department. It is also home to Tenney Stadium, which offers seating for over 5,000 spectators.</p>
-    				<p>The field was dedicated to Dr. Aleski A. Leonidoff in 1968. Leonidoff was born and raised in Russia, and developed a relationship with Marist through Jack Gartland. During his tenure as a physician at St. Francis Hospital, he donated money to the College for the construction of the field. In addition, he donated funds to support a scholarship for students specializing in science and pre-medical studies.</p>
-			  		<p>Since its beginnings in 1965, multiple improvements have been made to the field. An irrigation system consisting of 11 zones and 36 sprinkler heads was installed to keep the then-Kentucky bluegrass, fescue, and rye natural turf looking its best. In 2001 Musco field lighting was installed to allow night games to occur, opening up a new range of possibilities for the field.</p>
-			  		<p>Marist Football has since been the program that has seen the most activity on the field, but other teams use it regularly, such as soccer, lacrosse, and intermural sports.</p>
+		<div style="width: 380px; float: right; margin-left: 10px;">
+			<table>
+				<tr>
+					<td width="120" rowspan="2" style="padding-right: 10px;"><img src="leonidoff/main.jpg" width="120" height="120" alt="Leonidoff Field"/></td>
+					<td>
+						<div class="building-name">Leonidoff Field</div>
+						<div class="building-date">Built in 1965</div>
+						<p class="building-description">Athletic field</p>
+					</td>
+				</tr>
+			</table>
+			
+			<div>
+				<ul class="tabs">
+					<li><a href="#tabs1">Info</a></li>
+				    <li><a href="#tabs2">Directory</a></li>
+				</ul>
+			</div>
+			
+			<div id="tabs1">
+				<div class="antiscroll-wrap">
+		        	<div class="antiscroll-inner">
+	    				<p>Leonidoff Field is Marist's first major athletic field, providing a venue for sports and intermural activities hosted by the Marist Athletics Department. It is also home to Tenney Stadium, which offers seating for over 5,000 spectators.</p>
+	    				<p>The field was dedicated to Dr. Aleski A. Leonidoff in 1968. Leonidoff was born and raised in Russia, and developed a relationship with Marist through Jack Gartland. During his tenure as a physician at St. Francis Hospital, he donated money to the College for the construction of the field. In addition, he donated funds to support a scholarship for students specializing in science and pre-medical studies.</p>
+				  		<p>Since its beginnings in 1965, multiple improvements have been made to the field. An irrigation system consisting of 11 zones and 36 sprinkler heads was installed to keep the then-Kentucky bluegrass, fescue, and rye natural turf looking its best. In 2001 Musco field lighting was installed to allow night games to occur, opening up a new range of possibilities for the field.</p>
+				  		<p>Marist Football has since been the program that has seen the most activity on the field, but other teams use it regularly, such as soccer, lacrosse, and intermural sports.</p>
+				  	</div>
 			  	</div>
 		  	</div>
-	  	</div>
-	  	
-	  	<div id="tabs2">
-			
+		  	
+		  	<div id="tabs2">
+				
+		  	</div>
 	  	</div>
 	</body>
 </html>

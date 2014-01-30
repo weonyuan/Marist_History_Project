@@ -8,38 +8,58 @@
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script src="../scripts/antiscroll.js"></script>
 		<script type="text/javascript" src="../scripts/locations.js"></script>
+		<script type="text/javascript" src="../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../mainStyles/prettyPhoto.css" />
 		
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
 	</head>
 	
-	<body>
-		<table>
-			<tr>
-				<td width="120" rowspan="2" style="padding-right: 10px;"><img src="library/main.jpg" width="120" height="120" alt="James A. Cannavino Library"/></td>
-				<td>
-					<div class="building-name">James A. Cannavino Library</div>
-					<div class="building-date">Built in 2000</div>
-					<p class="building-description">Library</p>
-				</td>
-			</tr>
-		</table>
-		
-		<div>
-			<ul class="tabs">
-				<li><a href="#tabs1">Info</a></li>
-			    <li><a href="#tabs2">Directory</a></li>
-			</ul>
+	<body style="width:900px;">
+		<div style="width: 510px; float: left;">
+			<iframe src="library/gallery.html" width="490px" height="560px" seamless>
+				<p>Oops! A 404 error occurred.</p>
+			</iframe>
 		</div>
-		
-		<div id="tabs1">
-			<div class="antiscroll-wrap">
-	        	<div class="antiscroll-inner">
-    				<p>The beautiful stone library overlooking the Hudson River and campus green is named after longtime Trustee and former Chairman of the Board, James A. Cannavino. Developed as part of the worldwide Digital Library Initiative launched by the IBM Corporation to facilitate anytime, anywhere access to books, periodicals, works of art, film, music, and rare manuscripts, the Cannavino Library is a model for academic libraries of the new century. This 83,000-square-foot facility is a state-of-the-art electronic teaching and service center at the hub of an electronic network linking all parts of the Marist campus to libraries and databases throughout the world. In addition to providing a number of spacious study areas and attractive quiet rooms for research, conferences, and collaborative work, the Library also houses the Archives and Special Collections rooms, an office overlooking the campus for the College President, and a multi-media language center on the third floor. A small cafe on the main floor of the Library also provides the students with a gathering place where they can have a bite to eat, drink coffee, and not have to worry quite as much about the level of their voices.</p>
+		<div style="width: 380px; float: right; margin-left: 10px;">
+			<table>
+				<tr>
+					<td width="120" rowspan="2" style="padding-right: 10px;"><img src="library/main.jpg" width="120" height="120" alt="James A. Cannavino Library"/></td>
+					<td>
+						<div class="building-name">James A. Cannavino Library</div>
+						<div class="building-date">Built in 2000</div>
+						<p class="building-description">Library</p>
+					</td>
+				</tr>
+			</table>
+			
+			<div>
+				<ul class="tabs">
+					<li><a href="#tabs1">Info</a></li>
+				    <li><a href="#tabs2">Directory</a></li>
+				</ul>
+			</div>
+			
+			<div id="tabs1">
+				<div class="antiscroll-wrap">
+		        	<div class="antiscroll-inner">
+	    				<p>The beautiful stone library overlooking the Hudson River and campus green is named after longtime Trustee and former Chairman of the Board, James A. Cannavino. Developed as part of the worldwide Digital Library Initiative launched by the IBM Corporation to facilitate anytime, anywhere access to books, periodicals, works of art, film, music, and rare manuscripts, the Cannavino Library is a model for academic libraries of the new century. This 83,000-square-foot facility is a state-of-the-art electronic teaching and service center at the hub of an electronic network linking all parts of the Marist campus to libraries and databases throughout the world. In addition to providing a number of spacious study areas and attractive quiet rooms for research, conferences, and collaborative work, the Library also houses the Archives and Special Collections rooms, an office overlooking the campus for the College President, and a multi-media language center on the third floor. A small cafe on the main floor of the Library also provides the students with a gathering place where they can have a bite to eat, drink coffee, and not have to worry quite as much about the level of their voices.</p>
+				  	</div>
 			  	</div>
 		  	</div>
-	  	</div>
-	  	
-	  	<div id="tabs2">
-			
+		  	
+		  	<div id="tabs2">
+				
+		  	</div>
 	  	</div>
 	</body>
 </html>

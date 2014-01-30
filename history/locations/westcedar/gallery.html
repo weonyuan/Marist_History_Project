@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <link rel="stylesheet" href="../../mainStyles/locations.css" />
+	    
+	  	<script type="text/javascript" src="../../scripts/jquery.min.js"></script>
+		<script type="text/javascript" src="../../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../../mainStyles/prettyPhoto.css" />
+		
+		<script>
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto({
+					overlay_gallery: true
+				});
+				
+				api_images = ['../../locations/westcedar/images/01.jpg',
+							  '../../locations/westcedar/images/02.jpg',
+							  '../../locations/westcedar/images/03.jpg',
+							  '../../locations/westcedar/images/04.jpg',
+							  '../../locations/westcedar/images/05.jpg',
+							  '../../locations/westcedar/images/06.jpg',
+							  '../../locations/westcedar/images/07.jpg',
+							  '../../locations/westcedar/images/08.jpg',
+							  '../../locations/westcedar/images/09.jpg',
+							  '../../locations/westcedar/images/10.jpg',
+							  '../../locations/westcedar/images/11.jpg',
+							  '../../locations/westcedar/images/12.jpg',
+							  '../../locations/westcedar/images/13.jpg',
+							  '../../locations/westcedar/images/14.jpg',
+							  '../../locations/westcedar/images/15.jpg',
+							  '../../locations/westcedar/images/16.jpg',
+							  '../../locations/westcedar/images/main.jpg'];
+				api_descriptions = ['Description 1','Description 2','Description 3'];
+				$.prettyPhoto.open(api_images,'',api_descriptions);
+			});
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	
+	<body>
+	</body>
+</html>
