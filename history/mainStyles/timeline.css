@@ -11,18 +11,21 @@
     position: absolute;
     background-color: #FFFFFF;
     overflow: hidden;
-    width: 100%;
+    width: 960px;
     height: 530px;
     margin: auto;
     font-family: sans-serif;
     z-index: 0;
+    /*border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 5px solid black;*/
 }
 
 #timeline-slider {
     position: relative;
-    margin-left: -8.5px; /*97px*/
+    margin-left: 0px; /*97px*/
     width: 100%;
-    display: table;
+    display: inline-table;
     height: 530px;
     z-index: 0;
 }
