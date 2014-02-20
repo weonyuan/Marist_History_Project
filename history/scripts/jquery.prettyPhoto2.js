@@ -22,7 +22,7 @@
 			default_height: 344,
 			counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
 			theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
-			horizontal_padding: 20, /* The padding on each side of the picture */
+			horizontal_padding: 0, /* The padding on each side of the picture */
 			hideflash: false, /* Hides all the flash object on a page, set to TRUE if flash appears over prettyPhoto */
 			wmode: 'opaque', /* Set the flash wmode attribute */
 			autoplay: true, /* Automatically start videos: True/False */
@@ -36,14 +36,7 @@
 			ie6_fallback: true,
 			markup: '<div class="pp_pic_holder"> \
 						<div class="ppt">&nbsp;</div> \
-						<div class="pp_top"> \
-							<div class="pp_left"></div> \
-							<div class="pp_middle"></div> \
-							<div class="pp_right"></div> \
-						</div> \
 						<div class="pp_content_container"> \
-							<div class="pp_left"> \
-							<div class="pp_right"> \
 								<div class="pp_content"> \
 									<div class="pp_loaderIcon"></div> \
 									<div class="pp_fade"> \
@@ -63,13 +56,6 @@
 										</div> \
 									</div> \
 								</div> \
-							</div> \
-							</div> \
-						</div> \
-						<div class="pp_bottom"> \
-							<div class="pp_left"></div> \
-							<div class="pp_middle"></div> \
-							<div class="pp_right"></div> \
 						</div> \
 					</div> \
 					<div class="pp_overlay"></div>',
@@ -500,8 +486,8 @@
 			// Resize the content holder
 			$pp_pic_holder.find('.pp_content')
 				.animate({
-					height:pp_dimensions['contentHeight'],
-					width:pp_dimensions['contentWidth']
+					height:600,
+					width:510
 				},settings.animation_speed);
 			
 			// Resize picture the holder
