@@ -5,11 +5,18 @@ $(document).ready(function() {
 	var containerWidth = windowWidth * 0.8;
 	var containerHeight = windowHeight * 0.8;
 	
-	var imageWidth = containerWidth * 0.8;
+/*	var imageWidth = containerWidth * 0.8;
 	var imageHeight = containerHeight * 0.8;
 	
 	loadImage(currentImage);
 	$('.photoContainer').css('width', containerWidth).css('height', containerHeight);
+	$('body').append('<div class="photoContainer"></div>');
+*/	
+	loadImage(currentImage);
+	
+	$('.photoContainer').append('previousImage= ' + previousImage + '<br>');
+	$('.photoContainer').append('currentImage= ' + currentImage + '<br>');
+	$('.photoContainer').append('nextImage= ' + nextImage + '<br>');
 });
 
 var photos = ['../../locations/greystone/images/01.jpg',
@@ -57,9 +64,8 @@ var currentImage = 0;
 var nextImage = currentImage + 1;
 
 function loadImage(image) {
-	$('.photoContainer').empty().append('<img src="' + photos[image] + '" >' + '<br>');
 	//$('.photoContainer').empty().append('<img src="' + photos[image] + '" width="' + imageWidth + '" height="' + imageHeight + '"' + '<br>');
-}
+	$('.photoContainer').empty().append('<img src="' + photos[image] + '" width="30%" height="60%">' + '<br>');
 
 $(document).keydown(function(e){
     if (e.keyCode == 37) { 
@@ -114,4 +120,9 @@ function navigateImage(direction) {
 	
 	//Displays the picture
 	loadImage(currentImage);
+	
+	$('.photoContainer').append('numImages= ' + numImages + '<br>');
+	$('.photoContainer').append('previousImage= ' + previousImage + '<br>');
+	$('.photoContainer').append('currentImage= ' + currentImage + '<br>');
+	$('.photoContainer').append('nextImage= ' + nextImage + '<br>');
 }
