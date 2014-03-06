@@ -5,21 +5,13 @@ $(document).ready(function() {
 	var containerWidth = windowWidth * 0.8;
 	var containerHeight = windowHeight * 0.8;
 	
-/*	var imageWidth = containerWidth * 0.8;
-	var imageHeight = containerHeight * 0.8;
-	
-	loadImage(currentImage);
-	$('.photoContainer').css('width', containerWidth).css('height', containerHeight);
-	$('body').append('<div class="photoContainer"></div>');
-*/	
 	loadImage(currentImage);
 	
-	$('.photoContainer').append('previousImage= ' + previousImage + '<br>');
-	$('.photoContainer').append('currentImage= ' + currentImage + '<br>');
-	$('.photoContainer').append('nextImage= ' + nextImage + '<br>');
+	$('.imageContainer').append(nextImage + '/' + numImages);
+		
 });
 
-var photos = ['../../locations/greystone/images/01.jpg',
+var images = ['../../locations/greystone/images/01.jpg',
 			  '../../locations/greystone/images/02.jpg',
 			  '../../locations/greystone/images/03.jpg',
 			  '../../locations/greystone/images/04.jpg',
@@ -58,14 +50,14 @@ var photos = ['../../locations/greystone/images/01.jpg',
 			  '../../locations/greystone/images/37.jpg',
 			  '../../locations/greystone/images/main.jpg'];
 
-var numImages = photos.length;
+var numImages = images.length;
 var previousImage = numImages - 1;
 var currentImage = 0;
 var nextImage = currentImage + 1;
 
 function loadImage(image) {
-	//$('.photoContainer').empty().append('<img src="' + photos[image] + '" width="' + imageWidth + '" height="' + imageHeight + '"' + '<br>');
-	$('.photoContainer').empty().append('<img src="' + photos[image] + '" width="30%" height="60%">' + '<br>');
+	$('.imageContainer').empty().append('<img src="' + photos[image] + '" width="490px" height="60%">' + '<br>');
+}
 
 $(document).keydown(function(e){
     if (e.keyCode == 37) { 
@@ -76,10 +68,6 @@ $(document).keydown(function(e){
     	navigateImage(1);
     	return false;
     }
-}).click(function() {
-	$('img').click(function() {
-		navigateImage(1);
-	});
 });
 
 function navigateImage(direction) {
@@ -120,9 +108,6 @@ function navigateImage(direction) {
 	
 	//Displays the picture
 	loadImage(currentImage);
-	
-	$('.photoContainer').append('numImages= ' + numImages + '<br>');
-	$('.photoContainer').append('previousImage= ' + previousImage + '<br>');
-	$('.photoContainer').append('currentImage= ' + currentImage + '<br>');
-	$('.photoContainer').append('nextImage= ' + nextImage + '<br>');
+
+	$('.imageContainer').append(nextImage + '/' + numImages);
 }

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <link rel="stylesheet" href="../mainStyles/locations.css" />
+	    <link rel="stylesheet" href="../mainStyles/tabs.css" />
+	    <link rel="stylesheet" href="../mainStyles/antiscroll.css" />
+	    
+	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
+	  	<script src="../scripts/antiscroll.js"></script>
+		<script type="text/javascript" src="../scripts/locations.js"></script>
+		<script type="text/javascript" src="../scripts/jquery.prettyPhoto2.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../mainStyles/prettyPhoto.css" />
+		
+		<script>
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.open("GET","locations.xml",false);
+			xmlhttp.send();
+			xmlDoc=xmlhttp.responseXML; 
+			
+			x=xmlDoc.getElementsByTagName("greystone");
+			i=0;
+			
+			function displayCD()
+			{
+			artist=(x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
+			title=(x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue);
+			year=(x[i].getElementsByTagName("desc")[0].childNodes[0].nodeValue);
+			txt="Artist: " + artist + "<br>Title: " + title + "<br>Year: "+ year;
+			document.getElementById("showCD").innerHTML=txt;
+			}
+		</script>
+		
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	
+	<body style="width:900px;" onload="displayCD();">
+		<div id='showCD'></div>
+	</body>
+</html>
