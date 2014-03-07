@@ -1,50 +1,61 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en" xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<head>
 	    <link rel="stylesheet" href="../mainStyles/locations.css" />
 	    <link rel="stylesheet" href="../mainStyles/tabs.css" />
 	    <link rel="stylesheet" href="../mainStyles/antiscroll.css" />
 	    
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
-	  	<script src="../scripts/antiscroll.js"></script>
-		<script type="text/javascript" src="../scripts/locations.js"></script>
-		<script type="text/javascript" src="../scripts/jquery.prettyPhoto2.js" ></script>
-		<link rel="stylesheet" type="text/css" href="../mainStyles/prettyPhoto.css" />
-		
-		<script>
-			if (window.XMLHttpRequest)
-			  {// code for IE7+, Firefox, Chrome, Opera, Safari
-			  xmlhttp=new XMLHttpRequest();
-			  }
-			else
-			  {// code for IE6, IE5
-			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			  }
-			xmlhttp.open("GET","locations.xml",false);
-			xmlhttp.send();
-			xmlDoc=xmlhttp.responseXML; 
-			
-			x=xmlDoc.getElementsByTagName("greystone");
-			i=0;
-			
-			function displayCD()
-			{
-			artist=(x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
-			title=(x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue);
-			year=(x[i].getElementsByTagName("desc")[0].childNodes[0].nodeValue);
-			txt="Artist: " + artist + "<br>Title: " + title + "<br>Year: "+ year;
-			document.getElementById("showCD").innerHTML=txt;
-			}
-		</script>
-		
+	  	<script type="text/javascript" src="../scripts/locations.js"></script>
+	  	<script type="text/javascript" src="../scripts/antiscroll.js"></script>
+		<script type="text/javascript" src="../scripts/photoGallery.js"></script>
+
 		<style>
 			body {
 				overflow: hidden;
+				display: block;
+			}
+			
+			#imageContainer {
+				float: left;
+				width: 60%;
+				background-color: black;
+				color: white;
+			}
+			
+			#imageContainer img {
+				margin: 20px;
+			}
+			
+			#infoContainer {
+				float: right;
+				width: 38%;
+				margin-left: 2%;
 			}
 		</style>
 	</head>
 	
-	<body style="width:900px;" onload="displayCD();">
-		<div id='showCD'></div>
+	<body style="width:900px;" onload="display();">
+		<div id="imageContainer">
+		</div>
+		<div id="infoContainer">
+			<table>
+				<tr>
+					<td rowspan="3" class="thumbnail"></td>
+					<td class="name"></td>
+				</tr>
+				<tr>
+					<td class="date"></td>
+				</tr>
+				<tr>
+					<td class="desc"></td>
+				</tr>
+			</table>
+			<div class="info">
+				<div class="antiscroll-wrap">
+		        	<div class="antiscroll-inner"></div>
+        		</div>
+			</div>
+		</div>
 	</body>
 </html>
