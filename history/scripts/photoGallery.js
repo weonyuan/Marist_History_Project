@@ -40,7 +40,7 @@ $(document).keydown(function(e){
 });
 
 function loadImage(image) {
-	$('#imageContainer').empty().append('<img src="' + photos[image] + '" width="490px" height="60%">' + '<br>');
+	$('#imageContainer').empty().append('<img src="' + photos[image] + '" width="510px" height="40%">' + '<br>');
 }
 
 function navigateImage(direction) {

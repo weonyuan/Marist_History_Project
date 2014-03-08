@@ -6,7 +6,7 @@
 		<date>1865</date>
 		<desc>Office of the current College President</desc>
 		<info>
-			The Rosenlund Carriage House, currently called Greystone is situated in the center of campus between Rt. 9 and the Hudson River.  The Greystone building displays outstanding features of the Gothic Revival style. These features, combined with the historic landscape features of lawns, paths, treed areas, and drives exemplifies estate dependencies with related landscape from the mid-nineteenth century. This significant building and associated ground in this nominated district retain a high degree of integrity of style and site from the early estate.
+			The Rosenlund Carriage House, currently called Greystone is situated in the center of campus between Rt. 9 and the Hudson River. The Greystone building displays outstanding features of the Gothic Revival style. These features, combined with the historic landscape features of lawns, paths, treed areas, and drives exemplifies estate dependencies with related landscape from the mid-nineteenth century. This significant building and associated ground in this nominated district retain a high degree of integrity of style and site from the early estate.
 		</info>
 		<info>
 			A. J. Downing's The Architecture of Country Houses were employed at the carriage house. Downing states that the most efficient way to combine a barn and a stable/carriage house was to place the building in an area where the ground slopes to create a separate barn level at grade on one side of the building and a stable/carriage house at the higher grade on the other side of the building. The lower level was to be utilized as a root cellar and a barn for cows while the middle level or first floor was used to house horses and wagons. Hay and grain would be stored above the wagon area. Such a floor plan was designed for the early carriage house. When the Marist Brothers first occupied the site and the carriage house had wagon storage at the east end of the main floor and horse stalls at the west end; the access was through the north facade. The upper level was the hay loft and a blacksmith's shop occupied part of the cellar.
@@ -33,7 +33,7 @@
 
 	<building name="stpeters">
 		<id>stpeters</id>
-		<name>Kieran Gatehouse</name>
+		<name>St. Peter's</name>
 		<date>1865</date>
 		<desc>Residence for administrative offices</desc>
 		<info>
@@ -112,6 +112,25 @@
 		<info></info>
 		<images></images>
 	</building>
+	
+	<building name="novitiate">
+		<id>novitiate</id>
+		<name>Novitiate</name>
+		<date></date>
+		<desc></desc>
+		<info></info>
+		<images></images>
+	</building>
+
+	<building name="studyarea">
+		<id>studyarea</id>
+		<name>Study Area</name>
+		<date></date>
+		<desc></desc>
+		<info></info>
+		<images></images>
+	</building>
+
 
 	<building name="chapel">
 		<id>chapel</id>
@@ -254,7 +273,7 @@
 
 	<building name="dyson">
 		<id>dyson</id>
-		<name>Dyson Hall</name>
+		<name>Dyson Center</name>
 		<date>1990</date>
 		<desc>Academic building</desc>
 		<info>
