@@ -6,9 +6,14 @@ $(document).ready(function() {
 	var containerHeight = windowHeight * 0.8;
 
 	loadImage(currentImage);
+	getFocus();
 	
 	$('#imageContainer').append(nextImage + '/' + numImages);
 });
+
+function getFocus() {
+	document.getElementById('imageContainer').focus();
+}
 
 //Prepares the photos array
 function stackPhotos(buildingName, num) {
@@ -45,8 +50,12 @@ function loadImage(image) {
 
 function navigateImage(direction) {
 	if (direction === 0) {
+		//Checks to see if there is only one image
+		if (numImages == 1) {
+			//do nothing
+		}
 		//Prepares navigation if user navigates to last picture of the array
-		if (previousImage == 0) {
+		else if (previousImage == 0) {
 			previousImage = numImages - 1;
 			nextImage--;
 			currentImage = nextImage - 1;
@@ -57,9 +66,6 @@ function navigateImage(direction) {
 			previousImage = currentImage - 1;
 			nextImage = currentImage + 1;
 		}
-		/*else if (nextImage == numImages || currentImage == numImages) {
-			//do nothing
-		}*/
 		//Navigates to previous picture
 		else {
 			previousImage--;
