@@ -8,7 +8,7 @@ $(document).ready(function() {
 	loadImage(currentImage);
 	getFocus();
 	
-	$('#imageContainer').append(nextImage + '/' + numImages);
+	$('#imageContainer').append('Image: ' + nextImage + '/' + numImages);
 });
 
 function getFocus() {
@@ -45,13 +45,13 @@ $(document).keydown(function(e){
 });
 
 function loadImage(image) {
-	$('#imageContainer').empty().append('<img src="' + photos[image] + '" width="510px" height="40%">' + '<br>');
+	$('#imageContainer').empty().append('<img src="' + photos[image] + '" width="95%" height="93%">' + '<br>');
 }
 
 function navigateImage(direction) {
 	if (direction === 0) {
 		//Checks to see if there is only one image
-		if (numImages == 1) {
+		if (numImages == 0 || numImages == 1) {
 			//do nothing
 		}
 		//Prepares navigation if user navigates to last picture of the array
@@ -75,8 +75,11 @@ function navigateImage(direction) {
 		
 	}
 	else if (direction === 1) {
+		if (numImages == 0 || numImages == 1) {
+			//do nothing
+		}
 		//Navigate back to the first picture
-		if (nextImage >= numImages) {
+		else if (nextImage >= numImages) {
 			previousImage = currentImage;
 			currentImage = 0;
 			nextImage = currentImage + 1;
@@ -92,5 +95,5 @@ function navigateImage(direction) {
 	//Displays the picture
 	loadImage(currentImage);
 
-	$('#imageContainer').append(nextImage + '/' + numImages);
+	$('#imageContainer').append('Image: ' + nextImage + '/' + numImages);
 }
