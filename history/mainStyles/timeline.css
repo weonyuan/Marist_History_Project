@@ -16,14 +16,11 @@
     margin: auto;
     font-family: sans-serif;
     z-index: 0;
-    /*border-left: 3px solid black;
-    border-right: 3px solid black;
-    border-bottom: 5px solid black;*/
 }
 
 #timeline-slider {
     position: relative;
-    margin-left: 0px; /*97px*/
+    margin-left: 0px;
     width: 100%;
     display: inline-table;
     height: 530px;

@@ -8,7 +8,7 @@ $(document).ready(function() {
 	loadImage(currentImage);
 	getFocus();
 	
-	$('#imageContainer').append('Image: ' + nextImage + '/' + numImages);
+	updateImageInfo();
 });
 
 function getFocus() {
@@ -45,7 +45,7 @@ $(document).keydown(function(e){
 });
 
 function loadImage(image) {
-	$('#imageContainer').empty().append('<img src="' + photos[image] + '" width="95%" height="93%">' + '<br>');
+	$('#image').empty().append('<img src="' + photos[image] + '" width="95%" height="93%">');
 }
 
 function navigateImage(direction) {
@@ -94,6 +94,9 @@ function navigateImage(direction) {
 	
 	//Displays the picture
 	loadImage(currentImage);
+	updateImageInfo();
+}
 
-	$('#imageContainer').append('Image: ' + nextImage + '/' + numImages);
+function updateImageInfo() {
+	$('#imageInfo').empty().append('Image: ' + nextImage + '/' + numImages);
 }

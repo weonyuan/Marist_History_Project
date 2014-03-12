@@ -18,13 +18,13 @@
 			#imageContainer {
 				float: left;
 				width: 60%;
-				height: 560px;
 				background-color: black;
 				color: white;
 			}
 			
-			#imageContainer img {
+			#image img {
 				display: block;
+				height: 560px;
 				margin-top: 10px;
 				margin-left: auto;
 				margin-right: auto;
@@ -41,11 +41,56 @@
 			.thumbnail img {
 				margin-right: 10px;
 			}
+			.navButton {
+				width: 50px;
+				height: 50px;
+				border-radius: 15px;
+				padding: 10px;
+				text-align: center;
+				background-color: #B31B1B;
+				color: white;
+				cursor: pointer;
+				opacity: 1;
+			}
+			#backward {
+				position: absolute;
+				left: 2%;
+				top: 30%;
+			}
+			#forward {
+				position: absolute;
+				left: 31%;
+				top: 30%;
+			}
 		</style>
+
+		<script>
+			$(document).ready(function() {
+				$('#imageContainer').hover(
+					function() {
+						$('.navButton').stop(true, true).fadeIn();
+					},
+					function() {
+						$('.navButton').stop(true, true).fadeOut();
+					},
+					function() {
+						$('#backward').hover(
+							function() {
+							}
+						);
+					}
+				);
+			});
+		</script>
 	</head>
 	
 	<body style="width:890px;" onload="display();">
-		<div id="imageContainer"></div>
+		<div id="imageContainer">
+			<div id="image"></div>
+			<div id="backward"><a class="navButton" onclick="navigateImage(0);" title="Backward"> < </a></div>
+			<div id="forward"><a class="navButton" onclick="navigateImage(1);" title="Forward"> > </a></div>
+			<div id="imageInfo"></div>
+		</div>
 		<div id="infoContainer">
 			<table>
 				<tr>
