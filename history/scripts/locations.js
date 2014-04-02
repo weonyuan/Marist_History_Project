@@ -31,9 +31,9 @@ var info = (x[i].getElementsByTagName('info')[0].childNodes[0].nodeValue);
 var images = (x[i].getElementsByTagName('images')[0].childNodes[0].nodeValue);
 
 function display() {
-	$('.name').append(name);
-	$('.date').append('Built in ' + date);
-	$('.desc').append(desc);
+	$('.building-name').append(name);
+	$('.building-date').append('Built in ' + date);
+	$('.building-desc').append(desc);
 
 	//$('.antiscroll-inner').append('<p>' + info + '</p>');
 	for (var j = 0; j < x[i].getElementsByTagName('info').length; j++) {

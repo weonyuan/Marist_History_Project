@@ -30,6 +30,10 @@ var initPos = 0;
         // append html
         html= '<div id="timeline" class="timeline">';
         html+= '	<div id="timeline-slider"></div>';
+        html+= '	<div>';
+        html+= '    	<div id="timeline-dates-line"></div>';
+        html+= '    	<div id="timeline-dates"></div>';
+        html+= '	</div>';
         html+= '</div>';
 		
 		$(this).append(html);
@@ -44,12 +48,11 @@ var initPos = 0;
 				var sliderOffset = $("#timeline-dates").offset();
 				
 				var newLeft = ((sliderOffset.left)-diff)-($("#timeline").offset().left);
-
 			},
 			sliderTo: function(id){
-				
 				// back to default
 				$('.timeline-item').removeClass("active");
+				$('.pointer-date').empty();
 				$('.date-focus').toggleClass("date-focus", 100);
 				
 				// get new position
@@ -65,6 +68,7 @@ var initPos = 0;
 				// move to new position
 				$("#timeline-slider").animate({left: newLeft}, 250);
 				$("#date-"+ id).toggleClass("active", 200);
+				$("#pointer-date-"+ id).append("<div class='dot' />");
 				$("#pointer-"+ id).toggleClass("date-focus", 100);
 
 				// update the position
@@ -101,8 +105,7 @@ var initPos = 0;
 		$("#timeline-slider").css("width", sliderLength);
 	
 		// Dates container width calc
-		//var datesLength = (dateWidth * (dataObjs.length+1));
-		$("#timeline-dates").css("width", 910);
+		$("#timeline-dates").css("width", 960);
 		var i=0;
 
 		// Data input
@@ -123,7 +126,14 @@ var initPos = 0;
 		
 			pointers += '<div class="date-container">';
 			pointers +=     '<div class="pointer-date" id="pointer-date-'+ i +'" />';
-			pointers +=     '<div class="pointer-date-separator" /><br/>';
+			
+			if ((i+1) != dataObjs.length) {
+				pointers +=  '<div class="pointer-date-separator" /><br/>';
+			}
+			else {
+				pointers +=  '<div class="pointer-date-separator-last" /><br/>';
+			}
+			
 			pointers +=     '<a class="date" id="pointer-'+ i +'">';
 			pointers +=         dateObj.marker;
 			pointers +=     '</a>';
@@ -136,11 +146,15 @@ var initPos = 0;
 			var position = $(this).attr('id').split('-');
 			methods.sliderTo(position[1]);
 		});
+
+		$('.pointer-date').bind('click', function(){
+			var position = $(this).attr('id').split('date-');
+			methods.sliderTo(position[1]);
+		});
+
 		$('.timeline-item-i').bind('click', function(){
 			$(this).next().toggle();
 		});
-		$('#backward').bind('click', methods.moveBackward);
-		$('#forward').bind('click', methods.moveForward);
 	
 		// Initial position
 		methods.sliderTo(initPos);

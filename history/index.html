@@ -11,14 +11,12 @@
 		<script type="text/javascript" src="scripts/timelineFormat.js" ></script>
 		<script type="text/javascript" src="scripts/timelineGallery.js" ></script>
 		<script type="text/javascript" src="scripts/jquery.maphilight.min.js"></script>
+		<script type="text/javascript" src="scripts/archivesMenu.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
                 $('.location').maphilight();
             });
 		</script>
-		
-		
-		<script type="text/javascript" src="scripts/menu.js" ></script>
 
 		<link rel="stylesheet" type="text/css" href="mainStyles/master.css" />
 		
@@ -41,196 +39,40 @@
 		<script>
 			$(document).ready(function() {
 				$("area[rel^='prettyPhoto']").prettyPhoto();
+
+				$('footer').load('footers.htm', function() {
+					$('a.nav').click(function() {
+						var toLoad = $(this).attr('href');
+						var toLoad = toLoad + " " + "#mainBody";
+						$('#infoContent').load(toLoad, function() {
+							var $tdata = $('table.tbl');
+							$tdata.find('tr.tbldata').hide();
+
+							$('tr.Box').mouseover(function() {
+								$(this).parent().find('tr.tbldata').show();
+							});
+
+							$('tr.Box').mouseout(function() {
+								$(this).parent().find('tr.tbldata').hide();
+							});
+
+							$('tr.Box').hover(function() {
+								$(this).css({
+									'cursor' : 'pointer'
+								});
+							});
+						});
+						return false;
+					});
+				});
 			});
 		</script>
 		
 		<style type="text/css">
-			.Archives {
-				min-height: 768px;
-			}
-		
 			#mainBody {
 				overflow-y: auto;
 			}
-			
-			area {
-				cursor: hand;
-			}
-			
-			/* menu::base */
-			#menu {
-				/*float: left;*/
-				z-index: 100;
-				height: 43px;
-				background: transparent url(images/header_bg.gif) repeat-x 0 0;
-				width: 100%;
-				margin-left: auto;
-				margin-right: auto;
-			}
-			#menu .menu {
-				/*
-				 position:absolute;
-				 padding-left: 40px;
-				 */
-				width: 960px;
-				background: transparent url(images/header_bg.gif) repeat-x 0 0;
-				background: url(images/header_bg.gif) right top no-repeat;
-				margin-left: auto;
-				margin-right: auto;
-				z-index: 99;
-			}
-			#menu * {
-				list-style: none;
-				border: 0;
-				padding: 0;
-				margin: 0;
-				z-index: 100;
-			}
-			#menu a {
-				display: block;
-				padding: 12px 20px 14px 19px;
-				white-space: nowrap;
-			}
-			#menu li {
-				float: left;
-				background: #b31b1b;
-			}
-			#menu li li {
-				float: none;
-			}
-			#menu div {
-				visibility: hidden;
-				position: absolute;
-				background: url(images/pix.gif);
-			}
-			#menu div div {
-				margin: -35px 0 0 0;
-				left: 100%;
-			}
-			#menu div div div {
-				margin: -35px 0 0 -1px;
-				left: 100%;
-			}
-			#menu li:hover > div {
-				visibility: visible;
-			}
 
-			/* menu::special styles */
-			/* menu::level 1 */
-			#menu a {
-				text-decoration: none;
-				color: #ffffff;/*1*/
-				position: relative;
-				z-index: 100;
-			}
-			#menu a:hover {
-				background: url(images/header.gif) left -43px repeat-x;
-				color: #b31b1b;
-			}
-			#menu a:hover span {
-				color: #FFFFFF;
-			}
-
-			#menu > ul > li:hover > a {
-				background: url(images/header.gif) left -43px repeat-x;
-				color: #CACFD3;
-			}
-			#menu > ul > li:hover > a span {
-				color: #FFFFFF;
-			}
-			#menu span {
-				text-decoration: none;
-				color: #ffffff;
-				font-weight: bold;
-			}
-			#menu li {
-				background: url(images/header_bg.gif) left top no-repeat;
-			}
-			/* menu::level >= 2 */
-			#menu ul ul {
-				width: 190px;
-			}
-			#menu li li {
-				background: #2B2E32;
-				border-bottom: 1px solid #FFFFFF;
-			}
-			#menu li li a {
-				position: static;
-				background: #2B2E32;
-				white-space: normal;
-				text-align: left;
-				color: #FFF;
-				padding: 0;
-				text-transform: none;
-				width: 100%;
-			}
-
-			#menu li li a:hover {
-				background: #404040;
-			}
-			#menu li li a span {
-				color: #fff;
-				line-height: 15px;
-				padding: 10px;
-			}
-			#menu li li a:hover span {
-				color: #ffffff;
-			}
-			#menu li li a.parent span {
-				background: transparent url(images/arrow.gif) no-repeat scroll right 50%;
-				z-index: 10;
-			}
-
-			#menu li li span {
-				display: block;
-				text-transform: none;
-				padding: 0px 25px 0px 0px;
-				letter-spacing: 0;
-			}
-
-			body.Marist li.aMarist a {
-				background: transparent url(images/header_active.gif) repeat-x;
-				color: #3C4955;
-			}
-
-			body.Archives li.aArchives a {
-				background: transparent url(images/header_active.gif) repeat-x;
-				color: #3C4955;
-			}
-
-			body.Library li.aLibrary a {
-				background: transparent url(images/header_active.gif) repeat-x;
-				color: #3C4955;
-			}
-
-			body.Exhibit li.aExhibit a {
-				background: transparent url(images/header_active.gif) repeat-x;
-				color: #3C4955;
-			}
-
-			body.Gallery li.aGallery a {
-				background: transparent url(images/header_active.gif) repeat-x;
-				color: #3C4955;
-			}
-
-			body.Forms li.aForms a {
-				background: transparent url(images/header_active.gif) repeat-x;
-				color: #3C4955;
-			}
-			
-			.searchIcon {
-				background: white;
-				opacity: 0.8;
-				position: relative;
-				top: 7px;
-				right: 3px;
-			}
-			
-			.searchIcon:hover {
-				opacity: 1;
-				cursor: pointer;
-			}
-			
 			.timeline-container {
 				height: 520px;
 			}
@@ -240,199 +82,25 @@
 			}
 		</style>
 	</head>
-	<body class="Archives">
+	<body>
 		<div id="headerContainer">
 			<a href="http://library.marist.edu/archives/index.html" target="_self"> <div id="header"></div> </a>
 		</div>
+		<div id="menu">
+			<div id="menuItems"></div>
+		</div>
 		<div id="bodyContainer">
-			<div id="menu">
-				<ul class="menu">
-					<li class="aMarist">
-						<a href="http://www.marist.edu" target="_blank"><span>Marist</span></a>
-					</li>
-					<li class="aArchives">
-						<a href="http://library.marist.edu/archives" class="parent"><span>Archives</span></a>
-						<div>
-							<ul>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/visitorInfo.htm" target="_blank"><span>Visitor Information</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/collectionDevelopment.htm" target="_blank"><span>Collection Development</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/policiesAndProcedures.htm" target="_blank"><span>Policies and Procedures</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/overview.htm" target="_blank"><span>Overview of Collections</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/contactInfo.htm" target="_blank"><span>Contact Information</span></a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li class="aLibrary">
-						<a href="http://library.marist.edu" target="_blank"><span>Library</span></a>
-					</li>
-					<li>
-						<a href="#" class="parent"><span>Exhibits/Special Projects</span></a>
-						<div>
-							<ul>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/heritageProject.htm" class="parent" target="_blank"><span>Marist Heritage Project</span></a>
-									<div>
-										<ul>
-											<li>
-												<a href="http://library.marist.edu/archives/mainpage/onlineHistory.htm" class="parent" target="_blank"><span>On-line History</span></a>
-												<div>
-													<ul>
-														<li>
-															<a href="http://library.marist.edu/archives/MHP_new/building.htm" target="_blank"><span>Buildings and Place Names</span></a>
-														</li>
-														<li>
-															<a href="http://library.marist.edu/archives/MHP_new/chronology.htm" target="_blank"><span>Chronology of Marist College: 1858-1969</span></a>
-														</li>
-														<li>
-															<a href="http://library.marist.edu/archives/MHP/tableofcontents.html" target="_blank"><span>Marist College History</span></a>
-														</li>
-														<li>
-															<a href="http://library.marist.edu/archives/MHP_new/maristSymbols.htm" target="_blank"><span>Marist Symbols</span></a>
-														</li>
-														<li>
-															<a href="http://library.marist.edu/archives/MHP_new/studentNewspaper.html" target="_blank"><span>Student Newspapers: The Record and The Circle</span></a>
-														</li>
-													</ul>
-												</div>
-											</li>
-											<li>
-												<a href="http://library.marist.edu/archives/oralHistory/oralHistory.html" target="_blank"><span>Oral History</span></a>
-											</li>
-											<li>
-												<a href="#" class="parent"><span>Written History</span></a>
-												<div>
-													<ul>
-														<li>
-															<a href="http://library.marist.edu/archives/writtenHistory/historicalGrowthAndDevelopment.html" target="_blank"><span>The Historical Growth and Development of the Marist Brothers in the United States</span></a>
-														</li>
-														<li>
-															<a href="http://library.marist.edu/archives/writtenHistory/murrayArticle.html" target="_blank"><span>A Lasting Ideal in a Changing World: A History of Marist College</span></a>
-														</li>
-														<li>
-															<a href="http://library.marist.edu/archives/prayerAndWork/prayerAndWork.htm" target="_blank"><span>Prayer and Work</span></a>
-														</li>
-														<li>
-															<a href="http://library.marist.edu/archives/writtenHistory/shortHistoryOfMaristCollegeTheatre.html" target="_blank"><span>A Short History of Marist College Theater</span></a>
-														</li>
-														<li>
-															<a href="http://library.marist.edu/archives/MHP_new/studentNewspaper.htm" target="_blank"><span>Student Newspapers: The Record and The Circle</span></a>
-														</li>
-													</ul>
-												</div>
-											</li>
-											<li>
-												<a href="http://library.marist.edu/archives/mehp/index.html" target="_blank"><span>Marist Environmental History Project</span></a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/lttravelogues/" target="_blank"><span>Lowell Thomas Travelogues</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/LTP/LTaudio/LTaudio.html" target="_blank"><span>Lowell Thomas Audio Samples</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/regatta/index.html" target="_blank"><span>Intercollegiate Rowing Association: Poughkeepsie Regatta</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/gill/foreword.html" target="_blank"><span>Hidden in Plain Sight: A Brief History of Fore-Edge Painting</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/Pawling%20Chronicle/index.html" target="_blank"><span>Lowell Thomas and "The Nine Old Men" Baseball Team</span></a>
-								</li>
-							</ul>
-						</div>
-					<li class="aGallery">
-						<a href="#" class="parent"><span>Digital Galleries</span></a>
-						<div>
-							<ul>
-								<li>
-									<a href="http://library.marist.edu/archives/LTP/Objects/objects360/1713.1.htm" target="_blank" class="parent"><span>360 Degree Gallery</span></a>
-									<div>
-										<ul>
-											<li>
-												<a href="http://library.marist.edu/archives/LTP/Objects/objects360/1713.1.htm" target="_blank"><span>World War I/Travelogues</span></a>
-											</li>
-											<li>
-												<a href="http://library.marist.edu/archives/LTP/Objects/objects360/3.5/1699.1.htm" target="_blank"><span>Tibet</span></a>
-											</li>
-											<li>
-												<a href="http://library.marist.edu/archives/LTP/Objects/equipment3.3.xml" target="_blank"><span>Equipment</span></a>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/gallery/redFoxGallery/redFoxGallery.html" target="_blank"><span>Red Fox Gallery</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/gallery/nellyGolettiGallery/nellyGolettiGallery.html" target="_blank"><span>Nelly Goletti Gallery</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/gallery/maristHeritage/maristHeritage.html" target="_blank"><span>Marist Heritage Gallery</span></a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li class="aForms">
-						<a href="http://library.marist.edu/archives/mainpage/archivesForms.htm" class="parent" target="_blank"><span>Forms</span></a>
-						<div>
-							<ul>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/forms/AUDIOVISUAL%20USE%20AGREEMENT%20FORM%20-%20MARIST%20COLLEGE.pdf" target="_blank"><span>Audiovisual Use Agreement</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/forms/DEED%20OF%20GIFT%20FORM%20-%20MARIST%20COLLEGE.pdf" target="_blank"><span>Deed of Gift Form</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/forms/PHOTOGRAPH%20USE%20FORM%20-%20MARIST%20COLLEGE.pdf" target="_blank"><span>Photograph Use Form</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/forms/Reproduction%20Charges%20and%20Commercial%20Use%20Fees.pdf" target="_blank"><span>Reproduction Charges and Commercial Use Fees</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/forms/RESEARCH%20AGREEMENT%20FORM%20-%20MARIST%20COLLEGE.pdf" target="_blank"><span>Research Agreement Form</span></a>
-								</li>
-								<li>
-									<a href="http://library.marist.edu/archives/mainpage/forms/USE%20AGREEMENT%20AND%20REPRODUCTION%20FORM%20-%20MARIST%20COLLEGE.pdf" target="_blank"><span>Use Agreement and Reproduction Form</span></a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<!--<li>
-						<form id="search_form" name="search_form" action="http://library.marist.edu/archives/search/" method="POST">
-							<input type="text" class="searchBar" style="width: 274px; height: 20px; margin-left: 10px; margin-top: 5px; margin-right: -33px; font-size: 16px; padding: 7px; padding-right: 35px;"/>
-							<button class="searchIcon">
-								<img src="images/search.png" width="25" height="25" alt="Search" />
-							</button>
-
-							<input type="hidden" name="action" value="search" />
-							<input type="hidden" name="page" value="0" />
-							<input type="hidden" name="page_size" value="25" />
-							<input id="col_42175" name="col_42175" value="true" style="display: none;"/>
-							<input id="col_38958" name="col_38958" value="true" style="display: none;"/>
-						</form>
-					</li>-->
-				</ul>
-			</div>
 			<div id="bodyContent">
-					<div id="container">
-						<div id="timeline-dates"></div>
-						<div id="infoContent">
-							<div class="timeline-container"></div>
-						</div>
-					</div>
+				<div style="height: 75px; padding-left: 10px; padding-right: 10px; margin-bottom: 10px; text-align: left;">
+					<table>
+						<tr>
+							<td width="40%"><h1>About the Marist History Project</h1></td>
+							<td width="60%" style="padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</td>
+						</tr>
+					</table>
+				</div>
+				<div class="timeline-container"></div>
+				<div>Year and summary</div>
 			</div>
 			
 			<map name="1904">
@@ -499,7 +167,7 @@
 				<area shape="rect" coords="235,291, 259,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=576');">
 				<area shape="rect" coords="781,175, 809,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=576');">
 				<area shape="rect" coords="645,384, 728,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">>
+				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">
 			</map>
 			
 			<map name="1980">
@@ -522,9 +190,9 @@
 				<area shape="rect" coords="235,291, 259,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=576');">
 				<area shape="rect" coords="781,175, 809,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=576');">
 				<area shape="rect" coords="645,384, 728,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">>
-				<area shape="rect" coords="551,206, 690,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=576');">>
-				<area shape="rect" coords="690,151, 776,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=576');">>
+				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="551,206, 690,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="690,151, 776,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=576');">
 			</map>
 			
 			<map name="1994">
@@ -547,11 +215,11 @@
 				<area shape="rect" coords="235,291, 259,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=576');">
 				<area shape="rect" coords="781,175, 809,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=576');">
 				<area shape="rect" coords="645,384, 728,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">>
-				<area shape="rect" coords="551,206, 690,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=576');">>
-				<area shape="rect" coords="690,151, 776,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=576');">>
-				<area shape="rect" coords="689,389, 781,449" class="location" alt="West Cedar Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=30&iframe=true&width=900&height=576');">>
-				<area shape="rect" coords="304,261, 387,294" class="location" alt="Midrise Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=31&iframe=true&width=900&height=576');">>
+				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="551,206, 690,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="690,151, 776,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="689,389, 781,449" class="location" alt="West Cedar Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=30&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="304,261, 387,294" class="location" alt="Midrise Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=31&iframe=true&width=900&height=576');">
 			</map>
 			
 			<map name="2000">
@@ -625,6 +293,6 @@
 
 		</div>
 
-		<div id="footerContent"></div>
+		<footer></footer>
 	</body>
 </html>

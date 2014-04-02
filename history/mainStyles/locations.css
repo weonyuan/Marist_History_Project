@@ -12,18 +12,18 @@ ul {
 	-webkit-padding-start: 0px;
 }
 
-.name {
+.building-name {
 	font-size: 22px;
 	font-weight: bold;
 	position: relative;
 }
 			
-.date {
+.building-date {
 	font-size: 18px;
 	font-weight: bold;
 }
 
-.desc {
+.building-desc {
 	font-size: 14px;
 	font-style: italic;
 }
