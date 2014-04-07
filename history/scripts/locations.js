@@ -41,7 +41,13 @@ function display() {
 		$('.antiscroll-inner').append('<p>' + info + '</p>');
 	}
 	
-	$('.thumbnail').append('<img src="../locations/' + nameLowerCase + '/main.jpg">');
+	$('.thumbnail').append('<img src="../locations/' + nameLowerCase + '/main.jpg" alt="' + name + '" onerror="imgError(this)">');
 	$('.antiscroll-wrap').antiscroll();
 }
 
+function imgError(image) {
+    image.onerror = "";
+    image.src = "../locations/noMain.jpg";
+    image.alt = "No Building Image";
+    return true;
+}
