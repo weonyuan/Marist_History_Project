@@ -26,20 +26,14 @@ var i = getUrlVars()['id'];
 var name = (x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue);
 var nameLowerCase = x[i].getAttribute('name');
 var feature = x[i].getElementsByTagName('feature')[0].getElementsByTagName('li')[0].childNodes[0].nodeValue;
-var info = (x[i].getElementsByTagName('info')[0].childNodes[0].nodeValue);
 
 function display() {
 	$('.building-name').append(name);
 
-	for (var j = 0; j < x[i].getElementsByTagName('info').length; j++) {
-		info = (x[i].getElementsByTagName('info')[j].childNodes[0].nodeValue);
-		$('.antiscroll-inner').append('<p>' + info + '</p>');
+	for (var j = 0; j < x[i].getElementsByTagName('feature')[0].getElementsByTagName('li').length; j++) {
+		feature = x[i].getElementsByTagName('feature')[0].getElementsByTagName('li')[j].childNodes[0].nodeValue;
+		$('.antiscroll-inner ul').append('<li>' + feature + '</li>');
 	}
-	
-    for (var k = 0; k < x[i].getElementsByTagName('feature')[0].getElementsByTagName('li').length; k++) {
-        feature = x[i].getElementsByTagName('feature')[0].getElementsByTagName('li')[k].childNodes[0].nodeValue;
-        $('#feature ul').append('<li>' + feature + '</li>');
-    }
 
 	$('.thumbnail').append('<img src="../locations/' + nameLowerCase + '/main.jpg" alt="' + name + '" onerror="imgError(this)" width="120px" height="120px">');
 	$('.antiscroll-wrap').antiscroll();

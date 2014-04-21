@@ -3,7 +3,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 430px;
+  height: 100%;
 }
 
 .antiscroll-scrollbar {
@@ -35,8 +35,8 @@
 }
 
 .antiscroll-inner {
-	width: 97%;
-	height: 430px;
+	width: 95%;
+	height: 98%;
 	font-size: 1.2em;
 	overflow: scroll;
 }
