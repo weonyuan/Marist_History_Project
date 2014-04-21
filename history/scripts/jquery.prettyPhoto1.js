@@ -123,7 +123,6 @@
 		* Initialize prettyPhoto.
 		*/
 		$.prettyPhoto.initialize = function() {
-			
 			settings = pp_settings;
 			
 			if(settings.theme == 'pp_default') settings.horizontal_padding = 16;

@@ -66,7 +66,7 @@ var initPos = 0;
 				
 				methods.positionTo(id);
 				// move to new position
-				$("#timeline-slider").animate({left: newLeft}, 250);
+				$("#timeline-slider").animate({left: newLeft}, 400);
 				$("#date-"+ id).toggleClass("active", 200);
 				$("#pointer-date-"+ id).append("<div class='dot' />");
 				$("#pointer-"+ id).toggleClass("date-focus", 100);
