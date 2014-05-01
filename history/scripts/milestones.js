@@ -28,7 +28,7 @@ var nameLowerCase = x[i].getAttribute('name');
 var feature = x[i].getElementsByTagName('feature')[0].getElementsByTagName('li')[0].childNodes[0].nodeValue;
 
 function display() {
-	$('.building-name').append(name);
+	$('.milestone-name').append(name);
 
 	for (var j = 0; j < x[i].getElementsByTagName('feature')[0].getElementsByTagName('li').length; j++) {
 		feature = x[i].getElementsByTagName('feature')[0].getElementsByTagName('li')[j].childNodes[0].nodeValue;

@@ -11,7 +11,7 @@ ul {
 	-webkit-padding-start: 0px;
 }
 
-.building-name {
+.building-name, .milestone-name {
 	font-size: 22px;
 	font-weight: bold;
 	position: relative;

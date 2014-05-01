@@ -3,7 +3,14 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 430px;
+}
+
+.antiscroll-inner {
+  width: 95%;
+  height: 430px;
+  font-size: 1.2em;
+  overflow: scroll;
 }
 
 .antiscroll-scrollbar {
@@ -32,13 +39,6 @@
   margin-top: 2px;
   right: 2px;
   top: 0;
-}
-
-.antiscroll-inner {
-	width: 95%;
-	height: 98%;
-	font-size: 1.2em;
-	overflow: scroll;
 }
 
 /** A bug in Chrome 25 on Lion requires each selector to have their own
