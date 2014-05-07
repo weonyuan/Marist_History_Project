@@ -6,7 +6,6 @@
 	    
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script type="text/javascript" src="../scripts/locations.js"></script>
-	  	<script type="text/javascript" src="../scripts/antiscroll.js"></script>
 		<script type="text/javascript" src="../scripts/photoGallery.js"></script>
 
 		<style>
@@ -41,9 +40,6 @@
 				width: 38%;
 				margin-left: 2%;
 			}
-			.building-info {
-				margin-top: 10px;
-			}
 			.thumbnail img {
 				margin-right: 10px;
 			}
@@ -77,10 +73,27 @@
 				background-size: auto;
 				background-position: 15px -19px;
 			}
+			.building-info {
+				margin-top: 5px;
+				font-size: 15px;
+				width: 310px;
+				height: 420px;
+				overflow-y: auto;
+				padding: 10px;
+				background-color: #F7F7F7;
+			}
+			.building-info p:first-child {
+				margin-top: 0;
+			}
+			.building-info p:last-child {
+				margin-bottom: 0;
+			}
 		</style>
 
 		<script>
 			$(document).ready(function() {
+				$('.building-info').focusin();
+
 				$('#imageContainer').hover(
 					function() {
 						$('#navButtons').stop(true, true).fadeIn(200);
@@ -115,9 +128,9 @@
 				<a class="backward" onclick="navigateImage(0);" title="Backward"> </a>
 				<a class="forward" onclick="navigateImage(1);" title="Forward"> </a>
 			</div>
-			<div id="image"></div>
+			<div id="image"><div id="imageInfo"></div></div>
 			
-			<div id="imageInfo"></div>
+			
 		</div>
 		<div id="infoContainer">
 			<table>
@@ -133,9 +146,6 @@
 				</tr>
 			</table>
 			<div class="building-info">
-				<div class="antiscroll-wrap">
-		        	<div class="antiscroll-inner"></div>
-        		</div>
 			</div>
 		</div>
 	</body>

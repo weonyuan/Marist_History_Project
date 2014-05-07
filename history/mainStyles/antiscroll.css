@@ -1,16 +1,16 @@
 .antiscroll-wrap {
   display: inline-block;
   position: relative;
-  overflow: hidden;
-  width: 340px;
+  overflow-y: auto;
+  width: 360px;
   height: 450px;
 }
 
 .antiscroll-inner {
-  width: 300px;
+  width: 320px;
   height: 414px;
   font-size: 1.2em;
-  overflow-x: hidden;
+  overflow-y: scroll;
   padding-right: 20px;
 }
 

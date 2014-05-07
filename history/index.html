@@ -38,33 +38,7 @@
 		
 		<script>
 			$(document).ready(function() {
-				$("area[rel^='prettyPhoto']").prettyPhoto();
-
-				$('footer').load('footers.htm', function() {
-					$('a.nav').click(function() {
-						var toLoad = $(this).attr('href');
-						var toLoad = toLoad + " " + "#mainBody";
-						$('#infoContent').load(toLoad, function() {
-							var $tdata = $('table.tbl');
-							$tdata.find('tr.tbldata').hide();
-
-							$('tr.Box').mouseover(function() {
-								$(this).parent().find('tr.tbldata').show();
-							});
-
-							$('tr.Box').mouseout(function() {
-								$(this).parent().find('tr.tbldata').hide();
-							});
-
-							$('tr.Box').hover(function() {
-								$(this).css({
-									'cursor' : 'pointer'
-								});
-							});
-						});
-						return false;
-					});
-				});
+				$("a[rel^='prettyPhoto']").prettyPhoto();
 			});
 		</script>
 		
@@ -79,6 +53,9 @@
 			
 			area {
 				cursor: pointer;
+			}
+			.map {
+				border: 0;
 			}
 		</style>
 	</head>
@@ -104,192 +81,192 @@
 			</div>
 			
 			<map name="1904">
-				<area shape="rect" coords="108,27, 300,121" class="location" alt="About 1904" onclick="$.prettyPhoto.open('locations/milestones.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="108,27, 300,121" class="location" alt="About 1904" onclick="$.prettyPhoto.open('locations/milestones.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
 			</map>
 			
 			<map name="1905">
-				<area shape="rect" coords="108,28, 300,121" class="location" alt="About 1905 - 1929" onclick="$.prettyPhoto.open('locations/milestones.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="108,28, 300,121" class="location" alt="About 1905 - 1929" onclick="$.prettyPhoto.open('locations/milestones.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=595');">
 			</map>
 			
 			<map name="1930">
-				<area shape="rect" coords="108,28, 300,122" class="location" alt="About 1930 - 1945" onclick="$.prettyPhoto.open('locations/milestones.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="108,28, 300,122" class="location" alt="About 1930 - 1945" onclick="$.prettyPhoto.open('locations/milestones.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=595');">
 			</map>
 			
 			<map name="1946">
-				<area shape="rect" coords="108,27, 300,122" class="location" alt="About 1946 - 1957" onclick="$.prettyPhoto.open('locations/milestones.html?id=3&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="518,325, 559,348" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="485,345, 518,373" class="location" alt="Adrian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=13&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="108,27, 300,122" class="location" alt="About 1946 - 1957" onclick="$.prettyPhoto.open('locations/milestones.html?id=3&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="518,325, 559,348" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="485,345, 518,373" class="location" alt="Adrian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=13&iframe=true&width=900&height=595');">
 			</map>
 			
 			<map name="1958">
-			  	<area shape="rect" coords="108,27, 300,120" class="location" alt="About 1958 - 1969" onclick="$.prettyPhoto.open('locations/milestones.html?id=4&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="518,325, 559,348" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="485,345, 518,373" class="location" alt="Adrian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=13&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="184,363, 220,389" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="162,336, 208,368" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="487,375, 563,422" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=576');">
+			  	<area shape="rect" coords="108,27, 300,120" class="location" alt="About 1958 - 1969" onclick="$.prettyPhoto.open('locations/milestones.html?id=4&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="462,331, 488,356" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="320,379, 374,410" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="518,325, 559,348" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="485,345, 518,373" class="location" alt="Adrian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=13&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="184,363, 220,389" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="162,336, 208,368" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="487,375, 563,422" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=595');">
 			</map>
 			
 			<map name="1970">
-			  	<area shape="rect" coords="112,22, 312,120" class="location" alt="About 1970 - 1979" onclick="$.prettyPhoto.open('locations/milestones.html?id=5&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="480,300, 506,331" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="424,312, 476,341" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="538,293, 80%,317" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="220,337, 260,366" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="202,310, 248,344" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="544,337, 625,381" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="118,369, 207,453" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="300,309, 339,344" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="318,289, 384,332" class="location" alt="Student Center" onclick="$.prettyPhoto.open('locations/locations.html?id=19&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="659,232, 712,269" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="631,265, 699,293" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="199,241, 236,265" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="523,230, 563,268" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="437,251, 487,283" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="235,291, 259,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="781,175, 809,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="645,384, 728,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">
+			  	<area shape="rect" coords="112,22, 312,120" class="location" alt="About 1970 - 1979" onclick="$.prettyPhoto.open('locations/milestones.html?id=5&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="480,300, 506,331" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="424,312, 476,341" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="538,293, 80%,317" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="220,337, 260,366" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="202,310, 248,344" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="544,337, 625,381" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="118,369, 207,453" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="300,309, 339,344" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="318,289, 384,332" class="location" alt="Student Center" onclick="$.prettyPhoto.open('locations/locations.html?id=19&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="659,232, 712,269" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="631,265, 699,293" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="199,241, 236,265" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="523,230, 563,268" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="437,251, 487,283" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="235,291, 259,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="781,175, 809,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="645,384, 728,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=595');">
 			</map>
 			
 			<map name="1980">
-			  	<area shape="rect" coords="112,22, 312,120" class="location" alt="About 1980 - 1993" onclick="$.prettyPhoto.open('locations/milestones.html?id=6&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="480,300, 506,331" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="424,312, 476,341" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="538,293, 80%,317" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="220,337, 260,366" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="202,310, 248,344" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="544,337, 625,381" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="118,369, 207,453" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="300,309, 339,344" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="318,289, 384,332" class="location" alt="Student Center" onclick="$.prettyPhoto.open('locations/locations.html?id=19&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="659,232, 712,269" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="631,265, 699,293" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="199,241, 236,265" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="523,230, 563,268" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="437,251, 487,283" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="235,291, 259,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="781,175, 809,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="645,384, 728,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="551,206, 690,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="690,151, 776,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=576');">
+			  	<area shape="rect" coords="112,22, 312,120" class="location" alt="About 1980 - 1993" onclick="$.prettyPhoto.open('locations/milestones.html?id=6&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="480,300, 506,331" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="424,312, 476,341" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="538,293, 80%,317" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="220,337, 260,366" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="202,310, 248,344" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="544,337, 625,381" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="118,369, 207,453" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="300,309, 339,344" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="318,289, 384,332" class="location" alt="Student Center" onclick="$.prettyPhoto.open('locations/locations.html?id=19&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="659,232, 712,269" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="631,265, 699,293" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="199,241, 236,265" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="523,230, 563,268" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="437,251, 487,283" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="235,291, 259,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="781,175, 809,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="645,384, 728,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="551,206, 690,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="690,151, 776,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=595');">
 			</map>
 			
 			<map name="1994">
-				<area shape="rect" coords="113,22, 313,120" class="location" alt="About 1994 - 1999" onclick="$.prettyPhoto.open('locations/milestones.html?id=7&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="480,300, 506,331" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="424,312, 476,341" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="538,293, 80%,317" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="220,337, 260,366" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="202,310, 248,344" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="544,337, 625,381" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="118,369, 207,453" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="300,309, 339,344" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="318,289, 384,332" class="location" alt="Student Center" onclick="$.prettyPhoto.open('locations/locations.html?id=19&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="659,232, 712,269" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="631,265, 699,293" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="199,241, 236,265" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="523,230, 563,268" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="437,251, 487,283" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="235,291, 259,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="781,175, 809,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="645,384, 728,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="551,206, 690,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="690,151, 776,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="689,389, 781,449" class="location" alt="West Cedar Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=30&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="304,261, 387,294" class="location" alt="Midrise Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=31&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="113,22, 313,120" class="location" alt="About 1994 - 1999" onclick="$.prettyPhoto.open('locations/milestones.html?id=7&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="480,300, 506,331" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="424,312, 476,341" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="538,293, 80%,317" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="220,337, 260,366" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="202,310, 248,344" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="544,337, 625,381" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="118,369, 207,453" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="300,309, 339,344" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="318,289, 384,332" class="location" alt="Student Center" onclick="$.prettyPhoto.open('locations/locations.html?id=19&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="659,232, 712,269" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="631,265, 699,293" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="199,241, 236,265" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="523,230, 563,268" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="437,251, 487,283" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="235,291, 259,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="781,175, 809,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="645,384, 728,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="775,126, 806,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="551,206, 690,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="690,151, 776,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="689,389, 781,449" class="location" alt="West Cedar Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=30&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="304,261, 387,294" class="location" alt="Midrise Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=31&iframe=true&width=900&height=595');">
 			</map>
 			
 			<map name="2000">
 				<area shape="rect" coords="72,22, 271,120" class="location" alt="About 2000 - 2009" onclick="$.prettyPhoto.open('locations/milestones.html?id=8&iframe=true&width=900&height=595');">
-			  	<area shape="rect" coords="440,300, 466,331" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="384,312, 436,341" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="498,293, 536,317" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="180,337, 220,366" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="162,310, 208,344" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="504,337, 585,381" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="78,369,  167,453" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="260,309, 299,344" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="278,289, 344,332" class="location" alt="Student Center" onclick="$.prettyPhoto.open('locations/locations.html?id=19&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="619,232, 672,269" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="591,265, 659,293" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="159,241, 196,265" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="483,230, 523,268" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="397,251, 447,283" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="195,291, 219,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="741,175, 769,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="605,384, 688,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="735,126, 766,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="511,206, 650,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="650,151, 736,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="649,389, 741,449" class="location" alt="West Cedar Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=30&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="264,261, 347,294" class="location" alt="Midrise Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=31&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="438,273, 508,317" class="location" alt="James A. Cannavino Library" onclick="$.prettyPhoto.open('locations/locations.html?id=32&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="350,380, 475,442" class="location" alt="Tenney Stadium" onclick="$.prettyPhoto.open('locations/locations.html?id=33&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="695,203, 734,236" class="location" alt="Fontaine Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=34&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="684,119, 722,142" class="location" alt="Fern Tor Arborteum" onclick="$.prettyPhoto.open('locations/locations.html?id=35&iframe=true&width=900&height=576');">
+			  	<area shape="rect" coords="440,300, 466,331" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="384,312, 436,341" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="498,293, 536,317" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="180,337, 220,366" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="162,310, 208,344" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="504,337, 585,381" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="78,369,  167,453" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="260,309, 299,344" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="278,289, 344,332" class="location" alt="Student Center" onclick="$.prettyPhoto.open('locations/locations.html?id=19&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="619,232, 672,269" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="591,265, 659,293" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="159,241, 196,265" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="483,230, 523,268" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="397,251, 447,283" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="195,291, 219,308" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="741,175, 769,195" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="605,384, 688,420" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="735,126, 766,145" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="511,206, 650,238" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="650,151, 736,194" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="649,389, 741,449" class="location" alt="West Cedar Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=30&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="264,261, 347,294" class="location" alt="Midrise Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=31&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="438,273, 508,317" class="location" alt="James A. Cannavino Library" onclick="$.prettyPhoto.open('locations/locations.html?id=32&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="350,380, 475,442" class="location" alt="Tenney Stadium" onclick="$.prettyPhoto.open('locations/locations.html?id=33&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="695,203, 734,236" class="location" alt="Fontaine Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=34&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="684,119, 722,142" class="location" alt="Fern Tor Arborteum" onclick="$.prettyPhoto.open('locations/locations.html?id=35&iframe=true&width=900&height=595');">
 			</map>
 			
 			<map name="2010">
 				<area shape="rect" coords="112,26, 304,118" class="location" alt="About 2010 - 2012" onclick="$.prettyPhoto.open('locations/milestones.html?id=9&iframe=true&width=900&height=595');">
-			  	<area shape="rect" coords="463,330, 484,355" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="408,340, 457,366" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="517,322, 550,342" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="214,365, 249,389" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="194,338, 239,370" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=576');">
-			  	<area shape="rect" coords="523,362, 600,409" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="108,394, 200,476" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="288,336, 326,369" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=576');">
+			  	<area shape="rect" coords="463,330, 484,355" class="location" alt="Greystone Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=0&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="624,359, 643,379" class="location" alt="Kieran Gatehouse" onclick="$.prettyPhoto.open('locations/locations.html?id=1&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="595,322, 621,347" class="location" alt="St. Peter's" onclick="$.prettyPhoto.open('locations/locations.html?id=2&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="408,340, 457,366" class="location" alt="Marian Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=7&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="517,322, 550,342" class="location" alt="Our Lady Seat of Wisdom Chapel" onclick="$.prettyPhoto.open('locations/locations.html?id=12&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="214,365, 249,389" class="location" alt="Sheahan Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=15&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="194,338, 239,370" class="location" alt="Leo Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=14&iframe=true&width=900&height=595');">
+			  	<area shape="rect" coords="523,362, 600,409" class="location" alt="Donnelly Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=16&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="108,394, 200,476" class="location" alt="James J. McCann Recreational Center" onclick="$.prettyPhoto.open('locations/locations.html?id=17&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="288,336, 326,369" class="location" alt="Champagnat Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=18&iframe=true&width=900&height=595');">
 				<area shape="rect" coords="305,311, 376,357" class="location" alt="Student Center" onclick="$.prettyPhoto.open('locations/locations.html?id=19&iframe=true&width=900&height=595');">
-				<area shape="rect" coords="632,254, 682,295" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="604,291, 667,318" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="192,265, 228,289" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="507,254, 544,290" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="424,276, 460,307" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="225,316, 250,335" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="751,194, 772,211" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="655,384, 706,409" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="743,132, 773,153" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="527,228, 661,258" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="661,162, 745,212" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="659,416, 746,468" class="location" alt="West Cedar Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=30&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="264,289, 347,324" class="location" alt="Midrise Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=31&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="460,304, 523,343" class="location" alt="James A. Cannavino Library" onclick="$.prettyPhoto.open('locations/locations.html?id=32&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="371,404, 501,463" class="location" alt="Tenney Stadium" onclick="$.prettyPhoto.open('locations/locations.html?id=33&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="704,225, 743,260" class="location" alt="Fontaine Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=34&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="700,121, 732,153" class="location" alt="Fern Tor Arborteum" onclick="$.prettyPhoto.open('locations/locations.html?id=35&iframe=true&width=900&height=576');">
-				<area shape="rect" coords="456,274, 526,309" class="location" alt="Hancock Center" onclick="$.prettyPhoto.open('locations/locations.html?id=36&iframe=true&width=900&height=576');">
+				<area shape="rect" coords="632,254, 682,295" class="location" alt="Dyson Center" onclick="$.prettyPhoto.open('locations/locations.html?id=20&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="604,291, 667,318" class="location" alt="Lowell Thomas Communications Center" onclick="$.prettyPhoto.open('locations/locations.html?id=21&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="192,265, 228,289" class="location" alt="Cornell Boathouse" onclick="$.prettyPhoto.open('locations/locations.html?id=41&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="507,254, 544,290" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="424,276, 460,307" class="location" alt="New Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=23&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="225,316, 250,335" class="location" alt="Byrne House" onclick="$.prettyPhoto.open('locations/locations.html?id=24&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="751,194, 772,211" class="location" alt="Fontaine Annex" onclick="$.prettyPhoto.open('locations/locations.html?id=25&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="655,384, 706,409" class="location" alt="Steel Plant Studios" onclick="$.prettyPhoto.open('locations/locations.html?id=26&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="743,132, 773,153" class="location" alt="St. Ann's Hermitage" onclick="$.prettyPhoto.open('locations/locations.html?id=27&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="527,228, 661,258" class="location" alt="Foy Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=28&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="661,162, 745,212" class="location" alt="Gartland Commons" onclick="$.prettyPhoto.open('locations/locations.html?id=29&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="659,416, 746,468" class="location" alt="West Cedar Townhouses" onclick="$.prettyPhoto.open('locations/locations.html?id=30&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="264,289, 347,324" class="location" alt="Midrise Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=31&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="460,304, 523,343" class="location" alt="James A. Cannavino Library" onclick="$.prettyPhoto.open('locations/locations.html?id=32&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="371,404, 501,463" class="location" alt="Tenney Stadium" onclick="$.prettyPhoto.open('locations/locations.html?id=33&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="704,225, 743,260" class="location" alt="Fontaine Hall" onclick="$.prettyPhoto.open('locations/locations.html?id=34&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="700,121, 732,153" class="location" alt="Fern Tor Arborteum" onclick="$.prettyPhoto.open('locations/locations.html?id=35&iframe=true&width=900&height=595');">
+				<area shape="rect" coords="456,274, 526,309" class="location" alt="Hancock Center" onclick="$.prettyPhoto.open('locations/locations.html?id=36&iframe=true&width=900&height=595');">
 			</map>
 			
 			<noscript>
@@ -300,6 +277,13 @@
 
 		</div>
 
-		<footer></footer>
+		<div id="footerContent">
+			<p class="footer">
+				Marist Archives &amp; Special Collections, 3399 North Road, Poughkeepsie, NY 12601; 845.575.3199
+			</p>
+			<p class="footer">
+				&copy; Copyright 2007-2014 Marist College. All Rights Reserved. <a href="http://www.marist.edu/disclaimers.html" target="_blank" id="footerLinks">Disclaimers</a> | <a href="http://www.marist.edu/privacy.html" target="_blank" id="footerLinks">Privacy Policy</a> | <a href="ack.html?iframe=true&width=60%&height=50%" rel="prettyphoto[iframes]" id="footerLinks">Acknowledgements</a>
+			</p>
+		</div>
 	</body>
 </html>
