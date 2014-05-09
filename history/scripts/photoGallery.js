@@ -45,7 +45,16 @@ $(document).keydown(function(e){
 });
 
 function loadImage(image) {
-	$('#image').empty().append('<img src="' + photos[image] + '" width="95%" height="93%">');
+	$image = $('#image img');
+	width = $image.width();
+	height = $image.height();
+
+	$image.css({
+	    left: 0 - (width / 2),
+	    top: 0 - (height / 2)
+	});
+
+	$('#image').empty().append('<img src="' + photos[image] + '" width="100%" height="100%">');
 }
 
 function navigateImage(direction) {

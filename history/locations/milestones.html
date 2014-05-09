@@ -2,11 +2,9 @@
 <html lang="en">
 	<head>
 	    <link rel="stylesheet" href="../mainStyles/locations.css" />
-	    <link rel="stylesheet" href="../mainStyles/antiscroll.css" />
 	    
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script type="text/javascript" src="../scripts/milestones.js"></script>
-	  	<script type="text/javascript" src="../scripts/antiscroll.js"></script>
 
 		<style>
 			body {
@@ -33,13 +31,11 @@
 				font-size: 1.2em;
 				font-weight: bold;
 			}
-			.antiscroll-wrap {
+			#info {
 				width: 890px;
 				height: 330px;
-			}
-			.antiscroll-inner {
-				width: 850px;
-				height: 300px;
+				font-size: 15px;
+				overflow-y: auto;
 			}
 		</style>
 	</head>
@@ -51,13 +47,7 @@
 			<div></div>
 		</div>
 		<div>
-			<div id="info">
-				<div class="antiscroll-wrap">
-		        	<div class="antiscroll-inner">
-		        		<ul></ul>
-		        	</div>
-        		</div>
-			</div>
+			<div id="info"><ul></ul></div>
 		</div>
 	</body>
 </html>

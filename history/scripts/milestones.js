@@ -32,16 +32,9 @@ function display() {
 
 	for (var j = 0; j < x[i].getElementsByTagName('feature')[0].getElementsByTagName('li').length; j++) {
 		feature = x[i].getElementsByTagName('feature')[0].getElementsByTagName('li')[j].childNodes[0].nodeValue;
-		$('.antiscroll-inner ul').append('<li>' + feature + '</li>');
+		$('#info ul').append('<li>' + feature + '</li>');
 	}
 
 	$('.thumbnail').append('<img src="../locations/' + nameLowerCase + '/main.jpg" alt="' + name + '" onerror="imgError(this)" width="120px" height="120px">');
-	$('.antiscroll-wrap').antiscroll();
-}
-
-function imgError(image) {
-    image.onerror = "";
-    image.src = "../locations/noMain1.jpg";
-    image.alt = "No Building Image";
-    return true;
+	//$('.antiscroll-wrap').antiscroll();
 }

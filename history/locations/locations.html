@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 	    <link rel="stylesheet" href="../mainStyles/locations.css" />
-	    <link rel="stylesheet" href="../mainStyles/antiscroll.css" />
+	    <!--<link rel="stylesheet" href="../mainStyles/antiscroll.css" />-->
 	    
 	  	<script type="text/javascript" src="../scripts/jquery.min.js"></script>
 	  	<script type="text/javascript" src="../scripts/locations.js"></script>
@@ -16,23 +16,20 @@
 			
 			#imageContainer {
 				float: left;
-				width: 60%;
-				background-color: black;
+				width: 57%;
 				color: white;
 				position: relative;
+				overflow: hidden;
 				-webkit-user-select: none;
 			    -moz-user-select: -moz-none;
 			    /*IE10*/
 			    -ms-user-select: none;
 			    user-select: none;
+			    border: 10px solid black;
 			}
 			
-			#image img {
-				display: block;
-				height: 560px;
-				margin-top: 10px;
-				margin-left: auto;
-				margin-right: auto;
+			#image {
+				height: 548px;
 			}
 			
 			#infoContainer {
@@ -88,6 +85,14 @@
 			.building-info p:last-child {
 				margin-bottom: 0;
 			}
+			#imageInfo {
+				position: absolute;
+				top: 94%;
+				background-color: rgba(0, 0, 0, 0.5);
+				width: 96%;
+				padding: 10px;
+				padding-left: 10px;
+			}
 		</style>
 
 		<script>
@@ -97,9 +102,11 @@
 				$('#imageContainer').hover(
 					function() {
 						$('#navButtons').stop(true, true).fadeIn(200);
+						$('#imageInfo').stop(true, true).fadeIn(200);
 					},
 					function() {
 						$('#navButtons').stop(true, true).fadeOut(200);
+						$('#imageInfo').stop(true, true).fadeOut(200);
 					}
 				);
 				$('.backward').hover(
@@ -128,12 +135,14 @@
 				<a class="backward" onclick="navigateImage(0);" title="Backward"> </a>
 				<a class="forward" onclick="navigateImage(1);" title="Forward"> </a>
 			</div>
-			<div id="image"><div id="imageInfo"></div></div>
-			
-			
+			<div id="image"></div>
+			<div id="imageInfo"></div>
 		</div>
+		
+
+
 		<div id="infoContainer">
-			<table>
+			<table style="box-shadow: 0px 2px 5px #888888">
 				<tr>
 					<td rowspan="3" class="thumbnail"></td>
 					<td class="building-name"></td>
@@ -145,8 +154,7 @@
 					<td class="building-desc"></td>
 				</tr>
 			</table>
-			<div class="building-info">
-			</div>
+			<div class="building-info"></div>
 		</div>
 	</body>
 </html>
