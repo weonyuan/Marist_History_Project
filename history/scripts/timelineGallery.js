@@ -71,6 +71,6 @@ $(document).ready(function(){
 			$(".hoverBox span").append(currentName);
 			$(this).css("cursor: hand");
 		}, function() {
-			$(".hoverBox span").empty();
+			$(".hoverBox span").empty().append("Hover over a building");
 		});
 });

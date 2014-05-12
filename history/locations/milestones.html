@@ -7,35 +7,33 @@
 	  	<script type="text/javascript" src="../scripts/milestones.js"></script>
 
 		<style>
-			body {
-				overflow: hidden;
-				display: block;
-			}
-			#info {
-				width: 100%;
-				float: left;
-				text-align: left;
-			}
 			#feature {
 				width: 25%;
 				float: right;
 			}
-			li {
-				margin-left: 25px;
-			}
+
 			.milestone-name {
 				margin-top: 10px;
 				margin-bottom: 10px;
 			}
+
 			#highlight-header {
 				font-size: 1.2em;
 				font-weight: bold;
 			}
+
 			#info {
-				width: 890px;
+				width: 880px;
 				height: 330px;
 				font-size: 15px;
 				overflow-y: auto;
+				padding: 5px;
+				margin-top: 15px;
+				background-color: #F0F0F0;
+			}
+
+			#info li {
+				margin-left: 20px;
 			}
 		</style>
 	</head>
@@ -44,10 +42,8 @@
 		<div>
 			<img src="hancock/images/1.jpg" width="100%" height="200px"/>
 			<div class="milestone-name"></div>
-			<div></div>
 		</div>
-		<div>
-			<div id="info"><ul></ul></div>
-		</div>
+		<div style="border-bottom: solid #AEAEA6 1px"></div>
+		<div id="info"><ul></ul></div>
 	</body>
 </html>
