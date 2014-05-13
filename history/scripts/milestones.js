@@ -24,7 +24,7 @@ var x = xmlDoc.getElementsByTagName('milestone');
 var i = getUrlVars()['id'];
 
 var name = (x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue);
-var nameLowerCase = x[i].getAttribute('name');
+var milestone = x[i].getElementsByTagName('id')[0].childNodes[0].nodeValue;
 var feature = x[i].getElementsByTagName('feature')[0].getElementsByTagName('li')[0].childNodes[0].nodeValue;
 
 function display() {
@@ -35,6 +35,12 @@ function display() {
 		$('#info ul').append('<li>' + feature + '</li>');
 	}
 
-	$('.thumbnail').append('<img src="../locations/' + nameLowerCase + '/main.jpg" alt="' + name + '" onerror="imgError(this)" width="120px" height="120px">');
-	//$('.antiscroll-wrap').antiscroll();
+	$('.milestone-cover').append('<img src="../images/milestones/' + milestone + '.jpg" alt="' + name + '" onerror="imgError(this)" width="100%" height="200px">');
+}
+
+function imgError(image) {
+    image.onerror = "";
+    image.src = "../images/milestones/noCover.jpg";
+    image.alt = "No Milestone Cover";
+    return true;
 }
