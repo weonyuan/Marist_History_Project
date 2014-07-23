@@ -17,7 +17,7 @@
 		<info>
 			Since the construction of the carriage house in 1865, there have been three remodeling's starting in 1909, then 1928, and finally 1964. Major renovations were made to Greystone in 1928 for laboratories and a library. A third story was added for more dorm space, together with windows and the tower and stairs. The wooden floors were replaced by concrete floors supported by steel beams. Brother Paul Acyndinus did the electrical wiring. Cost of the construction was $30,000. Cost of the furnishings was $10,000. The steam laundry that was installed in 1909 was transferred to Marian in 1928 as well. Throughout the years Greystone has served as a dormitory, classrooms, science labs, and a library. Since 1964, Greystone has been the President's building, where the College President's office resides along with the academic dean's office. The Marist Brothers named the building "Greystone" because of its distinctive stonewalls.
 		</info>
-		<images>40</images>
+		<images>21</images>
 	</building>
 	
 	<building name="kieran">
@@ -180,7 +180,7 @@
 		<info>
 			Leo presently serves as a co-ed dorm for freshmen students at Marist.
 		</info>
-		<images>17</images>
+		<images>9</images>
 	</building>
 
 	<building name="sheahan">
@@ -191,7 +191,7 @@
 		<info>
 			In March of 1961 Brother Linus Richard Foy, President of Marist College, received confirmation for a government loan for a dormitory that would accommodate 120 students and three faculty advisors. This was the first building on the property that was not constructed by the Marist Brothers since the property was purchased in 1908. Sheahan Hall was one of the first dormitories where women lived when the College became a coeducational institution in 1969. It currently houses freshman students and is named in memory of Monsignor J. F. Sheahan, pastor of St. Peter's Church in Poughkeepsie. Monsignor Sheahan used his influence to help the Brothers purchase the Bech Estate in 1908. Today this property forms the entire Marist College campus south of the Waterworks Road (the main entrance to the campus).
 		</info>
-		<images>20</images>
+		<images>10</images>
 	</building>
 
 	<building name="donnelly">
@@ -205,7 +205,7 @@
 		<info>
 			Donnelly Hall has served as headquarters for almost every college activity on campus in addition to academics and even a residence hall for lay students even though it was originally built to hold dorm rooms, cafeteria, bookstore, lecture halls, classrooms, and a library. Donnelly is currently home to the School of Science, science labs, the Fashion Program, photography darkrooms, lecture halls, classrooms, Security, Registrar, Financial Aid, Information Technology, Human Resources, the computer store, the Copy Center, and even a coffee shop.
 		</info>
-		<images>102</images>
+		<images>50</images>
 	</building>
 
 	<building name="mccann">
@@ -219,7 +219,7 @@
 		<info>
 			The McCann Center was named after James J. McCann, who was born in Poughkeepsie in 1880. He and his family operated the McCann Feed and Grain Store on Main Street, and McCann eventually amassed a large estate through the stock market. In 1967, two years before his death, McCann established the McCann Foundation, which began awarding money in 1969 for "progressive human welfare work."
 		</info>
-		<images></images>
+		<images>9</images>
 	</building>
 
 	<building name="champagnat">
@@ -245,7 +245,7 @@
 		<info>
 			Champagnat is named after the French priest, Marcellin Champagnat, who founded the Marist Brothers in 1817. According to history, Champagnat encountered a dying boy on a mountainside who did not know of the existence of God. Haunted by the thought, this chance encounter motivated him to assume the responsibility of educating the young who would become the future leaders of the Church.
 		</info>
-		<images>31</images>
+		<images>15</images>
 	</building>
 
 	<building name="studentcenter">
@@ -268,7 +268,7 @@
 		<info>
 			Presently, the Student Center is, once again, under major construction to attach a multipurpose academic building. Renovations are being made to enhance the building for everyone. Specifically, improvements are being made to the Performing Arts Room, Student Government Association Office, and Nelly Goletti Theatre. A new music wing is being constructed to house the Marist Band, Singers, and Orchestra and will include rehearsal halls, practice rooms, music labs, classrooms, and faculty offices.  The dining hall will be completely transformed into a grander space with vaulted ceilings and increased seating capacity.  Efforts are being made to make the new building more environmentally friendly by making improvements to heating, ventilation, and air conditioning.
 		</info>
-		<images>44</images>
+		<images>32</images>
 	</building>
 
 	<building name="dyson">
@@ -285,13 +285,13 @@
 		<info>
 			The Dyson Center was built to fulfill the Marist's growing need for technology and space caused by renovations being made to Donnelly. The number of offices, classrooms, and seminar areas not only provided the students and faculty with adequate learning space, but with a prominent and technologically-advanced facility. It also served as the missing link connecting the North End with the center of campus, creating a more unified community.
 		</info>
-		<images>24</images>
+		<images>11</images>
 	</building>
 
 	<building name="lowell">
 		<id>lowell</id>
 		<name>Lowell Thomas Communications Center</name>
-		<date>1994</date>
+		<date>1987</date>
 		<desc>Academic building</desc>
 		<info>
 			Construction for the Lowell Thomas Communication Center began in 1984 with generous gifts from generous donors. Robert R. Dyson, member of the college's board of trustees, became the project's first major donor with a gift of $250,000. The McCann Foundation donated a million dollars and Lowell Thomas Jr. made two individual gifts totaling $550,000. After three years of construction the building finally opened in 1987.
@@ -305,7 +305,7 @@
 		<info>
 			Renovations to the second floor, which include updating the television equipment and studios, are scheduled to take place in the near future.
 		</info>
-		<images>35</images>
+		<images>13</images>
 	</building>
 
 	<building name="longview">
@@ -362,7 +362,7 @@
 		<info>
 			Marist purchased an industrial site across the street from Marist in 1997 to house the college library while the James A. Cannavino Library was being built.  After the Library was completed, Marist renovated the old storehouse and turned it into the Steel Plant Studios, a 3,200 square-foot space that is now home to the Marist College Art Gallery. Several kinds of studios live inside including 2-D/Graphic Design, Drawing &amp; Painting, 3-D Sculpture, Digital Media, and a studio specifically for Special Processes &amp; Techniques. It also features a 2,500 square-foot Art Gallery where students can display their work for members of the community to see. The Gallery holds its industrial-like feel with its concrete floors and 15-foot exposed ceilings. The Gallery is open from September to May and showcases the work of student and faculty artists working with various types of fine arts media.
 		</info>
-		<images>11</images>
+		<images>6</images>
 	</building>
 
 	<building name="stanns">
@@ -393,7 +393,7 @@
 		<info>
 			In 2003 these townhouses were named in honor of President Emeritus and Life Trustee, Dr. Linus Richard Foy. He was named President of Marist College in 1958 and, at age 28, became the youngest college president in the United States. Dr. Foy made countless contributions to the development of the College until 1979, when Marist's current President, Dennis J. Murray was appointed.
 		</info>
-		<images>8</images>
+		<images>6</images>
 	</building>
 
 	<building name="gartland">
@@ -407,7 +407,7 @@
 		<info>
 			Gartland Commons are named after John J. Gartland, Jr., a longtime Marist College Benefactor, Board Member, and Advisor. John Gartland served in the U.S. Army Air Force during World War II later earned a bachelor's of science degree from Georgetown University in 1935. After, Gartland earned law degrees from Fordham and St. John's. Marist College awarded Gartland with a doctorate in humane letters in 1980. Gartland served on the boards of numerous local organizations including Marist, the Astor Home, New York Archdiocese Catholic Charities and St. Mary's Church. In addition, Gartland was also honored by the pope as a Knight of the Holy Sepulchre, one of the highest honors the church can bestow on a lay person.
 		</info>
-		<images>4</images>
+		<images>9</images>
 	</building>
 
 	<building name="westcedar">
@@ -418,7 +418,7 @@
 		<info>
 			West Cedar is located across Route 9 on West-Cedar Street and is made up of two sections where upperclassmen can reside: Lower (labeled O-S, completed in 1998) and Upper (labeled T-Y, completed in 2000). Together, these sections contain twelve buildings which can accommodate 468 upperclassmen. Each house features a kitchen, dining area, living room, and two bathrooms. Residents in the complex have access to laundry facilities and campus security.
 		</info>
-		<images>17</images>
+		<images>10</images>
 	</building>
 
 	<building name="midrise">
@@ -438,7 +438,7 @@
 		<info>
 			The beautiful stone library overlooking the Hudson River and campus green is named after longtime Trustee and former Chairman of the Board, James A. Cannavino. Developed as part of the worldwide Digital Library Initiative launched by the IBM Corporation to facilitate anytime, anywhere access to books, periodicals, works of art, film, music, and rare manuscripts, the Cannavino Library is a model for academic libraries of the new century. This 83,000-square-foot facility is a state-of-the-art electronic teaching and service center at the hub of an electronic network linking all parts of the Marist campus to libraries and databases throughout the world. In addition to providing a number of spacious study areas and attractive quiet rooms for research, conferences, and collaborative work, the Library also houses the Archives and Special Collections rooms, an office overlooking the campus for the College President, and a multi-media language center on the third floor. A small cafe on the main floor of the Library also provides the students with a gathering place where they can have a bite to eat, drink coffee, and not have to worry quite as much about the level of their voices.
 		</info>
-		<images></images>
+		<images>9</images>
 	</building>
 
 	<building name="tenney">
@@ -485,7 +485,7 @@
 		<info>
 			Fontaine was rebuilt in 2000 as the home of the School of Liberal Arts. It houses multimedia classrooms, a black box theatre, and the Office of College Advancement, including the offices of Alumni Relations and Public Affairs. It also features the Henry Hudson room, a large conference room that offers stunning views of the Hudson River. Up until recently it also contained the MIPO, the Marist College Institute for Public Opinion. The hallway on the first floor, also known as the Gallery Corridor, is lined with photographs of Franklin D. Roosevelt to remind the Marist community of the close affiliation between the College and the FDR Presidential Library in the neighboring town of Hyde Park.
 		</info>
-		<images>36</images>
+		<images>19</images>
 	</building>
 
 	<building name="ferntor">
@@ -507,7 +507,7 @@
 		<info>
 			The Hancock Center is named after the lead donor and vice chair of the Marist Board of Trustees, Ellen Hancock, and her husband Jason. The 57,000 square foot academic center opened in 2011 and houses the School of Computer Science and Mathematics, faculty offices, nine classrooms, six conference/seminar rooms, and three computer labs. In addition, the Marist College Institute for Public Opinion (MIPO), the International Programs Office, and a small cafe is also located in the Hancock Center. The $35 million Center includes the Center for Collaborative and On-Demand Computing, the Institute for Data Center Professionals, and the IBM-Marist Joint Study Program which features some of the most advanced technology available. The Hancock Center's look was inspired by the original buildings acquired with the Bech Estate: The Greystone, Kieran Gatehouse, and St. Peter's cottage. Designed by Robert A. M. Stern Architects, LLP, the Center also reduces environmental impact with energy efficient lighting and a green roof that absorbs and filters rain water.
 		</info>
-		<images>24</images>
+		<images>29</images>
 	</building>
 
 	<building name="musicbuilding">
@@ -585,7 +585,7 @@
 		<info>
 			Marist Football has since been the program that has seen the most activity on the field, but other teams use it regularly, such as soccer, lacrosse, and intermural sports.
 		</info>
-		<images>13</images>
+		<images>10</images>
 	</building>
 
 	<building name="martin">
@@ -611,7 +611,7 @@
 		<info>
 			The boathouse is named after William Martin, a local insurance agent who was the chairman of the fund drive to construct the boathouse. He passed away before the boathouse's completion and Brother Joannes requested it be named in his memory.
 		</info>
-		<images>21</images>
+		<images>8</images>
 	</building>
 
 	<building name="cornell">
